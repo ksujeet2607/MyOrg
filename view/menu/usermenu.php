@@ -1,6 +1,6 @@
                     <nav class="main-navigation fr">
                         <ul class="clearfix">
-                            <li class="parent-item">
+                            <li class="parent-item current_page_item">
                                 <a href="<?= BASE_URL ?>" class="ln-tr">Home</a>
                             </li>
                             <li class="parent-item haschild courses-menu">
@@ -107,71 +107,20 @@
                             <li class="parent-item ">
                                 <a href="<?= PUBLIC_URL ?>techTeam" class="ln-tr">Our Team</a>
                             </li>
-                            <li class="parent-item haschild">
-                                <a href="#" class="ln-tr">Features</a>
-                                <ul class="submenu">
-                                    <li class="sub-item haschild">
-                                        <a href="28-portfolio-classic-2cols.html" class="ln-tr">Portfolio</a>
-                                        <ul>
-                                            <li class="sub-item"><a href="28-portfolio-classic-2cols.html" class="ln-tr">Portfolio 2 Columns</a></li>
-                                            <li class="sub-item"><a href="29-portfolio-classic-3cols.html" class="ln-tr">Portfolio 3 Columns</a></li>
-                                            <li class="sub-item"><a href="30-portfolio-classic-4cols.html" class="ln-tr">Portfolio 4 Columns</a></li>
-                                            <li class="sub-item"><a href="31-single-portfolio.html" class="ln-tr">Single Portfolio</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub-item"><a href="36-login.html" class="ln-tr">Login Page</a></li>
-                                    <li class="sub-item"><a href="38-register.html" class="ln-tr">Register Page</a></li>
-                                    <li class="sub-item"><a href="#" class="ln-tr" data-toggle="modal" data-target="#register-modal">Register Popup</a></li>
-                                    <li class="sub-item"><a href="32-photo-gallery.html" class="ln-tr">Photo Gallery</a></li>
-                                    <li class="sub-item"><a href="42-typography.html" class="ln-tr">Typography</a></li>
-                                    <li class="sub-item"><a href="43-shortcodes.html" class="ln-tr">Shortcodes</a></li>
-                                    <li class="sub-item"><a href="44-pricing-tables.html" class="ln-tr">Pricing Tables</a></li>
-                                    <li class="sub-item"><a href="45-soon.html" class="ln-tr">Coming Soon</a></li>
-                                    <li class="sub-item"><a href="46-404.html" class="ln-tr">404 Page 1</a></li>
-                                    <li class="sub-item"><a href="47-404-v2.html" class="ln-tr">404 Page 2</a></li>
-                                </ul>
+                            <li class="parent-item ">
+                                <a href="<?= PUBLIC_URL ?>portfolio" class="ln-tr">Portfolio</a>
                             </li>
-                            <li class="parent-item haschild">
-                                <a href="17-about-1.html" class="ln-tr">About</a>
-                                <ul class="submenu">
-                                    <li class="sub-item"><a href="17-about-1.html" class="ln-tr">About 1</a></li>
-                                    <li class="sub-item"><a href="18-about-2.html" class="ln-tr">About 2</a></li>
-                                    <li class="sub-item"><a href="19-about-3.html" class="ln-tr">About 3</a></li>
-                                </ul>
+                            <li class="parent-item ">
+                                <a href="<?= PUBLIC_URL ?>aboutus" class="ln-tr">About</a>
                             </li>
-                            <li class="parent-item haschild">
+                            <!-- <li class="parent-item haschild">
                                 <a href="20-blog-1-list.html" class="ln-tr">Blog</a>
-                                <ul class="submenu">
-                                    <li class="sub-item haschild">
-                                        <a href="20-blog-1-list.html" class="ln-tr">Blog 1</a>
-                                        <ul class="left-submenu">
-                                            <li class="sub-item"><a href="20-blog-1-list.html" class="ln-tr">Blog 1 Listview</a></li>
-                                            <li class="sub-item"><a href="21-blog-2-columns.html" class="ln-tr">Blog 1 Two Columns</a></li>
-                                            <li class="sub-item"><a href="22-blog-3-columns.html" class="ln-tr">Blog 1 Three Columns</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub-item haschild">
-                                        <a href="23-blog-2-right-sidebar.html" class="ln-tr">Blog 2</a>
-                                        <ul class="left-submenu">
-                                            <li class="sub-item"><a href="23-blog-2-right-sidebar.html" class="ln-tr">Blog 2 Right Sidebar</a></li>
-                                            <li class="sub-item"><a href="24-blog-2-left-sidebar.html" class="ln-tr">Blog 2 Left Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub-item haschild">
-                                        <a href="25-blog-single-right-sidebar.html" class="ln-tr">Single Blog</a>
-                                        <ul class="left-submenu">
-                                            <li class="sub-item"><a href="25-blog-single-right-sidebar.html" class="ln-tr">Single blog Right Sidebar</a></li>
-                                            <li class="sub-item"><a href="26-blog-single-left-sidebar.html" class="ln-tr">Single blog Left Sidebar</a></li>
-                                            <li class="sub-item"><a href="27-blog-single-full-width.html" class="ln-tr">Single blog Full Width</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="parent-item current_page_item">
+                            </li> -->
+                            <li class="parent-item ">
                                 <a href="<?= PUBLIC_URL ?>contact" class="ln-tr">Contact</a>
                             </li>
-                            <li class="parent-item login">
-                                <a href="#" class="ln-tr" data-toggle="modal" data-target="#login-modal"><span class="grad-btn">Login</span></a>
+                            <li class="parent-item ">
+                                <a href="<?= PUBLIC_URL ?>contact" class="ln-tr">Career</a>
                             </li>
                         </ul>
                     </nav><!-- End NAV Container -->

@@ -47,7 +47,7 @@
                                 data-easing="Power3.easeInOut"
                                 data-endspeed="300"
                                 style="z-index: 2">
-                                <h2 class="slide-title">Join Coursaty now & get our free courses!</h2>
+                                <h2 class="slide-title">A new company with new ideas and approach!</h2>
                             </div>
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption black randomrotate skewtoleft tp-resizeme start"
@@ -62,7 +62,7 @@
                                 data-elementdelay="0.1"
                                 data-endelementdelay="0.1"
                                 data-endspeed="500" style="z-index: 99; white-space: pre-line;">
-                                <p class="slide-description">Lorem Ipsum is simply dummy of the printing and typesetting 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p class="slide-description">We belive in Affordable Affective Approach to deviler best product to our client.</p>
                             </div>
                         </li><!-- end 1st slide -->
                         <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
@@ -80,7 +80,7 @@
                                 data-easing="Power3.easeInOut"
                                 data-endspeed="300"
                                 style="z-index: 2">
-                                <h2 class="slide-title">We Help You Learn What You Love</h2>
+                                <h2 class="slide-title">We Help You To Get What You Want!</h2>
                             </div>
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption black randomrotate skewtoleft tp-resizeme start"
@@ -95,7 +95,7 @@
                                 data-elementdelay="0.1"
                                 data-endelementdelay="0.1"
                                 data-endspeed="500" style="z-index: 99; white-space: pre-line;">
-                                <p class="slide-description">Lorem Ipsum is simply dummy of the printing and typesetting 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p class="slide-description">Every professional wants his/her own identity into the virtual world. The best way is to have our own virtual world. Let the world visit to you. </p>
                             </div>
                         </li><!-- end 2nd slide -->
                         <li data-transition="random" data-slotamount="7" data-masterspeed="1500">
@@ -113,7 +113,7 @@
                                 data-easing="Power3.easeInOut"
                                 data-endspeed="300"
                                 style="z-index: 2">
-                                <h2 class="slide-title">Join Coursaty now & get our free courses!</h2>
+                                <h2 class="slide-title">Let us to build your profession in virtual world!</h2>
                             </div>
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption black randomrotate skewtoleft tp-resizeme start"
@@ -128,7 +128,7 @@
                                 data-elementdelay="0.1"
                                 data-endelementdelay="0.1"
                                 data-endspeed="500" style="z-index: 99; white-space: pre-line;">
-                                <p class="slide-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsa repudiandae sunt accusamus culpa officiis, printer esse illo minima at tempora quaerat perferendis ullam vitae possimus sit facere tenetur cum.</p>
+                                <p class="slide-description">We will provide you the best product, within a time schedule.</p>
                             </div>
                         </li><!-- end 3rd slide -->
                     </ul><!-- end ul elements -->
@@ -145,7 +145,6 @@
                 <div class="container">
                     <div class="logo-container fl clearfix">
                         <a href="#" class="ib">
-
                             <span class="site-name"><img src="<?= SRC_URL ?>img/logo@2x.jpg" class="fl" alt="Logo"><span>.in</span></span>
                         </a>
                     </div><!-- End Logo Container -->

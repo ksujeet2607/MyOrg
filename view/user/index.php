@@ -2,9 +2,9 @@
 
             <section class="full-section features-section fancy-shadow">
                 <div class="container">
-                    <h3 class="section-title">Welcome Dear Visitor in Coursaty</h3>
+                    <h3 class="section-title">Welcome Dear Visitor in <?= SITE_NAME ?></h3>
                     <p class="section-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.
+                        We are dedicated to give optimized and cost effective product within a scheduled time, We have a very skilled, enthusiastic and experienced team to develop high quality product.
                     </p><!-- End Section Description -->
                 </div>
                 <div class="section-content features-content fadeInDown-animation">
@@ -13,36 +13,36 @@
                             <div class="col-md-3 col-xs-6">
                                 <div class="feature-box alt">
                                     <div class="icon"><img src="<?= SRC_URL ?>img/icons/feature-icon-1.png" class="es-tr" alt=""></div><!-- End Icon -->
-                                    <h5 class="feature-title">Learn Anything Online</h5>
+                                    <h5 class="feature-title">Web Development</h5>
                                     <p class="feature-description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing.
+                                        We are mainly focused on Web Development, websites( static or dynamic), web applications and web services.
                                     </p>
                                 </div><!-- End Features Box -->
                             </div>
                             <div class="col-md-3 col-xs-6">
                                 <div class="feature-box alt">
                                     <div class="icon"><img src="<?= SRC_URL ?>img/icons/feature-icon-2.png" class="es-tr" alt=""></div><!-- End Icon -->
-                                    <h5 class="feature-title">Talk to Our Instructors</h5>
+                                    <h5 class="feature-title">Web & Logo Designing</h5>
                                     <p class="feature-description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing.
+                                      Web & Logo designing, mobile responsive designing, using native css and css framworks like Bootstrap, Foundation, Tailwind CSS etc.
                                     </p>
                                 </div><!-- End Features Box -->
                             </div>
                             <div class="col-md-3 col-xs-6">
                                 <div class="feature-box alt">
                                     <div class="icon"><img src="<?= SRC_URL ?>img/icons/feature-icon-3.png" class="es-tr" alt=""></div><!-- End Icon -->
-                                    <h5 class="feature-title">Communicate with Others</h5>
+                                    <h5 class="feature-title">CMS Customization</h5>
                                     <p class="feature-description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing.
+                                        We also works on various CMS like Wordpress, Magento, Drupal etc.
                                     </p>
                                 </div><!-- End Features Box -->
                             </div>
                             <div class="col-md-3 col-xs-6">
                                 <div class="feature-box alt">
                                     <div class="icon"><img src="<?= SRC_URL ?>img/icons/feature-icon-4.png" class="es-tr" alt=""></div><!-- End Icon -->
-                                    <h5 class="feature-title">Check for Centers</h5>
+                                    <h5 class="feature-title">Web Hosting</h5>
                                     <p class="feature-description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing.
+                                        We provide web hosting on, both linux and windows platform, in very affordable price.
                                     </p>
                                 </div><!-- End Features Box -->
                             </div>
@@ -55,9 +55,9 @@
 
             <section class="full-section instructors-section fancy-shadow">
                 <div class="container">
-                    <h3 class="section-title">Meet Our Instructors</h3>
+                    <h3 class="section-title">Web Hosting with <?= SITE_NAME ?></h3>
                     <p class="section-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
+                       We provide web hosting on winndow and linux plateforms with various price segment. Below is our hosting plans
                     </p><!-- End Section Description -->
                 </div>
                 <div class="section-content instructors-content fadeInDown-animation">
@@ -65,69 +65,41 @@
                         <div class="row">
                             <div class="col-md-3 col-xs-6">
                                 <div class="instructor">
-                                    <div class="avatar"><img src="<?= SRC_URL ?>img/content/instructor-avatar-1-270x270.jpg" class="img-responsive" alt=""></div><!-- End Avatar -->
+                                    <div class="avatar"><img src="<?= SRC_URL ?>img/windows.jpg" class="img-responsive" alt=""></div><!-- End Avatar -->
                                     <div class="instructor-info">
-                                        <p class="name">Ibrahim Abo Seada</p>
-                                        <span class="position">Web Developer</span>
-                                        <div class="social-icons">
-                                            <ul class="clearfix">
-                                                <li><a href="#" class="fb-icon es-tr"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" class="tw-icon es-tr"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" class="gp-icon es-tr"><i class="fa fa-google-plus"></i></a></li>
-                                                <li><a href="#" class="in-icon es-tr"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                        </div>
+                                        <p class="name">Windows (1 year)</p>
+                                        <span class="position">INR 4000 / year</span>
+
                                     </div>
                                 </div><!-- End Instructor Box -->
                             </div>
                             <div class="col-md-3 col-xs-6">
                                 <div class="instructor">
-                                    <div class="avatar"><img src="<?= SRC_URL ?>img/content/instructor-avatar-2-270x270.jpg" class="img-responsive" alt=""></div><!-- End Avatar -->
+                                    <div class="avatar"><img src="<?= SRC_URL ?>img/windows.jpg" class="img-responsive" alt=""></div><!-- End Avatar -->
                                     <div class="instructor-info">
-                                        <p class="name">Mahmoud Begha</p>
-                                        <span class="position">UI Designer</span>
-                                        <div class="social-icons">
-                                            <ul class="clearfix">
-                                                <li><a href="#" class="fb-icon es-tr"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" class="tw-icon es-tr"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" class="gp-icon es-tr"><i class="fa fa-google-plus"></i></a></li>
-                                                <li><a href="#" class="in-icon es-tr"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                        </div>
+                                        <p class="name">Windows (3 year)</p>
+                                        <span class="position">INR 3,500/ years</span>
+
                                     </div>
                                 </div><!-- End Instructor Box -->
                             </div>
                             <div class="col-md-3 col-xs-6">
                                 <div class="instructor">
-                                    <div class="avatar"><img src="<?= SRC_URL ?>img/content/instructor-avatar-3-270x270.jpg" class="img-responsive" alt=""></div><!-- End Avatar -->
+                                    <div class="avatar"><img src="<?= SRC_URL ?>img/linux.png" class="img-responsive" alt=""></div><!-- End Avatar -->
                                     <div class="instructor-info">
-                                        <p class="name">Naity Mohamed</p>
-                                        <span class="position">Branding Developer</span>
-                                        <div class="social-icons">
-                                            <ul class="clearfix">
-                                                <li><a href="#" class="fb-icon es-tr"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" class="tw-icon es-tr"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" class="gp-icon es-tr"><i class="fa fa-google-plus"></i></a></li>
-                                                <li><a href="#" class="in-icon es-tr"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                        </div>
+                                        <p class="name">Linux (1 year)</p>
+                                        <span class="position">INR 3500 / year</span>
+
                                     </div>
                                 </div><!-- End Instructor Box -->
                             </div>
                             <div class="col-md-3 col-xs-6">
                                 <div class="instructor">
-                                    <div class="avatar"><img src="<?= SRC_URL ?>img/content/instructor-avatar-4-270x270.jpg" class="img-responsive" alt=""></div><!-- End Avatar -->
+                                    <div class="avatar"><img src="<?= SRC_URL ?>img/linux.png" class="img-responsive" alt=""></div><!-- End Avatar -->
                                     <div class="instructor-info">
-                                        <p class="name">Ahmed Abdul Halim</p>
-                                        <span class="position">Branding Developer</span>
-                                        <div class="social-icons">
-                                            <ul class="clearfix">
-                                                <li><a href="#" class="fb-icon es-tr"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" class="tw-icon es-tr"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" class="gp-icon es-tr"><i class="fa fa-google-plus"></i></a></li>
-                                                <li><a href="#" class="in-icon es-tr"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                        </div>
+                                        <p class="name">Linux (3 year)</p>
+                                        <span class="position">INR 3,000 / year</span>
+
                                     </div>
                                 </div><!-- End Instructor Box -->
                             </div>
@@ -138,272 +110,6 @@
 
             <div class="clearfix"></div>
 
-            <section class="full-section latest-courses-section">
-                <div class="container">
-                    <h3 class="section-title">Look at Our Latest Courses</h3>
-                    <p class="section-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
-                    </p><!-- End Section Description -->
-                </div>
-                <div class="section-content latest-courses-content fadeInDown-animation">
-                    <div class="container">
-                        <div class="row">
-                            <div id="courses-slider" class="flexslider">
-                                <ul class="slides">
-                                    <li class="course-slide-item clearfix">
-                                        <div class="col-md-12">
-                                            <div class="course">
-                                                <div class="featured-badge"><span>special</span></div>
-                                                <div class="course-image">
-                                                    <div class="details-overlay">
-                                                        <span class="place">
-                                                            <i class="fa fa-map-marker"></i>
-                                                            <span class="text">Place : Alexandria, Miami</span>
-                                                        </span>
-                                                        <span class="time">
-                                                            <i class="fa fa-clock-o"></i>
-                                                            <span class="text">Time : 7 Dec, 2015</span>
-                                                        </span>
-                                                    </div><!-- End Course Overlay -->
-                                                    <img src="<?= SRC_URL ?>img/content/course-slider-img-1-270x178.jpg" class="img-responsive" alt="">
-                                                </div><!-- End Course Image -->
-                                                <div class="course-info">
-                                                    <h3 class="course-title"><a href="13-single-course.html" class="ln-tr">Course Name Here</a></h3>
-                                                    <p class="course-description">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing.
-                                                    </p>
-                                                    <div class="buttons">
-                                                        <a href="13-single-course.html" class="btn grad-btn orange-btn read-btn">Read More</a>
-                                                        <a href="13-single-course.html" class="btn grad-btn subscribe-btn">Subscribe</a>
-                                                    </div>
-                                                </div>
-                                            </div><!-- End Course -->
-                                        </div><!-- End col-md-12 -->
-                                    </li><!-- End 1st Slide -->
-                                    <li class="course-slide-item clearfix">
-                                        <div class="col-md-12">
-                                            <div class="course">
-                                                <div class="course-image">
-                                                    <div class="details-overlay">
-                                                        <span class="place">
-                                                            <i class="fa fa-map-marker"></i>
-                                                            <span class="text">Place : Alexandria, Miami</span>
-                                                        </span>
-                                                        <span class="time">
-                                                            <i class="fa fa-clock-o"></i>
-                                                            <span class="text">Time : 7 Dec, 2015</span>
-                                                        </span>
-                                                    </div><!-- End Course Overlay -->
-                                                    <img src="<?= SRC_URL ?>img/content/course-slider-img-2-270x178.jpg" class="img-responsive" alt="">
-                                                </div><!-- End Course Image -->
-                                                <div class="course-info">
-                                                    <h3 class="course-title"><a href="13-single-course.html" class="ln-tr">Course Name Here</a></h3>
-                                                    <p class="course-description">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing.
-                                                    </p>
-                                                    <div class="buttons">
-                                                        <a href="13-single-course.html" class="btn grad-btn orange-btn read-btn">Read More</a>
-                                                        <a href="13-single-course.html" class="btn grad-btn subscribe-btn">Subscribe</a>
-                                                    </div>
-                                                </div>
-                                            </div><!-- End Course -->
-                                        </div><!-- End col-md-12 -->
-                                    </li><!-- End 2nd Slide -->
-                                    <li class="course-slide-item clearfix">
-                                        <div class="col-md-12">
-                                            <div class="course">
-                                                <div class="course-image">
-                                                    <div class="details-overlay">
-                                                        <span class="place">
-                                                            <i class="fa fa-map-marker"></i>
-                                                            <span class="text">Place : Alexandria, Miami</span>
-                                                        </span>
-                                                        <span class="time">
-                                                            <i class="fa fa-clock-o"></i>
-                                                            <span class="text">Time : 7 Dec, 2015</span>
-                                                        </span>
-                                                    </div><!-- End Course Overlay -->
-                                                    <img src="<?= SRC_URL ?>img/content/course-slider-img-3-270x178.jpg" class="img-responsive" alt="">
-                                                </div><!-- End Course Image -->
-                                                <div class="course-info">
-                                                    <h3 class="course-title"><a href="13-single-course.html" class="ln-tr">Course Name Here</a></h3>
-                                                    <p class="course-description">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing.
-                                                    </p>
-                                                    <div class="buttons">
-                                                        <a href="13-single-course.html" class="btn grad-btn orange-btn read-btn">Read More</a>
-                                                        <a href="13-single-course.html" class="btn grad-btn subscribe-btn">Subscribe</a>
-                                                    </div>
-                                                </div>
-                                            </div><!-- End Course -->
-                                        </div><!-- End col-md-12 -->
-                                    </li><!-- End 3rd Slide -->
-                                    <li class="course-slide-item clearfix">
-                                        <div class="col-md-12">
-                                            <div class="course">
-                                                <div class="course-image">
-                                                    <div class="details-overlay">
-                                                        <span class="place">
-                                                            <i class="fa fa-map-marker"></i>
-                                                            <span class="text">Place : Alexandria, Miami</span>
-                                                        </span>
-                                                        <span class="time">
-                                                            <i class="fa fa-clock-o"></i>
-                                                            <span class="text">Time : 7 Dec, 2015</span>
-                                                        </span>
-                                                    </div><!-- End Course Overlay -->
-                                                    <img src="<?= SRC_URL ?>img/content/course-slider-img-4-270x178.jpg" class="img-responsive" alt="">
-                                                </div><!-- End Course Image -->
-                                                <div class="course-info">
-                                                    <h3 class="course-title"><a href="13-single-course.html" class="ln-tr">Course Name Here</a></h3>
-                                                    <p class="course-description">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing.
-                                                    </p>
-                                                    <div class="buttons">
-                                                        <a href="13-single-course.html" class="btn grad-btn orange-btn read-btn">Read More</a>
-                                                        <a href="13-single-course.html" class="btn grad-btn subscribe-btn">Subscribe</a>
-                                                    </div>
-                                                </div>
-                                            </div><!-- End Course -->
-                                        </div><!-- End col-md-12 -->
-                                    </li><!-- End 4th Slide -->
-                                    <li class="course-slide-item clearfix">
-                                        <div class="col-md-12">
-                                            <div class="course">
-                                                <div class="featured-badge"><span>special</span></div>
-                                                <div class="course-image">
-                                                    <div class="details-overlay">
-                                                        <span class="place">
-                                                            <i class="fa fa-map-marker"></i>
-                                                            <span class="text">Place : Alexandria, Miami</span>
-                                                        </span>
-                                                        <span class="time">
-                                                            <i class="fa fa-clock-o"></i>
-                                                            <span class="text">Time : 7 Dec, 2015</span>
-                                                        </span>
-                                                    </div><!-- End Course Overlay -->
-                                                    <img src="<?= SRC_URL ?>img/content/course-slider-img-2-270x178.jpg" class="img-responsive" alt="">
-                                                </div><!-- End Course Image -->
-                                                <div class="course-info">
-                                                    <h3 class="course-title"><a href="13-single-course.html" class="ln-tr">Course Name Here</a></h3>
-                                                    <p class="course-description">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing.
-                                                    </p>
-                                                    <div class="buttons">
-                                                        <a href="13-single-course.html" class="btn grad-btn orange-btn read-btn">Read More</a>
-                                                        <a href="13-single-course.html" class="btn grad-btn subscribe-btn">Subscribe</a>
-                                                    </div>
-                                                </div>
-                                            </div><!-- End Course -->
-                                        </div><!-- End col-md-12 -->
-                                    </li><!-- End 5th Slide -->
-                                    <li class="course-slide-item clearfix">
-                                        <div class="col-md-12">
-                                            <div class="course">
-                                                <div class="course-image">
-                                                    <div class="details-overlay">
-                                                        <span class="place">
-                                                            <i class="fa fa-map-marker"></i>
-                                                            <span class="text">Place : Alexandria, Miami</span>
-                                                        </span>
-                                                        <span class="time">
-                                                            <i class="fa fa-clock-o"></i>
-                                                            <span class="text">Time : 7 Dec, 2015</span>
-                                                        </span>
-                                                    </div><!-- End Course Overlay -->
-                                                    <img src="<?= SRC_URL ?>img/content/course-slider-img-3-270x178.jpg" class="img-responsive" alt="">
-                                                </div><!-- End Course Image -->
-                                                <div class="course-info">
-                                                    <h3 class="course-title"><a href="13-single-course.html" class="ln-tr">Course Name Here</a></h3>
-                                                    <p class="course-description">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing.
-                                                    </p>
-                                                    <div class="buttons">
-                                                        <a href="13-single-course.html" class="btn grad-btn orange-btn read-btn">Read More</a>
-                                                        <a href="13-single-course.html" class="btn grad-btn subscribe-btn">Subscribe</a>
-                                                    </div>
-                                                </div>
-                                            </div><!-- End Course -->
-                                        </div><!-- End col-md-12 -->
-                                    </li><!-- End 6th Slide -->
-                                    <li class="course-slide-item clearfix">
-                                        <div class="col-md-12">
-                                            <div class="course">
-                                                <div class="course-image">
-                                                    <div class="details-overlay">
-                                                        <span class="place">
-                                                            <i class="fa fa-map-marker"></i>
-                                                            <span class="text">Place : Alexandria, Miami</span>
-                                                        </span>
-                                                        <span class="time">
-                                                            <i class="fa fa-clock-o"></i>
-                                                            <span class="text">Time : 7 Dec, 2015</span>
-                                                        </span>
-                                                    </div><!-- End Course Overlay -->
-                                                    <img src="<?= SRC_URL ?>img/content/course-slider-img-4-270x178.jpg" class="img-responsive" alt="">
-                                                </div><!-- End Course Image -->
-                                                <div class="course-info">
-                                                    <h3 class="course-title"><a href="13-single-course.html" class="ln-tr">Course Name Here</a></h3>
-                                                    <p class="course-description">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing.
-                                                    </p>
-                                                    <div class="buttons">
-                                                        <a href="13-single-course.html" class="btn grad-btn orange-btn read-btn">Read More</a>
-                                                        <a href="13-single-course.html" class="btn grad-btn subscribe-btn">Subscribe</a>
-                                                    </div>
-                                                </div>
-                                            </div><!-- End Course -->
-                                        </div><!-- End col-md-12 -->
-                                    </li><!-- End 7th Slide -->
-                                    <li class="course-slide-item clearfix">
-                                        <div class="col-md-12">
-                                            <div class="course">
-                                                <div class="course-image">
-                                                    <div class="details-overlay">
-                                                        <span class="place">
-                                                            <i class="fa fa-map-marker"></i>
-                                                            <span class="text">Place : Alexandria, Miami</span>
-                                                        </span>
-                                                        <span class="time">
-                                                            <i class="fa fa-clock-o"></i>
-                                                            <span class="text">Time : 7 Dec, 2015</span>
-                                                        </span>
-                                                    </div><!-- End Course Overlay -->
-                                                    <img src="<?= SRC_URL ?>img/content/course-slider-img-1-270x178.jpg" class="img-responsive" alt="">
-                                                </div><!-- End Course Image -->
-                                                <div class="course-info">
-                                                    <h3 class="course-title"><a href="13-single-course.html" class="ln-tr">Course Name Here</a></h3>
-                                                    <p class="course-description">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing.
-                                                    </p>
-                                                    <div class="buttons">
-                                                        <a href="13-single-course.html" class="btn grad-btn orange-btn read-btn">Read More</a>
-                                                        <a href="13-single-course.html" class="btn grad-btn subscribe-btn">Subscribe</a>
-                                                    </div>
-                                                </div>
-                                            </div><!-- End Course -->
-                                        </div><!-- End col-md-12 -->
-                                    </li><!-- End 8th Slide -->
-                                </ul><!-- End ul Items -->
-                            </div><!-- End Courses Slider -->
-                        </div><!-- End 1st row -->
-                        <div class="clearfix"></div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="add-courses">
-                                    <img src="<?= SRC_URL ?>img/icons/addcourse-icon.png" alt="" class="fl add-courses-icon">
-                                    <a href="#" class="add-courses-title ln-tr">You Are an Instructor ? Add Your Courses Now !</a>
-                                    <p class="add-courses-description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.
-                                    </p>
-                                </div><!-- End Add Courses -->
-                            </div>
-                        </div><!-- End 2nd row -->
-                    </div><!-- End Container -->
-                </div><!-- End Latest-Courses Section Content -->
-            </section><!-- End Courses Section -->
-
-            <div class="clearfix"></div>
 
             <section class="testimonials-section">
                 <div class="testimonials-content fadeInDown-animation">
@@ -415,19 +121,19 @@
                                     <ul class="slides">
                                         <li class="testimonial">
                                             <p class="description">
-                                                “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie. ”
+                                                “ Come to the virtual world and get an identity in it with technets.in. ”
                                             </p>
                                             <div class="image">
                                                 <img src="<?= SRC_URL ?>img/content/instructor-avatar-2-72x72.jpg" alt="">
                                             </div>
                                             <div class="info">
-                                                <p class="name">Begha</p>
-                                                <p class="position">Senior UI Designer</p>
+                                                <p class="name">Sujeet Kahar</p>
+                                                <p class="position">Senior Web Developer</p>
                                             </div>
                                         </li><!-- End 1st Slide Item -->
                                         <li class="testimonial">
                                             <p class="description">
-                                                “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam ”
+                                                “ Come to the virtual world and get an identity in it with technets.in. ”
                                             </p>
                                             <div class="image">
                                                 <img src="<?= SRC_URL ?>img/content/instructor-avatar-6-72x72.jpg" alt="">
@@ -938,5 +644,3 @@
                     </div><!-- End row -->
                 </div><!-- End Our Clients -->
             </section><!-- End MISC Section -->
-
-            
