@@ -1,0 +1,912 @@
+/* Large Devices, Wide Screens **************************************************/
+
+@media only screen and (max-width : 1200px) {
+
+	.boxed, .boxed-2 {
+		width: 990px;
+	}
+
+	/*==========  01 - Home  ==========*/
+
+	header .main-navigation li.courses-menu li .single-item {
+		padding: 10px;
+	}
+	header .main-navigation li.courses-menu li .single-item a {
+		margin-bottom: 3px;
+	}
+	.tp-leftarrow.default {
+		left: 50px !important;
+	}
+	.tp-rightarrow.default {
+		right: 50px !important;
+	}
+	.tp-banner ul li .slide-description,
+	.fullscreen ul li .slide-description {
+		max-width: 800px;
+	}
+	.course-search #course-name {
+		width: 350px;
+	}
+	.dropdown {
+		width: 150px;
+	}
+	.dropdown div {
+		min-width: 150px;
+	}
+	.dropdown .selected, .dropdown li {
+		font-size: 12px;
+		font-weight: 600;
+	}
+	h4.cat-title {
+		font-size: 14px;
+	}
+	.blog-posts .post .meta {
+		margin-bottom: 0;
+	}
+
+	/*==========  02 - Home 2  ==========*/
+
+	.features-section .feature-box.alt {
+		background-position: 25px top;
+	}
+	.features-section .icon img {
+		margin-left: -10px;
+	}
+	.instructor.alt {
+		margin-top: 0;
+	}
+	.instructors-section.alt .col-sm-6,
+	.instructors-page .col-sm-6 {
+		width: 33.33333333%;
+	}
+
+	/*==========  03 - Home 3  ==========*/
+
+	.features-section.alt {
+		padding-top: 0;
+	}
+
+	/*==========  06 - Home 6 ==========*/
+
+	.latest-courses-section .course-image .details-overlay {
+		padding: 30px 20px 0;
+	}
+	.latest-courses-section .course-info .buttons a {
+		margin-right: 0;
+	}
+
+	/*==========  13 - Courses ==========*/
+
+	.entry-sidebar .instructor .avatar {
+		float: none;
+		max-width: 79px;
+		margin: auto;
+	}
+	.entry-sidebar .instructor .instructor-info {
+		float: none;
+		text-align: center;
+	}
+	.entry-sidebar .instructor .details .read-more {
+		float: none;
+		text-align: center;
+		margin: 0 auto 10px auto;
+	}
+	.entry-sidebar .instructor .details .rating {
+		float: none;
+		clear: both;
+		text-align: left;
+	}
+
+	/*==========  20, 21, 22, 23, 24, 25, 26, 27 - Blog ==========*/
+
+	.blog .blogpost .blogpost-info .meta {
+		margin-bottom: 20px;
+	}
+	.blog .blogpost .blogpost-info .buttons {
+		float: none;
+		margin-top: 20px;
+	}
+	.blog.listview .blogpost .blogpost-title,
+	.blog.listview .blogpost .blogpost-info .meta {
+		float: none;
+	}
+	.blog.listview .blogpost .blogpost-info .blogpost-description,
+	.blog.listview .blogpost .blogpost-info .meta {
+		margin: 10px 0 0;
+	}
+	.blog.listview .blogpost .blogpost-info .buttons,
+	.blog.three-col .blogpost .blogpost-info .buttons {
+		margin-top: 0;
+		float: right;
+	}
+	.blog.three-col .blogpost .meta div {
+		margin-top: 10px;
+	}
+	.sidebar .search .search-input {
+		width: 200px;
+	}
+	.post .entry .share-post .text,
+	.share-icons .text {
+		font-size: 15px;
+	}
+
+	/*========== 28, 29, 30, 31 - Portfolio ==========*/
+
+	.portfolio-filter ul li.icon {
+		display: none;
+	}
+	.portfolio-filter ul li.item a {
+		width: auto;
+		padding: 5px 10px;
+		font-size: 14px;
+	}
+
+	/*========== 44 - Tables ==========*/
+
+	.pricing-tables .table-row .table .table-body .features li {
+		font-size: 14px;
+	}
+	.pricing-tables .table-2 .table .table-header .text {
+		font-size: 20px;
+	}
+	.pricing-tables .table-2 .table .table-header .price {
+		margin-top: 10px;
+	}
+	.pricing-tables .table-3 .table .table-header .text {
+		font-size: 22px;
+	}
+	.pricing-tables .table-3 .table .table-header .price {
+		margin-top: 10px;
+		font-size: 14px;
+	}
+	.pricing-tables .table-3 .table .table-footer .order-btn a {
+		float: none;
+		width: 100%;
+	}
+	.pricing-tables .table-3 .table .table-footer .order-btn a.details {
+		margin-bottom: 20px;
+	}
+
+	/*========== 45 - Soon ==========*/
+
+	.coming-soon {
+		padding: 100px 0;
+	}
+	.countdown div {
+		width: 120px;
+		height: 120px;
+		margin-left: 30px;
+		font-size: 35px;
+		border-width: 4px;
+	}
+	.countdown div span {
+		font-size: 16px;
+	}
+}
+
+/* Medium Devices, Desktops **************************************************/
+
+@media only screen and (max-width : 992px) {
+
+	.boxed, .boxed-2 {
+		width: 100%;
+		margin: 0;
+	}
+
+	/*==========  01 - Home  ==========*/
+
+	header .logo-container {
+		float: none;
+		text-align: center;
+	}
+	header .main-navigation {
+		float: none;
+	}
+	header .main-navigation li.courses-menu:hover ul {
+		top: 150px;
+	}
+	header .main-navigation li.courses-menu li .single-item {
+		margin-bottom: 15px;
+	}
+	h2.slide-title {
+		font-size: 30px;
+	}
+	.tp-banner ul li .slide-description,
+	.fullscreen ul li .slide-description {
+		max-width: 700px;
+		font-size: 14px;
+	}
+	.full-section {
+		padding: 33px 0 50px 0;
+	}
+	.full-section .section-content {
+		margin-top: 25px;
+	}
+	.testimonials-section {
+		padding: 45px 0 30px 0;
+	}
+	.inner-head {
+		padding: 50px 0;
+	}
+	.post {
+		padding-top: 50px;	
+	}
+	.instructors-page {
+		padding: 20px 0 50px;
+	}
+	.blog {
+		padding: 20px 0 50px 0;
+	}
+	.post.single {
+		padding-bottom: 50px;
+	}
+	.post.portfolio {
+		padding-bottom: 0;
+	}
+	.misc-section {
+		padding-bottom: 20px;
+	}
+	.portfolio-grid {
+		padding: 50px 0;
+	}
+	.contact {
+		padding-bottom: 50px;
+	}
+	.contact.contact-3 {
+		padding: 0 0 50px 0;
+	}
+	.login-page {
+		padding: 50px 0;
+	}
+	.pricing-tables {
+		padding: 50px 0 20px 0;
+	}
+	.pricing-tables .table-row {
+		margin-bottom: 0;
+	}
+	.error-page {
+		padding: 50px 0;
+	}
+	.space {
+		height: 15px;
+	}
+	.course-search {
+		height: auto;
+		line-height: 100%;
+		text-align: center;
+		padding: 30px 0;
+	}
+	.course-search #course-name {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.course-search.alt #course-name {
+		margin-bottom: 0;
+	}
+	.dropdown .selected, .dropdown li {
+		text-align: left;
+	}
+	.feature-box {
+		margin-top: 15px;
+	}
+	.instructor, .instructors-page .instructor.alt {
+		margin-top: 30px;
+	}
+	.instructors-section .avatar img {
+		width: 100%;
+	}
+	.add-courses {
+		margin-top: 65px;
+	}
+	.categories-section {
+		padding-bottom: 20px;
+	}
+	.misc-section [class^="col-md-"],
+	.misc-section [class*="col-md-"],
+	.basic-slider-box {
+		margin-bottom: 30px;
+	}
+	.our-clients {
+		margin-top: 0;
+	}
+	.clients .client {
+		padding: 10px 0;
+	}
+	footer {
+		padding-top: 35px;
+	}
+	footer .widget {
+		margin-bottom: 35px;
+	}
+	footer #bottom {
+		margin-top: 0;
+	}
+
+	/*==========  02 - Home 2  ==========*/
+
+	header {
+		height: auto;
+	}
+	.course-search.alt {
+		height: auto;
+		bottom: 0;
+	}
+	.features-section .feature-box.alt {
+		background-position: 70% top;
+	}
+	.instructors-section.alt {
+		padding-bottom: 20px;
+	}
+	.instructors-section.alt .col-sm-6,
+	.instructors-page .col-sm-6 {
+		width: 50%;
+		float: left;
+	}
+
+	/*==========  03 - Home 3  ==========*/
+
+	.tp-banner-container.has-btns .slider-btns a {
+		margin-right: -30px;
+	}
+	.tp-banner-container.has-btns .slider-btns a.more {
+		margin-right: 0;
+		margin-left: -30px;
+	}
+
+	/*==========  06 - Home 6  ==========*/
+
+	.latest-courses-section.no-slider .course .course-info {
+		position: relative;
+		z-index: 1;
+	}
+	.latest-courses-section .course-image img {
+		width: 100%;
+	}
+	.latest-courses-section .course-image .details-overlay {
+		padding: 50px 20px 0;
+	}
+	.latest-courses-section .course-info .buttons a {
+		margin-right: 17px;
+	}
+	.pagination {
+		margin-top: 0;
+		padding-top: 40px;
+	}
+
+	/*==========  12 - Courses  ==========*/
+
+	.latest-courses-content.listview .course .details {
+		width: 65%;
+	}
+
+	/*==========  13 - Courses  ==========*/
+
+	.post .entry {
+		margin-bottom: 30px;
+	}
+
+	/*==========  15 - Instructors  ==========*/
+
+	.instructors-page .instructor {
+		margin-bottom: 0;
+	}
+
+	/*==========  17 - About  ==========*/
+
+	.post.alt {
+		padding-bottom: 20px;
+	}
+
+	/*==========  18 - About  ==========*/
+
+	.about-section .about-images .main-img {
+		margin-top: 30px;
+	}
+
+	/*==========  20, 21, 22, 23, 24, 25, 26, 27 - Blog ==========*/
+
+	.blog .blogpost .meta div {
+		min-width: inherit;
+		margin-right: 10px;
+	}
+	.blog .blogpost .blogpost-image img {
+		width: 100%;
+	}
+	.blog .blogpost .blogpost-info .blogpost-description {
+		margin: 10px 0 20px;
+	}
+	.blog .blogpost .blogpost-info .meta {
+		margin-bottom: 0;
+	}
+	.blog .blogpost .blogpost-info .buttons {
+		float: right;
+		margin-top: 0;
+	}
+	.blog.three-col .blogpost .meta div {
+		margin-top: 18px;
+	}
+	.sidebar .search .search-input {
+		width: 85%;
+	}
+	.sidebar .search .submit-btn {
+		width: 12%;
+	}
+	.sidebar .sidebar-widget:last-child {
+		margin-bottom: 0;
+	}
+	.post .main-content {
+		margin-bottom: 30px;
+	}
+
+	/*========== 28, 29, 30, 31 - Portfolio ==========*/
+
+	.portfolio .entry .project-link {
+		margin-bottom: 20px;
+	}
+
+	/*========== 33 - Contact ==========*/
+
+	.contact .big-map .fixed-map {
+		margin-top: 50px;
+	}
+	.contact .contact-left {
+		margin-bottom: 30px;
+	}
+
+	/*========== 42 - Typography ==========*/
+
+	h1.h1-title {
+		font-size: 28px;
+	}
+	h2.h2-title {
+		font-size: 25px;
+	}
+	h3.h3-title {
+		font-size: 22px;
+	}
+	h4.h4-title {
+		font-size: 20px;
+	}
+	h5.h5-title {
+		font-size: 16px;
+	}
+
+	/*========== 43 - Shortcodes ==========*/
+
+	.sidebar .sidebar-widget.single-widget {
+		margin-bottom: 30px;
+	}
+
+	/*========== 44 - Tables ==========*/
+
+	.pricing-tables .table-row .table {
+		margin-bottom: 30px;
+	}
+	.pricing-tables .table-row .table .table-header .icon {
+		width: 70px;
+		height: 70px;
+		line-height: 75px;
+	}
+	.pricing-tables .table-row .table .table-header .icon i {
+		font-size: 30px;
+	}
+	.pricing-tables .table-2 .table .table-header,
+	.pricing-tables .table-3 .table .table-header {
+		padding: 25px 0;
+	}
+
+	/*========== 45 - Soon ==========*/
+	
+	.coming-soon {
+		padding: 50px 0;
+	}
+	.countdown div {
+		width: 100px;
+		height: 100px;
+		margin-left: 20px;
+		font-size: 30px;
+		border-width: 2px;
+	}
+	.countdown div span {
+		font-size: 14px;
+	}
+	.countdown {
+		margin-bottom: 50px;
+	}
+}
+
+/* Small Devices, Tablets **************************************************/
+
+@media only screen and (max-width : 768px) {
+	
+	.demo_navigation {
+		display: none;
+	}
+
+	/*==========  01 - Home  ==========*/
+
+	.main-navigation, .tp-leftarrow.default, .tp-rightarrow.default,
+	.tp-banner ul li .slide-description,
+	.fullscreen ul li .slide-description {
+		display: none;
+	}
+	header .logo-container {
+		float: left;
+	}
+	header .mobile-navigation,
+	.mobile-navigation .mobile-btn {
+	  display: block;
+	}
+	.course-search #course-name {
+		text-align: left;
+	}
+	.select-time, .select-category, .select-country {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	.dropdown {
+		width: 100%;
+	}
+	h3.section-title {
+		font-size: 22px;
+	}
+	h5.feature-title {
+		font-size: 16px;
+	}
+	.inner-head h1.entry-title {
+		font-size: 25px;
+	}
+	.add-courses .add-courses-icon {
+		display: block;
+		float: none;
+		margin: 0 auto 20px auto;
+	}
+	.categories-section .section-content .col-xs-4 {
+		width: 50%;
+	}
+	.categories-section .cat-box .cat-image img {
+		width: 100%;
+	}
+	footer #bottom {
+		height: auto;
+		line-height: 100%;
+		padding: 20px 0;
+	}
+	footer .copyright, footer #bottom .footer-social-icons {
+		float: none;
+		text-align: center;
+	}
+	footer #bottom .copyright p {
+		line-height: 22px;
+		text-align: center;
+	}
+	footer #bottom .footer-social-icons li {
+		float: none;
+		display: inline-block;
+	}
+
+	/*==========  02 - Home 2  ==========*/
+
+	.top-bar {
+		height: auto;
+	}
+	.top-bar .top-social-icons, .top-bar .top-contact {
+		float: none;
+		text-align: center;
+	}
+	.top-bar .top-contact li, .top-bar .top-social-icons ul li {
+		float: none;
+		display: inline-block;
+	}
+	header.alt {
+		height: 100px;
+	}
+	.course-search.alt {
+		display: none;
+	}
+	.features-section .feature-box.alt {
+		background: none;
+	}
+	.features-section .feature-box.alt .icon {
+		height: auto;
+		padding-top: 0;
+	}
+
+	/*==========  03 - Home 3  ==========*/
+
+	.tp-banner-container.has-btns .slider-btns a {
+		display: none;
+	}
+
+	.course-search-section .course-search.alt {
+		display: block;
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	/*==========  06 - Home 6  ==========*/
+
+	.course-search-section.alt .select-time,
+	.course-search-section.alt .select-category,
+	.course-search-section.alt .select-country {
+		width: auto;
+	}
+	.course-search-section.alt .dropdown {
+		width: 150px;
+	}
+
+	/*==========  12 - Courses  ==========*/
+
+	.latest-courses-content.listview .course .course-image {
+		float: none;
+		margin: 0 auto 20px auto;
+	}
+	.latest-courses-content.listview .course .course-title {
+		text-align: center;
+	}
+	.latest-courses-section .course-info .course-description {
+		padding: 0;
+	}
+	.latest-courses-content.listview .course .details {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.latest-courses-content.listview .course .buttons {
+		float: none;
+		text-align: center;
+	}
+
+	/*==========  20, 21, 22, 23, 24, 25, 26, 27 - Blog  ==========*/
+
+	.blog.listview .blogpost .blogpost-image {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+	.blog .blogpost .blogpost-image img {
+		width: 100%;
+	}
+
+	/*========== 28, 29, 30, 31 - Portfolio ==========*/
+
+	.portfolio-filter ul li {
+		margin-right: 10px;
+	}
+
+	/*==========  36 - Login  ==========*/
+
+	.login-page .login-options .login-op-btn.tw {
+		margin-bottom: 20px;
+	}
+
+	/*==========  42 - Typography  ==========*/
+
+	.row-title {
+		margin-top: 10px;
+	}
+
+	/*========== 45 - Soon ==========*/
+	
+	.countdown div {
+		width: 100px;
+		height: 100px;
+		margin-left: 20px;
+		font-size: 30px;
+		border-width: 2px;
+	}
+	.countdown div span {
+		font-size: 16px;
+	}
+
+	/*========== 46 - 404 ==========*/
+
+	.error-page .not-found {
+		width: 250px;
+		height: 250px;
+		padding-top: 60px;
+	}
+	.error-page .not-found .num {
+		font-size: 70px;
+	}
+	.error-page .error-message {
+		font-size: 20px;
+		margin-bottom: 25px;
+	}
+}
+
+/* Extra Small Devices, Phones **************************************************/
+
+@media only screen and (max-width : 480px) {
+
+	/*==========  01 - Home  ==========*/
+
+	.full-section .section-content [class^="col-xs-"],
+	.full-section .section-content [class*="col-xs-"],
+	.instructors-page [class^="col-"],
+	.instructors-page [class*="col-"] {
+		width: 100%;
+	}
+	.add-courses .add-courses-title {
+		line-height: 28px;
+	}
+	#clients-slider .col-xs-4 {
+		width: 50%;
+	}
+	.blog-posts .post .image-post {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.blog-posts .post .meta {
+		margin-bottom: 12px;
+	}
+
+	/*==========  02 - Home 2  ==========*/
+
+	.instructors-section.alt .col-sm-6 {
+		float: none;
+		width: 100%;
+	}
+	.questions .flexslider li .query .image {
+		display: none;
+	}
+	.questions .flexslider li .query .query-content {
+		margin-left: 0;
+	}
+	.top-bar .top-social-icons ul li {
+		margin-right: 3px;
+		margin-bottom: 5px;
+	}
+	.top-bar .top-contact li.divider {
+		display: none;
+	}
+
+	/*==========  18 - About  ==========*/
+
+	.about-section .about-images .main-img {
+		margin-top: 50px;
+	}
+
+	/*==========  20, 21, 22, 23, 24, 25, 26, 27 - Blog ==========*/
+
+	.blog .blogpost .meta div,
+	.post.single .entry .meta div {
+		display: block;
+		margin: 5px 0;
+	}
+	.blog .blogpost .blogpost-info .meta,
+	.post.single .entry .meta {
+		float: none;
+		clear: both;
+	}
+	.blog .blogpost .blogpost-info .buttons,
+	.blog.listview .blogpost .blogpost-info .buttons {
+		margin-top: 10px;
+	}
+	.sidebar .search .search-input {
+		width: 80%;
+	}
+	.sidebar .search .submit-btn {
+		width: 15%;
+	}
+	.post .entry .share-post .text,
+	.share-icons .text {
+		float: none;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.post .entry .icons,
+	.share-icons .icons,
+	.follow-icons .icons,
+	.post .entry .icons ul li,
+	.share-icons .icons ul li,
+	.follow-icons .icons ul li,
+	.portfolio.single .project-link a {
+		float: none;
+		display: inline-block;
+	}
+	.post .entry .share-post,
+	.follow-icons, .share-icons {
+		text-align: center;
+	}
+	.comments-list li .avatar,
+	.comments-list li.haschild > .comment-body:after,
+	.comments-list li.haschild > .comment-body:before {
+		display: none;
+	}
+	.comments-list ul.children {
+		margin-left: 20px;
+	}
+
+	/*========== 28, 29, 30, 31 - Portfolio ==========*/
+
+	.portfolio-filter ul li {
+		float: none;
+		margin: 5px 0;
+	}
+
+	/*==========  36 - Login  ==========*/
+
+	.login-page .login-form .custom-checkbox {
+		margin-bottom: 10px;
+	}
+	.login-page .login-form .custom-checkbox,
+	.login-page .login-form .forgot {
+		float: none;
+		text-align: center;
+	}
+
+	/*========== 45 - Soon ==========*/
+
+	.coming-soon {
+		padding: 30px 0;
+	}
+	.countdown div {
+		margin-left: 0;
+		display: block;
+		margin: 15px auto !important;
+	}
+	.countdown {
+		margin-bottom: 30px;
+	}
+}
+
+/* Custom, iPhone Retina **************************************************/
+
+@media only screen and (max-width : 320px) {
+
+	/*==========  01 - Home  ==========*/
+
+    h3.section-title {
+    	font-size: 18px;
+    }
+    h5.feature-title {
+    	font-size: 15px;
+    }
+    .tp-bullets.simplebullets.round .bullet {
+    	margin-top: 80px;
+    }
+    .mobile-navigation .mobile-container li.courses-menu .course-menu-item .item-icon {
+    	display: none;
+    }
+    .mobile-navigation .mobile-container li.courses-menu .course-menu-item a {
+    	padding: 10px;
+    }
+
+	/*==========  03 - Home 3  ==========*/
+
+	.testimonials-section .flexslider .flex-direction-nav li {
+		margin: 0 50px;
+	}
+
+	/*==========  10 - Courses  ==========*/
+
+	.inner-head h1.entry-title {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	/*==========  36 - Login  ==========*/
+
+	.login-page .login-options .login-op-btn {
+		font-size: 13px;
+	}
+
+	/*========== 46 - 404 ==========*/
+
+	.error-page .not-found {
+		width: 200px;
+		height: 200px;
+		padding-top: 50px;
+	}
+	.error-page .not-found .num {
+		font-size: 50px;
+	}
+	.error-page .error-message {
+		font-size: 16px;
+	}
+}

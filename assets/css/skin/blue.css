@@ -1,0 +1,94 @@
+/* Blue Skin **************************************************/
+/* font color */
+header .logo-container .site-name span, header .main-navigation ul li.current_page_item a,
+header .main-navigation ul li a:hover, .top-bar .top-contact li i,
+header .main-navigation li.courses-menu li .single-item a, .countdown div,
+header.alt .main-navigation ul li.current_page_item a, .inner-head .breadcrumb li a,
+header.alt .main-navigation ul li a:hover, .blog-posts .post .meta a,
+header .main-navigation li.parent-item ul.submenu li:hover > a,
+h3.section-title, h5.feature-title, .add-courses .add-courses-title,
+.categories-section .cat-box .cat-title a, .basic-slider-box .post-title a,
+.accordion .active-header, .accordion .inactive-header:hover, .portfolio-overlay .course-info .course-title a,
+footer .footer-links ul li a, footer .twitter-widget .tweet a, [class^="list-"] li:before, [class*="list-"] li:before,
+footer .courses-widget .footer-course-title a, footer #bottom .copyright a,
+.course-search.alt #search-btn:hover, .testimonials-section .testimonials-content .title,
+.post .entry .share-post .text, .share-icons .text, h2.about-title, .sidebar .sidebar-widget .tab-posts .post-item .post-title,
+.blog .blogpost h3.blogpost-title a, .post.single .single-title a, .sidebar .sidebar-widget ul.tabs li.active,
+.blog .blogpost .meta div a, .post.single .meta div a, .sidebar .sidebar-widget.last-posts ul li a,
+.portfolio-filter ul li.item a:hover, .portfolio-filter ul li.item a.active, .contact .contact-right .call,
+h1.h1-title, h2.h2-title, h3.h3-title, h4.h4-title, h5.h5-title, h6.h6-title, .row-title, blockquote .story,
+.latest-courses-section .course-info .course-title a:hover, .dark .latest-courses-section .course-info .course-title a:hover {
+	color: #0394f1;
+}
+/* background color */
+header .main-navigation > ul > li.login > a span, blockquote.blockquote-4,
+header .main-navigation li.courses-menu li .single-item .item-icon,
+header.alt .main-navigation > ul > li:after, header.alt .main-navigation > ul > li.courses-menu > a:after,
+.top-bar .top-social-icons ul li a:hover, .tp-banner ul li .slide-title:after,
+.fullscreen ul li .slide-title:after, .tp-bullets.simplebullets .bullet.selected,
+.tp-bullets.simplebullets.round .bullet.selected, .course-search #search-btn:hover,
+.dropdown .carat, .btn.orange-btn, .flex-direction-nav a, .course-search.alt .container,
+.comment-form .input .submit-input:hover, .contact-form .input .submit-input:hover,
+.flex-control-paging li a.flex-active, .dark .flex-control-paging li a.flex-active,
+.login-page .login-form .input .submit-input, .dark .login-page .login-form .input .submit-input,
+.categories-section .cat-box .cat-image .cat-icon, .instructor.alt .details .read-more,
+.instructors-section .instructor-info .social-icons li a:hover, .accordion .inactive-header:after,
+footer .courses-widget .course-icon .icon, .portfolio-filter ul li.icon a,
+footer #bottom .footer-social-icons li a:hover, .home-skills .skillbar-bar, .home-skills .skillbar-title,
+footer .twitter-widget #tweets-slider .flex-control-nav li a.flex-active, .pagination li.arrow a,
+.dark .pagination li.arrow a, footer .courses-widget #footer-courses-slider .flex-control-nav li a.flex-active,
+#single-slider .flex-direction-nav a:hover, #sidebar-tweets .flex-direction-nav a:hover,
+.portfolio-slider .flex-direction-nav a:hover, .modal-slider .flex-direction-nav a:hover,
+.blog .blogpost h3.blogpost-title .post-type-icon, .post.single .single-title .post-type-icon,
+.sidebar .search .submit-btn, .sidebar .sidebar-widget .tab-posts .post-item .read-more:hover,
+.sidebar .sidebar-widget ul.tabs li, .comments-list, .portfolio-overlay .course-info .project-icon,
+.social-media-icons ul li a, .pricing-tables .table-row .table .table-header,
+.pricing-tables .table-row .table .table-footer .order-btn a, .error-page .not-found,
+.pricing-tables .table-2 .table .table-footer .order-btn a:hover, .push_options,
+.demo_options .nav_skin .demo-content.demo-layout div:hover,
+.tp-bullets.simplebullets .bullet:hover, .tp-bullets.simplebullets.round .bullet:hover {
+	background: #0394f1;
+}
+/* rgba BGs */
+.latest-courses-section .course-image .details-overlay,
+.course-search-section:after, .sidebar .sidebar-widget ul.tabs li:hover {
+	background: rgba(3, 148, 241, .9);
+}
+.sidebar .sidebar-widget .tab-posts .post-item,
+.post .entry .share-post, .follow-icons, .share-icons {
+	background: rgba(3, 148, 241, .25);
+}
+/* background image */
+.latest-courses-section .course .featured-badge {
+	background-image: url(../../img/icons/blue/ribbon.png);
+}
+.features-section .feature-box.alt {
+	background-image: url(../../img/icons/blue/long-shadow-bg.png);
+}
+/* border */
+blockquote.blockquote-1, .error-page.full-page .not-found,
+.demo_options .nav_skin .demo-content.demo-layout div:hover {
+	border-color: #0394f1;
+}
+/* border top */
+header .main-navigation li.parent-item ul.submenu,
+header .main-navigation li.courses-menu ul,
+header .main-navigation li.parent-item ul.submenu ul {
+	border-top-color: #0394f1;
+}
+/* other */
+.sidebar .sidebar-widget ul.tabs .active:hover {
+	background: #fff;
+}
+.pricing-tables .table-3 .table .table-header {
+	background: none;
+}
+.pricing-tables .table-2 .table .table-footer .order-btn a {
+	background: #000020;
+}
+.pricing-tables .table-row .table .table-header .icon {
+	border-color: #107DC3;
+}
+.comments-list li .avatar {
+	border-color: #383c4b;
+}
