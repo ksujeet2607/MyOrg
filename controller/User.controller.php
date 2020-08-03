@@ -29,6 +29,10 @@ class User extends Session{
         $this->render(__FUNCTION__, $response);
     }
     
+     public function about($param){
+        $this->render(__FUNCTION__, $response);
+    }
+    
     public function enquiry($param){
         $response = $this->model->saveEnquiry($param);
         $this->render(__FUNCTION__, $response);
