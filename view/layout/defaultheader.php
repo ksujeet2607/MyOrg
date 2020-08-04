@@ -16,11 +16,10 @@
         <!-- Responsiveness -->
         <link rel="stylesheet" href="<?= SRC_URL ?>css/responsive.css">
         <!-- FAV & Touch Icons -->
-        <link rel="shortcut icon" href="<?= SRC_URL ?>img/icons/favicon.ico">
-        <link rel="apple-touch-icon" href="<?= SRC_URL ?>img/icons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="<?= SRC_URL ?>img/icons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="<?= SRC_URL ?>img/icons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="<?= SRC_URL ?>img/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?= SRC_URL ?>img/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="<?= SRC_URL ?>img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?= SRC_URL ?>img/icons/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script>window.html5 || document.write('<script src="<?= SRC_URL ?>js/vendor/html5shiv.js"><\/script>')</script>
@@ -34,7 +33,7 @@
                     <ul>
                         <li data-transition="random" data-slotamount="7" data-masterspeed="1500">
                             <!-- MAIN IMAGE -->
-                            <img src="<?= SRC_URL ?>img/content/01-home-slide-item-2-1600x770.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                            <img src="<?= SRC_URL ?>img/maze-1804499_1920.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                             <!-- LAYERS -->
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption lft skewtoleft tp-resizeme start white"
@@ -67,7 +66,7 @@
                         </li><!-- end 1st slide -->
                         <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
                             <!-- MAIN IMAGE -->
-                            <img src="<?= SRC_URL ?>img/content/01-home-slide-item-1-1600x770.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                            <img src="<?= SRC_URL ?>img/innovation-5161494_1920.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                             <!-- LAYERS -->
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption lft skewtoleft tp-resizeme start white"
@@ -100,7 +99,7 @@
                         </li><!-- end 2nd slide -->
                         <li data-transition="random" data-slotamount="7" data-masterspeed="1500">
                             <!-- MAIN IMAGE -->
-                            <img src="<?= SRC_URL ?>img/content/01-home-slide-item-3-1600x770.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                            <img src="<?= SRC_URL ?>img/puzzle-1686920_1920.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                             <!-- LAYERS -->
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption lft skewtoleft tp-resizeme start white"
