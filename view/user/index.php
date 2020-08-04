@@ -15,7 +15,7 @@
                                     <div class="icon"><img src="<?= SRC_URL ?>img/icons/feature-icon-1.png" class="es-tr" alt=""></div><!-- End Icon -->
                                     <h5 class="feature-title">Web Development</h5>
                                     <p class="feature-description">
-                                        We are mainly focused on Web Development, websites( static or dynamic), web applications and web services.
+                                        We are mainly focused on Web Development, websites( static or dynamic), web applications and web services. Courier websites and parcel tracking systems etc.
                                     </p>
                                 </div><!-- End Features Box -->
                             </div>

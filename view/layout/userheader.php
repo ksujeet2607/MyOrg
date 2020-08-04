@@ -6,7 +6,7 @@
     <head>
         <!-- Meta Tags -->
         <meta charset="utf-8">
-        <title>Coursaty - Contact 1</title>
+        <title><?= SITE_NAME ?> | <?= SUBTITLE ?></title>
         <meta name="description" content="">
         <meta name="author" content="iSeada.com">
         <!-- Mobile Meta -->
@@ -35,13 +35,7 @@
                         <ul class="clearfix">
                             <li><a href="#" class="fb-icon ln-tr"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#" class="tw-icon ln-tr"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="gp-icon ln-tr"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#" class="pn-icon ln-tr"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#" class="vm-icon ln-tr"><i class="fa fa-vimeo-square"></i></a></li>
                             <li><a href="#" class="in-icon ln-tr"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#" class="yt-icon ln-tr"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="yt-icon ln-tr"><i class="fa fa-youtube-play"></i></a></li>
-                            <li><a href="#" class="rss-icon ln-tr"><i class="fa fa-rss"></i></a></li>
                         </ul>
                     </div><!-- End Social Container -->
                     <div class="fr top-contact">
@@ -57,7 +51,7 @@
                 <div class="container">
                     <div class="logo-container fl clearfix">
                         <a href="#" class="ib">
-                            
+
                            <span class="site-name"><img src="<?= SRC_URL ?>img/logo@2x.jpg" class="fl" alt="Logo"><span>.in</span></span>
                         </a>
                     </div><!-- End Logo Container -->

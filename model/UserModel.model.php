@@ -16,7 +16,7 @@ class UserModel extends Base{
 
     public function indexPageSrc($param){
         //$imgs = parent::getSliderImg($param);
-        $services = $this->db_executeReader("news", "*", "", "","","order by newsId DESC LIMIT 12",false);
+        //$services = $this->db_executeReader("news", "*", "", "","","order by newsId DESC LIMIT 12",false);
         return $response = array("list",$rs,$about,$imgs);
     }
 
@@ -43,7 +43,7 @@ class UserModel extends Base{
 
     private function getPortfolio($param){
 
-        $rs = $this->db_executeReader("portfolio", "*", "", "","","order by newsId DESC LIMIT 12",false);
+        //$rs = $this->db_executeReader("portfolio", "*", "", "","","order by newsId DESC LIMIT 12",false);
     }
 
 

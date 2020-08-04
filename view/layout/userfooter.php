@@ -3,95 +3,21 @@
             <footer id="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="widget about-widget">
-                                <h6 class="widget-title">About Coursaty</h6>
+                                <h6 class="widget-title">About <?= SITE_NAME ?></h6>
                                 <p class="about-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.
+                                  We are dedicated to give optimized and cost effective product within a scheduled time, We have a very skilled, enthusiastic and experienced team to develop high quality product.
                                 </p>
                                 <div class="footer-links">
                                     <ul>
-                                        <li><a href="#" class="ln-tr">About Us</a></li>
+                                        <li><a href="<?= PUBLIC_URL ?>about" class="ln-tr">About Us</a></li>
                                         <li><a href="#" class="ln-tr">Meet Our Team</a></li>
-                                        <li><a href="#" class="ln-tr">Contact Us</a></li>
+                                        <li><a href="<?= PUBLIC_URL ?>contact" class="ln-tr">Contact Us</a></li>
                                     </ul>
                                 </div><!-- End Footer Links -->
                             </div><!-- End About Widget -->
                         </div><!-- End col-md3 -->
-                        <div class="col-md-3">
-                            <div class="widget twitter-widget">
-                                <h6 class="widget-title">Latest Tweets</h6>
-                                <div id="tweets-slider" class="flexslider">
-                                    <ul class="slides">
-                                        <li>
-                                            <div class="tweet">
-                                                <a href="#" class="ln-tr">@begha</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.
-                                                <div class="date">Dec. 6, 2014</div>
-                                            </div><!-- End Single Tweet -->
-                                            <div class="tweet">
-                                                <a href="#" class="ln-tr">@begha</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.
-                                                <div class="date">Dec. 6, 2014</div>
-                                            </div><!-- End Single Tweet -->
-                                        </li><!-- End 1st Tweet Slide Item -->
-                                        <li>
-                                            <div class="tweet">
-                                                <a href="#" class="ln-tr">@begha</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.
-                                                <div class="date">Dec. 6, 2014</div>
-                                            </div><!-- End Single Tweet -->
-                                            <div class="tweet">
-                                                <a href="#" class="ln-tr">@begha</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.
-                                                <div class="date">Dec. 6, 2014</div>
-                                            </div><!-- End Single Tweet -->
-                                        </li><!-- End 2nd Tweet Slide Item -->
-                                    </ul><!-- End ul Items -->
-                                </div><!-- End Tweets Slider -->
-                            </div><!-- End Twitter Widget -->
-                        </div><!-- End col-md3 -->
-                        <div class="col-md-4">
-                            <div class="widget courses-widget">
-                                <h6 class="widget-title">Latest Courses</h6>
-                                <div id="footer-courses-slider" class="flexslider">
-                                    <ul class="slides">
-                                        <li class="clearfix">
-                                            <div class="course-icon fl">
-                                                <span class="icon grad-btn"><i class="fa fa-bookmark"></i></span>
-                                            </div><!-- End Course Icon -->
-                                            <div class="course-info">
-                                                <h4 class="footer-course-title"><a href="#" class="ln-tr">How to Design website?</a></h4>
-                                                <p class="footer-course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem</p>
-                                                <span class="course-date">Dec 8, 2015</span>
-                                            </div><!-- End Course Info -->
-                                            <div class="course-icon fl">
-                                                <span class="icon"><i class="fa fa-bookmark"></i></span>
-                                            </div><!-- End Course Icon -->
-                                            <div class="course-info">
-                                                <h4 class="footer-course-title"><a href="#" class="ln-tr">How to Design website?</a></h4>
-                                                <p class="footer-course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem</p>
-                                                <span class="course-date">Dec 8, 2015</span>
-                                            </div><!-- End Course Info -->
-                                        </li><!-- End 1st Slide Item -->
-                                        <li class="clearfix">
-                                            <div class="course-icon fl">
-                                                <span class="icon grad-btn"><i class="fa fa-bookmark"></i></span>
-                                            </div><!-- End Course Icon -->
-                                            <div class="course-info">
-                                                <h4 class="footer-course-title"><a href="#" class="ln-tr">How to Design website?</a></h4>
-                                                <p class="footer-course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem</p>
-                                                <span class="course-date">Dec 8, 2015</span>
-                                            </div><!-- End Course Info -->
-                                            <div class="course-icon fl">
-                                                <span class="icon"><i class="fa fa-bookmark"></i></span>
-                                            </div><!-- End Course Icon -->
-                                            <div class="course-info">
-                                                <h4 class="footer-course-title"><a href="#" class="ln-tr">How to Design website?</a></h4>
-                                                <p class="footer-course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem</p>
-                                                <span class="course-date">Dec 8, 2015</span>
-                                            </div><!-- End Course Info -->
-                                        </li><!-- End 2nd Slide Item -->
-                                    </ul><!-- End ul Items -->
-                                </div><!-- End Footer Scourses Slider -->
-                            </div><!-- End Courses Widget -->
-                        </div><!-- End col-md4 -->
                         <div class="col-md-2">
                             <div class="widget links-widget">
                                 <h6 class="widget-title">Quick Links</h6>
@@ -108,21 +34,56 @@
                                 </div><!-- End Footer Links -->
                             </div><!-- End Links Widget -->
                         </div><!-- End col-md2 -->
+                        <div class="col-md-6">
+                            <div class="widget about-widget">
+                                <h6 class="widget-title">Give Us A Feedback</h6>
+                                <p class="about-text" style=" margin-bottom: 0;">
+                                  Give us your valueable feedback. Let us know what thoughts about us and help us to improve our services.
+                                </p>
+                                <div class="contact-left">
+                                    <div class="contact-form">
+                                        <form method="post" action="" id="contact-form">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="input">
+                                                        <input type="text" id="name" class="name-input" placeholder="Your Name">
+                                                    </div>
+                                                </div><!-- end name -->
+
+                                                <div class="col-md-6">
+                                                    <div class="input">
+                                                        <input type="text" id="tel" class="tel-input" placeholder="Phone">
+                                                    </div>
+                                                </div><!-- end phone -->
+                                                <div class="col-md-12">
+                                                    <div class="input">
+                                                        <input type="email" id="email" class="email-input" placeholder="Email">
+                                                    </div>
+                                                </div><!-- end email -->
+                                                <div class="col-md-12">
+                                                    <div class="input">
+                                                        <textarea name="comment-area" id="comment-area" placeholder="Comment"></textarea>
+                                                        <input type="submit" id="comment-submit" class="submit-input grad-btn ln-tr" value="Send">
+                                                    </div>
+                                                </div>
+                                            </div><!-- end row -->
+                                        </form><!-- end form tag -->
+                                    </div><!-- end contact form -->
+                                </div><!-- End contact left -->
+                            </div><!-- End About Widget -->
+                        </div><!-- End col-md3 -->
                     </div>
                 </div>
                 <div id="bottom">
                     <div class="container">
                         <div class="fl copyright">
-                            <p>All Rights Reserved &copy; Coursaty Template | By <a target="_blank" href="http://iseada.com/" class="ln-tr">iSeada</a> & <a target="_blank" href="http://7oroof.com/" class="ln-tr">7oroof</a></p>
+                            <p>All Rights Reserved &copy; <?= SITE_NAME ?> <?= date("Y") ?></p>
                         </div><!-- End Copyright -->
                         <div class="fr footer-social-icons">
                             <ul class="clearfix">
                                 <li><a href="#" class="fb-icon ln-tr"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#" class="tw-icon ln-tr"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" class="gp-icon ln-tr"><i class="fa fa-google-plus"></i></a></li>
                                 <li><a href="#" class="in-icon ln-tr"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#" class="yt-icon ln-tr"><i class="fa fa-youtube-play"></i></a></li>
-                                <li><a href="#" class="rss-icon ln-tr"><i class="fa fa-rss"></i></a></li>
                             </ul>
                         </div><!-- End Social Media Icons -->
                     </div><!-- End container -->

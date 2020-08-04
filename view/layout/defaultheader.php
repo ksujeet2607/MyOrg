@@ -6,7 +6,7 @@
     <head>
         <!-- Meta Tags -->
         <meta charset="utf-8">
-        <title>Coursaty - One Page</title>
+        <title><?= SITE_NAME ?> | <?= SUBTITLE ?></title>
         <meta name="description" content="">
         <meta name="author" content="iSeada.com">
         <!-- Mobile Meta -->
