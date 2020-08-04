@@ -9,7 +9,7 @@
                                     <li class="course-menu-item col-md-3 col-sm-4">
                                         <div class="single-item">
                                             <span class="item-icon"><i class="fa fa-user"></i></span>
-                                            <a href="10-courses-grid-1.html" class="ln-tr link">Web Design/Development</a>
+                                            <a href="10-courses-grid-1.html" class="ln-tr link">Web Development</a>
                                         </div>
                                     </li><!-- end course menu item -->
                                     <li class="course-menu-item col-md-3 col-sm-4">
@@ -48,7 +48,7 @@
                                 <a href="<?= PUBLIC_URL ?>contact" class="ln-tr">Contact</a>
                             </li>
                             <li class="parent-item ">
-                                <a href="<?= PUBLIC_URL ?>contact" class="ln-tr">Career</a>
+                                <a href="<?= PUBLIC_URL ?>contact" class="ln-tr">Careers</a>
                             </li>
                         </ul>
                     </nav><!-- End NAV Container -->

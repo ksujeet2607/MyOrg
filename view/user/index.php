@@ -281,21 +281,21 @@
                             </div><!-- End Blog Posts/Latest News -->
                         </div><!-- End col-md-6 -->
                         <div class="col-md-6">
-                            <h6 class="head-title">Why Coursaty</h6>
+                            <h6 class="head-title">Why <?= SITE_NAME ?></h6>
                             <div id="accordion-container" class="accordion">
-                                <h4 class="accordion-header ln-tr">What Is Coursaty?</h4>
+                                <h4 class="accordion-header ln-tr">What Is <?= SITE_NAME ?>?</h4>
                                 <div class="accordion-content">
                                     <p>
                                         Duis dapibus aliquam mi, eget euismod scelerisque ut. Vivamus at elit quis urna adipiscing , Curabitur vitae velit in neque dictum blandit. Duis dapibus aliquam mi, eget euismod sceler ut, Duis dapibus aliquam mi, eget euismod scelerisque at elit quis urna adipiscing.
                                     </p>
                                 </div><!-- End 1st Item -->
-                                <h4 class="accordion-header ln-tr">Why Should I Buy Coursaty?</h4>
+                                <h4 class="accordion-header ln-tr">Why Should I Choose <?= SITE_NAME ?>?</h4>
                                 <div class="accordion-content">
                                     <p>
                                         Duis dapibus aliquam mi, eget euismod scelerisque ut. Vivamus at elit quis urna adipiscing , Curabitur vitae velit in neque dictum blandit. Duis dapibus aliquam mi, eget euismod sceler ut, Duis dapibus aliquam mi, eget euismod scelerisque at elit quis urna adipiscing.
                                     </p>
                                 </div><!-- End 2nd Item -->
-                                <h4 class="accordion-header ln-tr">What Is Coursaty Features?</h4>
+                                <h4 class="accordion-header ln-tr">What Is <?= SITE_NAME ?> Services?</h4>
                                 <div class="accordion-content">
                                     <p>
                                         Duis dapibus aliquam mi, eget euismod scelerisque ut. Vivamus at elit quis urna adipiscing , Curabitur vitae velit in neque dictum blandit. Duis dapibus aliquam mi, eget euismod sceler ut, Duis dapibus aliquam mi, eget euismod scelerisque at elit quis urna adipiscing.
@@ -308,202 +308,3 @@
             </section><!-- End MISC Section -->
 
             <div class="clearfix"></div>
-
-            <section class="full-section misc-section fadeInDown-animation">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 basic-slider-box">
-                            <div class="questions">
-                                <h6 class="head-title">Latest Questions</h6>
-                                <div class="basic-slider flexslider">
-                                    <ul class="slides">
-                                        <li class="questions-slide-item">
-
-                                            <div class="query clearfix">
-                                                <div class="image fl">
-                                                    <img src="<?= SRC_URL ?>img/content/q-img-1-63x61.jpg" alt="">
-                                                </div><!-- End Post Image/Date -->
-                                                <div class="query-content">
-                                                    <h3 class="post-title"><a href="20-blog-1-list.html" class="ln-tr">Lorem ipsum post title.</a></h3>
-                                                    <p class="query-description">
-                                                        Duis dapibus aliquam mi, eget euismod sem scelerisque ut, vivamus at elit quis urna adipiscing iaculis dos Curabitur vitae velit in neque dictum blandit.
-                                                    </p>
-                                                    <div class="details">
-                                                        <div class="date ib">
-                                                            <span class="icon"><i class="fa fa-clock-o"></i></span>
-                                                            <span class="text">Time : 7 Dec, 2014</span>
-                                                        </div><!-- date icon -->
-                                                        <div class="place ib">
-                                                            <span class="icon"><i class="fa fa-map-marker"></i></span>
-                                                            <span class="text">Place : Alex, Miami</span>
-                                                        </div><!-- place icon -->
-                                                        <div class="center ib">
-                                                            <span class="icon"><i class="fa fa-building"></i></span>
-                                                            <span class="text">Yat Academy</span>
-                                                        </div><!-- center icon -->
-                                                    </div><!-- End Details Box -->
-                                                </div><!-- End Question Content -->
-                                            </div><!-- End 1st Question -->
-
-                                            <div class="query clearfix">
-                                                <div class="image fl">
-                                                    <img src="<?= SRC_URL ?>img/content/q-img-2-63x61.jpg" alt="">
-                                                </div><!-- End Post Image/Date -->
-                                                <div class="query-content">
-                                                    <h3 class="post-title"><a href="20-blog-1-list.html" class="ln-tr">Lorem ipsum post title.</a></h3>
-                                                    <p class="query-description">
-                                                        Duis dapibus aliquam mi, eget euismod sem scelerisque ut, vivamus at elit quis urna adipiscing iaculis dos Curabitur vitae velit in neque dictum blandit.
-                                                    </p>
-                                                    <div class="details">
-                                                        <div class="date ib">
-                                                            <span class="icon"><i class="fa fa-clock-o"></i></span>
-                                                            <span class="text">Time : 7 Dec, 2014</span>
-                                                        </div><!-- date icon -->
-                                                        <div class="place ib">
-                                                            <span class="icon"><i class="fa fa-map-marker"></i></span>
-                                                            <span class="text">Place : Alex, Miami</span>
-                                                        </div><!-- place icon -->
-                                                        <div class="center ib">
-                                                            <span class="icon"><i class="fa fa-building"></i></span>
-                                                            <span class="text">Yat Academy</span>
-                                                        </div><!-- center icon -->
-                                                    </div><!-- End Details Box -->
-                                                </div><!-- End Question Content -->
-                                            </div><!-- End 1st Question -->
-
-                                        </li><!-- End 1st Post Slide Item -->
-
-                                        <li class="questions-slide-item">
-
-                                            <div class="query clearfix">
-                                                <div class="image fl">
-                                                    <img src="<?= SRC_URL ?>img/content/q-img-1-63x61.jpg" alt="">
-                                                </div><!-- End Post Image/Date -->
-                                                <div class="query-content">
-                                                    <h3 class="post-title"><a href="20-blog-1-list.html" class="ln-tr">Lorem ipsum post title.</a></h3>
-                                                    <p class="query-description">
-                                                        Duis dapibus aliquam mi, eget euismod sem scelerisque ut, vivamus at elit quis urna adipiscing iaculis dos Curabitur vitae velit in neque dictum blandit.
-                                                    </p>
-                                                    <div class="details">
-                                                        <div class="date ib">
-                                                            <span class="icon"><i class="fa fa-clock-o"></i></span>
-                                                            <span class="text">Time : 7 Dec, 2014</span>
-                                                        </div><!-- date icon -->
-                                                        <div class="place ib">
-                                                            <span class="icon"><i class="fa fa-map-marker"></i></span>
-                                                            <span class="text">Place : Alex, Miami</span>
-                                                        </div><!-- place icon -->
-                                                        <div class="center ib">
-                                                            <span class="icon"><i class="fa fa-building"></i></span>
-                                                            <span class="text">Yat Academy</span>
-                                                        </div><!-- center icon -->
-                                                    </div><!-- End Details Box -->
-                                                </div><!-- End Question Content -->
-                                            </div><!-- End 1st Question -->
-
-                                            <div class="query clearfix">
-                                                <div class="image fl">
-                                                    <img src="<?= SRC_URL ?>img/content/q-img-2-63x61.jpg" alt="">
-                                                </div><!-- End Post Image/Date -->
-                                                <div class="query-content">
-                                                    <h3 class="post-title"><a href="20-blog-1-list.html" class="ln-tr">Lorem ipsum post title.</a></h3>
-                                                    <p class="query-description">
-                                                        Duis dapibus aliquam mi, eget euismod sem scelerisque ut, vivamus at elit quis urna adipiscing iaculis dos Curabitur vitae velit in neque dictum blandit.
-                                                    </p>
-                                                    <div class="details">
-                                                        <div class="date ib">
-                                                            <span class="icon"><i class="fa fa-clock-o"></i></span>
-                                                            <span class="text">Time : 7 Dec, 2014</span>
-                                                        </div><!-- date icon -->
-                                                        <div class="place ib">
-                                                            <span class="icon"><i class="fa fa-map-marker"></i></span>
-                                                            <span class="text">Place : Alex, Miami</span>
-                                                        </div><!-- place icon -->
-                                                        <div class="center ib">
-                                                            <span class="icon"><i class="fa fa-building"></i></span>
-                                                            <span class="text">Yat Academy</span>
-                                                        </div><!-- center icon -->
-                                                    </div><!-- End Details Box -->
-                                                </div><!-- End Question Content -->
-                                            </div><!-- End 1st Question -->
-
-                                        </li><!-- End 2nd Post Slide Item -->
-                                    </ul><!-- End ul Items -->
-                                </div><!-- End Posts Slider -->
-                            </div><!-- End Blog Posts/Latest News -->
-                        </div><!-- End col-md-6 -->
-                        <div class="col-md-4">
-                            <h6 class="head-title">Our Skills</h6>
-                            <div class="home-skills">
-                                <div class="skillbar clearfix" data-percent="70%">
-                                    <div class="skillbar-title"><span>Web Design (70%)</span></div><div class="skillbar-bar"></div>
-                                </div>
-                                <div class="skillbar clearfix" data-percent="80%">
-                                    <div class="skillbar-title"><span>Mobile UI Design (80%)</span></div><div class="skillbar-bar"></div>
-                                </div>
-                                <div class="skillbar clearfix" data-percent="60%">
-                                    <div class="skillbar-title"><span>Game UI Design (60%)</span></div><div class="skillbar-bar"></div>
-                                </div>
-                                <div class="skillbar clearfix" data-percent="80%">
-                                    <div class="skillbar-title"><span>Mobile Develop (80%)</span></div><div class="skillbar-bar"></div>
-                                </div>
-                                <div class="skillbar clearfix" data-percent="100%">
-                                    <div class="skillbar-title"><span>Web Development (100%)</span></div><div class="skillbar-bar"></div>
-                                </div>
-                                <div class="skillbar clearfix" data-percent="60%">
-                                    <div class="skillbar-title"><span>Wordpress (60%)</span></div><div class="skillbar-bar"></div>
-                                </div>
-                            </div><!-- End Skills Container -->
-                        </div><!-- End col-md-6 -->
-                    </div><!-- End row -->
-                </div><!-- End container -->
-                <div class="container our-clients">
-                    <h6 class="head-title">Our Clients</h6>
-                    <div class="row">
-                        <div id="clients-slider" class="flexslider">
-                            <ul class="slides clearfix">
-                                <li class="clients-slide-item">
-                                    <div class="col-md-2 col-xs-4">
-                                        <div class="client"><a href="#"><img src="<?= SRC_URL ?>img/content/client-img-1-170x68.jpg" alt=""></a></div><!-- End Client -->
-                                    </div>
-                                    <div class="col-md-2 col-xs-4">
-                                        <div class="client"><a href="#"><img src="<?= SRC_URL ?>img/content/client-img-2-170x68.jpg" alt=""></a></div><!-- End Client -->
-                                    </div>
-                                    <div class="col-md-2 col-xs-4">
-                                        <div class="client"><a href="#"><img src="<?= SRC_URL ?>img/content/client-img-3-170x68.jpg" alt=""></a></div><!-- End Client -->
-                                    </div>
-                                    <div class="col-md-2 col-xs-4">
-                                        <div class="client"><a href="#"><img src="<?= SRC_URL ?>img/content/client-img-4-170x68.jpg" alt=""></a></div><!-- End Client -->
-                                    </div>
-                                    <div class="col-md-2 col-xs-4">
-                                        <div class="client"><a href="#"><img src="<?= SRC_URL ?>img/content/client-img-5-170x68.jpg" alt=""></a></div><!-- End Client -->
-                                    </div>
-                                    <div class="col-md-2 col-xs-4">
-                                        <div class="client"><a href="#"><img src="<?= SRC_URL ?>img/content/client-img-6-170x68.jpg" alt=""></a></div><!-- End Client -->
-                                    </div>
-                                </li><!-- End 1st Slide Item -->
-                                <li class="clients-slide-item">
-                                    <div class="col-md-2 col-xs-4">
-                                        <div class="client"><a href="#"><img src="<?= SRC_URL ?>img/content/client-img-1-170x68.jpg" alt=""></a></div><!-- End Client -->
-                                    </div>
-                                    <div class="col-md-2 col-xs-4">
-                                        <div class="client"><a href="#"><img src="<?= SRC_URL ?>img/content/client-img-2-170x68.jpg" alt=""></a></div><!-- End Client -->
-                                    </div>
-                                    <div class="col-md-2 col-xs-4">
-                                        <div class="client"><a href="#"><img src="<?= SRC_URL ?>img/content/client-img-3-170x68.jpg" alt=""></a></div><!-- End Client -->
-                                    </div>
-                                    <div class="col-md-2 col-xs-4">
-                                        <div class="client"><a href="#"><img src="<?= SRC_URL ?>img/content/client-img-4-170x68.jpg" alt=""></a></div><!-- End Client -->
-                                    </div>
-                                    <div class="col-md-2 col-xs-4">
-                                        <div class="client"><a href="#"><img src="<?= SRC_URL ?>img/content/client-img-5-170x68.jpg" alt=""></a></div><!-- End Client -->
-                                    </div>
-                                    <div class="col-md-2 col-xs-4">
-                                        <div class="client"><a href="#"><img src="<?= SRC_URL ?>img/content/client-img-6-170x68.jpg" alt=""></a></div><!-- End Client -->
-                                    </div>
-                                </li><!-- End 2nd Slide Item -->
-                            </ul><!-- End ul Items -->
-                        </div><!-- End Clients Slider -->
-                    </div><!-- End row -->
-                </div><!-- End Our Clients -->
-            </section><!-- End MISC Section -->
