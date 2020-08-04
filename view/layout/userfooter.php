@@ -38,7 +38,7 @@
                             <div class="widget about-widget">
                                 <h6 class="widget-title">Give Us A Feedback</h6>
                                 <p class="about-text" style=" margin-bottom: 0;">
-                                  Give us your valueable feedback. Let us know what thoughts about us and help us to improve our services.
+                                  Give us your valueable feedback. Let us know your thoughts about us and help us to improve our services.
                                 </p>
                                 <div class="contact-left">
                                     <div class="contact-form">
