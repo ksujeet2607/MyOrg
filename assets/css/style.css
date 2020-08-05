@@ -450,7 +450,10 @@ header .main-navigation li.parent-item ul.submenu ul.left-submenu {
 	border-left: 0;
 	border-right: 1px solid #e6e6e7;
 }
-
+.bl{border-left:1px solid #e9e7e7;}
+.br{border-right:1px solid #e9e7e7;}
+.bt{border-top:1px solid #e9e7e7;}
+.bb{border-bottom:1px solid #e9e7e7;}
 header .main-navigation li.parent-item ul.submenu li a {
 	position: relative;
 	display: block;
@@ -1879,7 +1882,7 @@ h6.head-title {
 }
 .inner-head .description {
 	color: #a9abb0;
-	max-width: 770px;
+	max-width: 1024px;
 	margin: auto;
 }
 .inner-head .breadcrumb {
