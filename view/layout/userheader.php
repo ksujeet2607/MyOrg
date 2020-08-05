@@ -6,7 +6,7 @@
     <head>
         <!-- Meta Tags -->
         <meta charset="utf-8">
-        <title>Coursaty - Contact 1</title>
+        <title><?= SITE_NAME ?> | <?= SUBTITLE ?></title>
         <meta name="description" content="">
         <meta name="author" content="iSeada.com">
         <!-- Mobile Meta -->
@@ -16,11 +16,13 @@
         <!-- Responsiveness -->
         <link rel="stylesheet" href="<?= SRC_URL ?>css/responsive.css">
         <!-- FAV & Touch Icons -->
-        <link rel="shortcut icon" href="<?= SRC_URL ?>img/icons/favicon.ico">
-        <link rel="apple-touch-icon" href="<?= SRC_URL ?>img/icons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="<?= SRC_URL ?>img/icons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="<?= SRC_URL ?>img/icons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="<?= SRC_URL ?>img/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?= SRC_URL ?>img/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="<?= SRC_URL ?>img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?= SRC_URL ?>img/icons/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+
+
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script>window.html5 || document.write('<script src="<?= SRC_URL ?>js/vendor/html5shiv.js"><\/script>')</script>
@@ -35,13 +37,7 @@
                         <ul class="clearfix">
                             <li><a href="#" class="fb-icon ln-tr"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#" class="tw-icon ln-tr"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="gp-icon ln-tr"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#" class="pn-icon ln-tr"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#" class="vm-icon ln-tr"><i class="fa fa-vimeo-square"></i></a></li>
                             <li><a href="#" class="in-icon ln-tr"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#" class="yt-icon ln-tr"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#" class="yt-icon ln-tr"><i class="fa fa-youtube-play"></i></a></li>
-                            <li><a href="#" class="rss-icon ln-tr"><i class="fa fa-rss"></i></a></li>
                         </ul>
                     </div><!-- End Social Container -->
                     <div class="fr top-contact">
@@ -57,7 +53,7 @@
                 <div class="container">
                     <div class="logo-container fl clearfix">
                         <a href="#" class="ib">
-                            
+
                            <span class="site-name"><img src="<?= SRC_URL ?>img/logo@2x.jpg" class="fl" alt="Logo"><span>.in</span></span>
                         </a>
                     </div><!-- End Logo Container -->

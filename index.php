@@ -1,6 +1,6 @@
 <?php
 //echo phpinfo();
-//sfgkjhjhjkh
+// hgfdsshsgsdfgsfgsj
 require_once 'library/Autoloader.php';
 $obj = new Bootstrap();
 $obj->init();

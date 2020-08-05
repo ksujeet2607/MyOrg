@@ -1,2 +1,2 @@
 # MyOrg
-This is orgnization management project for oue team only
+This is orgnization management project for our team only

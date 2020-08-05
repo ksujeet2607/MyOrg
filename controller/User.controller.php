@@ -20,25 +20,29 @@ class User extends Session{
 
 
     public function index($param){
+        define('SUBTITLE','Innovative Business Solution Provider');
         $response = $this->model->indexPageSrc($param);
         $this->render(__FUNCTION__, $response, "default", "user");
     }
-    
+
     public function contact($param){
+        define('SUBTITLE','Contact Technets');
         $response = $this->model->contactPageSrc($param);
         $this->render(__FUNCTION__, $response);
     }
-    
+
      public function about($param){
+        define('SUBTITLE','About Technets');
         $this->render(__FUNCTION__, $response);
     }
-    
+
     public function enquiry($param){
         $response = $this->model->saveEnquiry($param);
         $this->render(__FUNCTION__, $response);
     }
-    
+
     public function portfolio($param){
+        define('SUBTITLE','Technets Portfolio');
         $response = $this->model->portfolioPageSrc($param);
         $this->render(__FUNCTION__, $response);
     }
