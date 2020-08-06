@@ -25,13 +25,13 @@ class User extends Session{
         $this->render(__FUNCTION__, $response, "default", "user");
     }
 
-    public function contact($param){
+    public function contact_us($param){
         define('SUBTITLE','Contact Technets');
         $response = $this->model->contactPageSrc($param);
         $this->render(__FUNCTION__, $response);
     }
 
-     public function about($param){
+     public function about_us($param){
         define('SUBTITLE','About Technets');
         $this->render(__FUNCTION__, $response);
     }

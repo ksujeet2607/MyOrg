@@ -14,7 +14,7 @@ ini_set("display_errors", "off");
 
 
 define('BASE_URL', 'http://localhost/TechNets/');
-define('PUBLIC_URL', 'http://localhost/TechNets/u/');
+define('PUBLIC_URL', 'http://localhost/TechNets/');
 define('ADMIN_URL', 'http://localhost/TechNets/admin/');
 define('ADMUR_URL', 'http://localhost/TechNets/adminuser/');
 

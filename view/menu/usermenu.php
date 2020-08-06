@@ -63,16 +63,16 @@
                                 <a href="<?= PUBLIC_URL ?>portfolio" class="ln-tr">Portfolio</a>
                             </li>
                             <li class="parent-item ">
-                                <a href="<?= PUBLIC_URL ?>about" class="ln-tr">About</a>
+                                <a href="<?= PUBLIC_URL ?>about-us" class="ln-tr">About</a>
                             </li>
                             <!-- <li class="parent-item haschild">
                                 <a href="20-blog-1-list.html" class="ln-tr">Blog</a>
                             </li> -->
                             <li class="parent-item ">
-                                <a href="<?= PUBLIC_URL ?>contact" class="ln-tr">Contact</a>
+                                <a href="<?= PUBLIC_URL ?>contact-us" class="ln-tr">Contact</a>
                             </li>
                             <li class="parent-item ">
-                                <a href="<?= PUBLIC_URL ?>contact" class="ln-tr">Careers</a>
+                                <a href="<?= PUBLIC_URL ?>contact-us" class="ln-tr">Careers</a>
                             </li>
                         </ul>
                     </nav><!-- End NAV Container -->
