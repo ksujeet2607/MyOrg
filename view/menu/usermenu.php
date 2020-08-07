@@ -57,10 +57,10 @@
                                 </ul><!-- end courses menu -->
                             </li>
                             <li class="parent-item ">
-                                <a href="<?= PUBLIC_URL ?>techTeam" class="ln-tr">Our Team</a>
+                                <a href="<?= PUBLIC_URL ?>meet-our-team" class="ln-tr">Our Team</a>
                             </li>
                             <li class="parent-item ">
-                                <a href="<?= PUBLIC_URL ?>portfolio" class="ln-tr">Portfolio</a>
+                                <a href="<?= PUBLIC_URL ?>our-portfolio" class="ln-tr">Portfolio</a>
                             </li>
                             <li class="parent-item ">
                                 <a href="<?= PUBLIC_URL ?>about-us" class="ln-tr">About</a>
@@ -72,7 +72,7 @@
                                 <a href="<?= PUBLIC_URL ?>contact-us" class="ln-tr">Contact</a>
                             </li>
                             <li class="parent-item ">
-                                <a href="<?= PUBLIC_URL ?>contact-us" class="ln-tr">Careers</a>
+                                <a href="<?= PUBLIC_URL ?>careers" class="ln-tr">Careers</a>
                             </li>
                         </ul>
                     </nav><!-- End NAV Container -->
