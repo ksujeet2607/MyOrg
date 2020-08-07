@@ -4,13 +4,12 @@
                 <div class="container">
                     <h1 class="entry-title">We Wanna Hear From You!</h1>
                     <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.
+                      We are ready to help you. Let us know what are your requirements. There is no challenge that we can't overcome!
                     </p>
                     <div class="breadcrumb">
                         <ul class="clearfix">
-                            <li class="ib"><a href="">Home</a></li>
-                            <li class="ib"><a href="">Blog</a></li>
-                            <li class="ib current-page"><a href="">Contact</a></li>
+                            <li class="ib"><a href="<?= PUBLIC_URL ?>">Home</a></li>
+                            <li class="ib current-page"><a href="">Contact Us</a></li>
                         </ul>
                     </div>
                 </div><!-- End container -->
@@ -36,7 +35,7 @@
                                 <h5 class="contact-title ib">Contact Form</h5>
                                 <div class="contact-text">
                                     <p>
-                                        Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                                      We are ready to help you. Let us know what are your requirements. There is no challenge that we can't overcome!
                                     </p>
                                 </div><!-- End text -->
                                 <div class="contact-form">
@@ -80,13 +79,13 @@
                                     <h5 class="sidebar-widget-title ib">Contact Information</h5>
                                     <div class="info-text">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie. Curabitur pellentesque massa eu nulla consequat sed porttitor arcu porttitor.
+                                          You can call or email us on below  given details  :
                                         </p>
                                     </div><!-- end text info -->
                                     <div class="call">
-                                        <p>Phone No : 02 01065370701</p>
-                                        <p>Email : 7oroof@7oroof.com</p>
-                                        <p>Website : www.7oroof.com</p>
+                                        <p>Mobile : <?= CONTACT ?></p>
+                                        <p>Mobile : <?= CONTACT_NO ?></p>
+                                        <p>Email : <?= EMAIL_FROM ?></p>
                                     </div><!-- end call info -->
                                 </div><!-- end 1st block -->
                                 <div class="sidebar-widget follow-us">
@@ -97,7 +96,6 @@
                                             <ul class="clearfix">
                                                 <li><a href="#" class="fb-icon ln-tr"><i class="fa fa-facebook"></i></a></li>
                                                 <li><a href="#" class="tw-icon ln-tr"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" class="gp-icon ln-tr"><i class="fa fa-google-plus"></i></a></li>
                                                 <li><a href="#" class="in-icon ln-tr"><i class="fa fa-linkedin"></i></a></li>
                                             </ul>
                                         </div>
@@ -110,4 +108,3 @@
             </article><!-- End Single Article -->
 
             <div class="clearfix"></div>
-

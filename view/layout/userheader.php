@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <title><?= SITE_NAME ?> | <?= SUBTITLE ?></title>
         <meta name="description" content="">
-        <meta name="author" content="iSeada.com">
+        <meta name="author" content="technets.in">
         <!-- Mobile Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
         <!-- Main Stylesheet -->
@@ -42,9 +42,9 @@
                     </div><!-- End Social Container -->
                     <div class="fr top-contact">
                         <ul class="clearfix">
-                            <li class="fl"><i class="fa fa-phone"></i><span class="text">Call Us: +2 01065370701</span></li>
+                            <li class="fl"><i class="fa fa-phone"></i><span class="text">Call Us: <?= CONTACT ?> | <?= CONTACT_NO ?></span></li>
                             <li class="fl divider"><span>&#124;</span></li>
-                            <li class="fl"><i class="fa fa-envelope"></i><span class="text">Email Us: <a href="mailto:johnsmith@gmail.com">johnsmith@gmail.com</a></span></li>
+                            <li class="fl"><i class="fa fa-envelope"></i><span class="text">Email Us: <a href="mailto:<?= EMAIL_FROM ?>"><?= EMAIL_FROM ?></a></span></li>
                         </ul>
                     </div><!-- End Top Contact -->
                 </div>
