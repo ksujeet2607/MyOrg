@@ -6,9 +6,9 @@
     <head>
         <!-- Meta Tags -->
         <meta charset="utf-8">
-        <title>Coursaty - 404 - Not found</title>
+        <title>Technets - 404 - Not found</title>
         <meta name="description" content="">
-        <meta name="author" content="iSeada.com">
+        <meta name="author" content="technets.in">
         <!-- Mobile Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
         <!-- Main Stylesheet -->
@@ -39,7 +39,7 @@
                             </div><!-- end 404 circle -->
                             <div class="error-message">We're sorry, but the page you were looking for doesn't exist.</div><!-- end error msg -->
                             <div class="share-icons clearfix">
-                                <button type="button" class=" custom_button">Go Back TO Home Page</button>
+                                <button type="button" onclick=" window.location.href='<?= $_SERVER['PHP_SELF'] ?>'" class=" custom_button" style=" cursor: pointer;">Go Back TO Home Page</button>
                             </div><!-- end share page -->
                         </div>
                     </div>

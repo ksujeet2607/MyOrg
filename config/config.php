@@ -13,27 +13,15 @@ ini_set("display_errors", "off");
 // ini_set("display_errors", "on");
 
 
-//define('BASE_URL', 'http://test.technets.in/');
-//define('PUBLIC_URL', 'http://test.technets.in/u/');
-//define('ADMIN_URL', 'http://test.technets.in/admin/');
-//define('ADMUR_URL', 'http://test.technets.in/adminuser/');
-//
-//define('SRC_URL', 'http://test.technets.in/assets/'); // Load Js/Css
-//
-//define('IMG_URL', 'http://test.technets.in/images/');// load Images
-//define('GAL_URL', 'http://test.technets.in/gallery/'); // load Gallery images
+define('BASE_URL', 'http://localhost/TechNets/');
+define('PUBLIC_URL', 'http://localhost/TechNets/');
+define('ADMIN_URL', 'http://localhost/TechNets/admin/');
+define('ADMUR_URL', 'http://localhost/TechNets/adminuser/');
 
-define('BASE_URL', 'http://localhost/technets/');
-define('PUBLIC_URL', 'http://localhost/technets/u/');
-define('ADMIN_URL', 'http://localhost/technets/admin/');
-define('ADMUR_URL', 'http://localhost/technets/adminuser/');
+define('SRC_URL', 'http://localhost/TechNets/assets/'); // Load Js/Css
 
-define('SRC_URL', 'http://localhost/technets/assets/'); // Load Js/Css
-
-define('IMG_URL', 'http://localhost/technets/images/');// load Images
-define('GAL_URL', 'http://localhost/technets/gallery/'); // load Gallery images
-
-
+define('IMG_URL', 'http://localhost/TechNets/images/');// load Images
+define('GAL_URL', 'http://localhost/TechNets/gallery/'); // load Gallery images
 define("SCANFILE", "scan");
 
 define("PROFILEPRE", "JMS");// Profile Prefix
@@ -47,7 +35,7 @@ define('SMS_PASSWORD', "");
 
 define('CONTACT', "+91 93430 86888");
 define('CONTACT_NO', "9343086888");
-define('EMAIL_FROM', "info@technets.in");
+define('EMAIL_FROM', "jainCommunity@gmail.com");
 
 define('EMAIL_FROM1', "noreply.matrimony.com@gmail.com");
 define('EMAIL_PASS1', "Admin@123");

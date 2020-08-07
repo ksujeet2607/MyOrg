@@ -11,9 +11,9 @@
                                 </p>
                                 <div class="footer-links">
                                     <ul>
-                                        <li><a href="<?= PUBLIC_URL ?>about" class="ln-tr">About Us</a></li>
-                                        <li><a href="#" class="ln-tr">Meet Our Team</a></li>
-                                        <li><a href="<?= PUBLIC_URL ?>contact" class="ln-tr">Contact Us</a></li>
+                                        <li><a href="<?= PUBLIC_URL ?>about-us" class="ln-tr">About Us</a></li>
+                                        <li><a href="<?= PUBLIC_URL ?>meet-our-team" class="ln-tr">Meet Our Team</a></li>
+                                        <li><a href="<?= PUBLIC_URL ?>contact-us" class="ln-tr">Contact Us</a></li>
                                     </ul>
                                 </div><!-- End Footer Links -->
                             </div><!-- End About Widget -->
@@ -23,13 +23,13 @@
                                 <h6 class="widget-title">Quick Links</h6>
                                 <div class="footer-links">
                                     <ul>
-                                        <li><a href="#" class="ln-tr">Help</a></li>
+                                        <li><a href="<?= PUBLIC_URL ?>" class="ln-tr">Home</a></li>
                                         <li><a href="#" class="ln-tr">Sitemap</a></li>
-                                        <li><a href="#" class="ln-tr">Mobile</a></li>
-                                        <li><a href="#" class="ln-tr">Privacy Policy</a></li>
-                                        <li><a href="#" class="ln-tr">Support</a></li>
-                                        <li><a href="#" class="ln-tr">Careers</a></li>
-                                        <li><a href="#" class="ln-tr">Instructors</a></li>
+                                        <li><a href="<?= PUBLIC_URL ?>our-services" class="ln-tr">Services</a></li>
+                                        <li><a href="<?= PUBLIC_URL ?>our-portfolio" class="ln-tr">portfolio</a></li>
+                                        <li><a href="<?= PUBLIC_URL ?>contact-us" class="ln-tr">Support</a></li>
+                                        <li><a href="<?= PUBLIC_URL ?>careers" class="ln-tr">Careers</a></li>
+
                                     </ul>
                                 </div><!-- End Footer Links -->
                             </div><!-- End Links Widget -->

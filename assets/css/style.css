@@ -529,7 +529,7 @@ header.alt .main-navigation li.courses-menu li .single-item {
 	margin-bottom: 0;
 }
 header .main-navigation li.courses-menu li .single-item .item-icon {
-	background: #2997ab;
+	background: #f3f3f3;
 	display: block;
 	width: 38px;
 	height: 38px;
@@ -543,10 +543,12 @@ header .main-navigation li.courses-menu li .single-item .item-icon {
 }
 header .main-navigation li.courses-menu li .single-item a {
 	display: block;
-	color: #2997ab;
+	color: #0a268a;
 	font-weight: bold;
 	font-size: 14px;
 	margin: -3px 0 7px 0;
+	position: relative;
+	top: 13px;
 }
 header .main-navigation li.courses-menu li .single-item a:hover {
 	color: #383c4b;
@@ -4236,4 +4238,7 @@ header .main-navigation li.courses-menu li .single-item:hover .item-icon i {
 		}
 .all_detail_text{
 	font-size:16px;
+}
+.services_img{
+	width: 37px;
 }
