@@ -37,7 +37,12 @@ class User extends Session{
         define('SUBTITLE','About Technets');
         $this->render(__FUNCTION__, $response);
     }
-
+    
+ public function meet_our_team($param){
+        define('SUBTITLE','Technets Team');
+        $this->render(__FUNCTION__, $response);
+    }
+    
     public function enquiry($param){
         $response = $this->model->saveEnquiry($param);
         $this->render(__FUNCTION__, $response);

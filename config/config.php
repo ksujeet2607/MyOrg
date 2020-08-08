@@ -1,7 +1,7 @@
 <?php
 // database credentials
 
-define('DB_NAME', 'technetsdb');
+define('DB_NAME', 'anuram');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
@@ -22,8 +22,6 @@ define('SRC_URL', 'http://localhost/TechNets/assets/'); // Load Js/Css
 
 define('IMG_URL', 'http://localhost/TechNets/images/');// load Images
 define('GAL_URL', 'http://localhost/TechNets/gallery/'); // load Gallery images
-
-
 define("SCANFILE", "scan");
 
 define("PROFILEPRE", "JMS");// Profile Prefix
