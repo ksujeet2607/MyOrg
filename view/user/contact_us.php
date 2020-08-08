@@ -94,9 +94,9 @@
                                     <div class="follow-icons clearfix">
                                         <div class="icons">
                                             <ul class="clearfix">
-                                                <li><a href="#" class="fb-icon ln-tr"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" class="tw-icon ln-tr"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#" class="in-icon ln-tr"><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="https://www.facebook.com/TechNets-101201801686846" target="_blank" class="fb-icon ln-tr"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="https://twitter.com/technets8" target="_blank" class="tw-icon ln-tr"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="https://www.linkedin.com/in/technets-in-46a5a11b3/" class="in-icon ln-tr"><i class="fa fa-linkedin"></i></a></li>
                                             </ul>
                                         </div>
                                     </div><!-- end social icons -->

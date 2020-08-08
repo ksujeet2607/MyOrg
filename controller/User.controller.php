@@ -4,10 +4,12 @@ class User extends Session{
     protected  $usertype;
     protected  $model;
     public  $params;
+    public static $menu;
 
     function __construct($method,$params) {
         $this->params = $params;
         $this->model = new UserModel();
+        self::$menu = $method;
     }
 
     public function isMemberLogin(){

@@ -143,7 +143,7 @@
             <header id="header" class="alt static-header">
                 <div class="container">
                     <div class="logo-container fl clearfix">
-                        <a href="#" class="ib">
+                        <a href="<?= PUBLIC_URL ?>" class="ib">
                             <span class="site-name"><img src="<?= SRC_URL ?>img/logo@2x.jpg" class="fl" alt="Logo"><span>.in</span></span>
                         </a>
                     </div><!-- End Logo Container -->

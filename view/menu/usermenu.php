@@ -1,9 +1,9 @@
                     <nav class="main-navigation fr">
                         <ul class="clearfix">
-                            <li class="parent-item current_page_item">
+                            <li class="parent-item <?= (mb_strtolower(User::$menu) == 'index')?"current_page_item":"" ?>">
                                 <a href="<?= BASE_URL ?>" class="ln-tr">Home</a>
                             </li>
-                            <li class="parent-item haschild courses-menu">
+                            <li class="parent-item haschild <?= (mb_strtolower(User::$menu) == 'services')?"current_page_item":"" ?> courses-menu">
                                 <a href="<?= PUBLIC_URL ?>services" class="ln-tr">Services</a>
                                 <ul class="clearfix">
                                     <li class="course-menu-item col-md-3 col-sm-4">
@@ -56,22 +56,22 @@
                                     </li><!-- end course menu item -->
                                 </ul><!-- end courses menu -->
                             </li>
-                            <li class="parent-item ">
+                            <li class="parent-item <?= (mb_strtolower(User::$menu) == 'meet_our_team')?"current_page_item":"" ?> ">
                                 <a href="<?= PUBLIC_URL ?>meet-our-team" class="ln-tr">Our Team</a>
                             </li>
-                            <li class="parent-item ">
+                            <li class="parent-item <?= (mb_strtolower(User::$menu) == 'our_portfolio')?"current_page_item":"" ?>">
                                 <a href="<?= PUBLIC_URL ?>our-portfolio" class="ln-tr">Portfolio</a>
                             </li>
-                            <li class="parent-item ">
+                            <li class="parent-item <?= (mb_strtolower(User::$menu) == 'about_us')?"current_page_item":"" ?> ">
                                 <a href="<?= PUBLIC_URL ?>about-us" class="ln-tr">About</a>
                             </li>
                             <!-- <li class="parent-item haschild">
                                 <a href="20-blog-1-list.html" class="ln-tr">Blog</a>
                             </li> -->
-                            <li class="parent-item ">
+                            <li class="parent-item <?= (mb_strtolower(User::$menu) == 'contact_us')?"current_page_item":"" ?> ">
                                 <a href="<?= PUBLIC_URL ?>contact-us" class="ln-tr">Contact</a>
                             </li>
-                            <li class="parent-item ">
+                            <li class="parent-item <?= (mb_strtolower(User::$menu) == 'careers')?"current_page_item":"" ?> ">
                                 <a href="<?= PUBLIC_URL ?>careers" class="ln-tr">Careers</a>
                             </li>
                         </ul>

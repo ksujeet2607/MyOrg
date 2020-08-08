@@ -26,7 +26,7 @@
                                         <li><a href="<?= PUBLIC_URL ?>" class="ln-tr">Home</a></li>
                                         <li><a href="#" class="ln-tr">Sitemap</a></li>
                                         <li><a href="<?= PUBLIC_URL ?>our-services" class="ln-tr">Services</a></li>
-                                        <li><a href="<?= PUBLIC_URL ?>our-portfolio" class="ln-tr">portfolio</a></li>
+                                        <li><a href="<?= PUBLIC_URL ?>our-portfolio" class="ln-tr">Portfolio</a></li>
                                         <li><a href="<?= PUBLIC_URL ?>contact-us" class="ln-tr">Support</a></li>
                                         <li><a href="<?= PUBLIC_URL ?>careers" class="ln-tr">Careers</a></li>
 
@@ -38,7 +38,7 @@
                             <div class="widget about-widget">
                                 <h6 class="widget-title">Give Us A Feedback</h6>
                                 <p class="about-text" style=" margin-bottom: 0;">
-                                  Give us your valueable feedback. Let us know your thoughts about us and help us to improve our services.
+                                  Give us your valuable feedback. Let us know your thoughts about us and help us to improve our services.
                                 </p>
                                 <div class="contact-left">
                                     <div class="contact-form">
@@ -81,9 +81,9 @@
                         </div><!-- End Copyright -->
                         <div class="fr footer-social-icons">
                             <ul class="clearfix">
-                                <li><a href="#" class="fb-icon ln-tr"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" class="tw-icon ln-tr"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" class="in-icon ln-tr"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://www.facebook.com/TechNets-101201801686846" target="_blank" class="fb-icon ln-tr"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/technets8" target="_blank" class="tw-icon ln-tr"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/technets-in-46a5a11b3/" target="_blank" class="in-icon ln-tr"><i class="fa fa-linkedin"></i></a></li>
                             </ul>
                         </div><!-- End Social Media Icons -->
                     </div><!-- End container -->
