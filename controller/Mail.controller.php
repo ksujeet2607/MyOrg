@@ -51,7 +51,7 @@ class Mail extends Session {
         $message='<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e8e8e8" style="max-width:700px;border-collapse:collapse;border:1px solid #e2e0e0;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#3a3a3a;line-height:18px" align="center">';
         $message.='<tbody><tr><td width="700px" valign="top" align="center"><table width="93%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr><td height="22"></td></tr><tr><td valign="top" align="center" bgcolor="#FFFFFF" style="border-radius:13px;">';
         $message.='<table width="93%" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse"><tbody><tr><td height="25"></td></tr><tr><td valign="top"><table border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse"><tbody>';
-        $message.='<tr><td width="380" ><img src="'.SRC_URL.'img/1.png" alt="'. SITE_NAME.'" style="text-align:left;font-size:17px;font-style:italic;color:#ff3414" class="CToWUd"><span style="color: #ff3414;font-size:large;position: absolute;margin-left: 7px;">'.SITE_NAME.'</span></td></tr><tr><td ></td></tr>';
+        $message.='<tr><td width="380" ><img src="'.SRC_URL.'img/logo@2x.jpg" alt="'. SITE_NAME.'" style="text-align:left;font-size:17px;font-style:italic;color:#ff3414" class="CToWUd"><span style="color: #ff3414;font-size:large;position: absolute;margin-left: 7px;">'.SITE_NAME.'</span></td></tr><tr><td ></td></tr>';
         $message.='<tr><td height="10"></td></tr></tbody></table></td></tr><tr><td height="22"></td></tr>'
                 . '<tr><td><p style="margin-left: 12px;"><b>Dear </b> Member, Your Login Password is : '.$password.' </p></td></tr>'
                 . '<tr><td height="10"></td></tr>'
@@ -59,7 +59,6 @@ class Mail extends Session {
         $message.='<tr><td height="10"></td></tr></tbody></table></td></tr>';
         $message.='<tr><td height="18"><center><br><font color="#999999" size="1">This is a computer auto generated message. Please do not Reply.<br>For any assistance please call on Ph: '. CONTACT_NO.'.</font><br><br></center></td></tr>';
         $message.='</tbody></table></td></tr></tbody></table>';
-
         $this->Obj->Subject = "Forgot Password  from " . SITE_NAME;
         $this->Obj->Body = $message;
         $this->Obj->addAddress($to, SITE_NAME);
@@ -67,6 +66,7 @@ class Mail extends Session {
         return true;
 
     }
+
     public function sendenquiry($data){
         $from = strtolower($data['email']);
         $mobile = $data['mobile'];
@@ -77,7 +77,7 @@ class Mail extends Session {
         $message='<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e8e8e8" style="max-width:700px;border-collapse:collapse;border:1px solid #e2e0e0;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#3a3a3a;line-height:18px" align="center">';
         $message.='<tbody><tr><td width="700px" valign="top" align="center"><table width="93%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr><td height="22"></td></tr><tr><td valign="top" align="center" bgcolor="#FFFFFF" style="border-radius:13px;">';
         $message.='<table width="93%" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse"><tbody><tr><td height="25"></td></tr><tr><td valign="top"><table border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse"><tbody>';
-        $message.='<tr><td width="380" ><img src="'.SRC_URL.'images/1.png" alt="'. SITE_NAME.'" style="text-align:left;font-size:17px;font-style:italic;color:#ff3414" class="CToWUd"><span style="color: #ff3414;font-size:large;position: absolute;margin-left: 7px;">'.SITE_NAME.'</span></td></tr><tr><td ></td></tr>';
+        $message.='<tr><td width="380" ><img src="'.SRC_URL.'img/logo@2x.jpg" alt="'. SITE_NAME.'" style="text-align:left;font-size:17px;font-style:italic;color:#ff3414" class="CToWUd"><span style="color: #ff3414;font-size:large;position: absolute;margin-left: 7px;">'.SITE_NAME.'</span></td></tr><tr><td ></td></tr>';
         $message.='<tr><td height="10"></td></tr></tbody></table></td></tr><tr><td height="22"></td></tr>'
                 . '<tr><td>'
                 . '<p style="margin-left: 12px;">'
@@ -101,5 +101,38 @@ class Mail extends Session {
 
     }
 
+    public function savefeedback($data){
+        $from = strtolower($data['email']);
+        $mobile = $data['mobile'];
+        $msg = $data['msg'];
+        $name = $this->ucf($data['fname']);
+        //$to = EMAIL_FROM;
+        $to = 'contact@technets.in';
+        $message='<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e8e8e8" style="max-width:700px;border-collapse:collapse;border:1px solid #e2e0e0;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#3a3a3a;line-height:18px" align="center">';
+        $message.='<tbody><tr><td width="700px" valign="top" align="center"><table width="93%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr><td height="22"></td></tr><tr><td valign="top" align="center" bgcolor="#FFFFFF" style="border-radius:13px;">';
+        $message.='<table width="93%" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse"><tbody><tr><td height="25"></td></tr><tr><td valign="top"><table border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse"><tbody>';
+        $message.='<tr><td width="380" ><img src="'.SRC_URL.'img/logo@2x.jpg" alt="'. SITE_NAME.'" style="text-align:left;font-size:17px;font-style:italic;color:#ff3414" class="CToWUd"><span style="color: #ff3414;font-size:large;position: absolute;margin-left: 7px;">'.SITE_NAME.'</span></td></tr><tr><td ></td></tr>';
+        $message.='<tr><td height="10"></td></tr></tbody></table></td></tr><tr><td height="22"></td></tr>'
+                . '<tr><td>'
+                . '<p style="margin-left: 12px;">'
+                . '<b>An enuiry has been received on '.SITE_NAME.'.</p>'
+                . '<p style="margin-left: 12px;">Feedback Detail: </p>'
+                . '<p style="margin-left: 12px;"><b>Name </b>:'.$name.' </p>'
+                . '<p style="margin-left: 12px;"><b>Mobile </b>:'.$mobile.' </p>'
+                . '<p style="margin-left: 12px;"><b>Email </b>:'.$from.' </p>'
+                . '<p style="margin-left: 12px;"><b>Message </b>:'.$msg.' </p>'
+                . '</td></tr>'
+                . '<tr><td height="10"></td></tr>'
+                . '<tr><td><p style="margin-left: 12px;"></p></td></tr>';
+        $message.='<tr><td height="10"></td></tr></tbody></table></td></tr>';
+        $message.='</tbody></table>';
+
+        $this->Obj->Subject = "Feedback on " . SITE_NAME;
+        $this->Obj->Body = $message;
+        $this->Obj->addAddress($to, SITE_NAME);
+        $this->Obj->send();
+        return true;
+
+    }
 
 }

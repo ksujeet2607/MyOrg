@@ -42,27 +42,27 @@
                                 </p>
                                 <div class="contact-left">
                                     <div class="contact-form">
-                                        <form method="post" action="" id="contact-form">
+                                        <form method="post" action="<?= PUBLIC_URL ?>send-feedback" id="contact-form">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="input">
-                                                        <input type="text" id="name" class="name-input" placeholder="Your Name">
+                                                        <input type="text" id="name" name="fname" class="name-input" placeholder="Your Name">
                                                     </div>
                                                 </div><!-- end name -->
 
                                                 <div class="col-md-6">
                                                     <div class="input">
-                                                        <input type="text" id="tel" class="tel-input" placeholder="Phone">
+                                                        <input type="text" name="mobile" id="tel" class="tel-input" placeholder="Mobile/Phone">
                                                     </div>
                                                 </div><!-- end phone -->
                                                 <div class="col-md-12">
                                                     <div class="input">
-                                                        <input type="email" id="email" class="email-input" placeholder="Email">
+                                                        <input type="email" name="email" id="email" class="email-input" placeholder="Email">
                                                     </div>
                                                 </div><!-- end email -->
                                                 <div class="col-md-12">
                                                     <div class="input">
-                                                        <textarea name="comment-area" id="comment-area" placeholder="Comment"></textarea>
+                                                        <textarea name="comment-area" name="msg" id="comment-area" placeholder="Comment"></textarea>
                                                         <input type="submit" id="comment-submit" class="submit-input grad-btn ln-tr" value="Send">
                                                     </div>
                                                 </div>

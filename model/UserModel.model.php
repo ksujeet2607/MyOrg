@@ -35,6 +35,10 @@ class UserModel extends Base{
         return $response = array("list",$rs,$about,$imgs);
     }
 
+    public function savefeedback($param){
+      return $response = array("list",$rs,$about,$imgs);
+    }
+
     public function saveEnquiry($param){
 
         return $response = array("list",$rs,$about,$imgs);

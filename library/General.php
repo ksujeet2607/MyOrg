@@ -21,11 +21,11 @@ class General  {
     public function render($d, $response=array(), $layoutH="", $layoutF=""){
          $dir = strtolower(get_called_class());
          //echo  __DIR__."/../view/".$dir."/".$d.".php";
-         if(file_exists( __DIR__."/../view/".$dir."/".$d.".php")){             
+         if(file_exists( __DIR__."/../view/".$dir."/".$d.".php")){
            if($layoutH!=""){
                include_once __DIR__."/../view/layout/".strtolower($layoutH)."header.php";
            }else{
-              include_once __DIR__."/../view/layout/".$dir."header.php"; 
+              include_once __DIR__."/../view/layout/".$dir."header.php";
            }
            require_once __DIR__."/../view/".$dir."/".$d.".php";
            if($layoutF!=""){

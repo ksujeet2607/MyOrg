@@ -37,12 +37,12 @@ class User extends Session{
         define('SUBTITLE','About Technets');
         $this->render(__FUNCTION__, $response);
     }
-    
+
  public function meet_our_team($param){
         define('SUBTITLE','Technets Team');
         $this->render(__FUNCTION__, $response);
     }
-    
+
     public function enquiry($param){
         $response = $this->model->saveEnquiry($param);
         $this->render(__FUNCTION__, $response);
@@ -52,6 +52,14 @@ class User extends Session{
         define('SUBTITLE','Technets Portfolio');
         $response = $this->model->portfolioPageSrc($param);
         $this->render(__FUNCTION__, $response);
+    }
+
+    public function send_feedback($param){
+        $response = $this->model->savefeedback($param);
+        include('mail.php');
+        $mail = new mail();
+        $mail->savefeedback($_POST);
+        $this->redirect(PUBLIC_URL, "Thank You For Your Valuable Feedback.~suc");
     }
 
 
