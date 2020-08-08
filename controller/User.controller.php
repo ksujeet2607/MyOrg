@@ -36,7 +36,7 @@ class User extends Session{
         $this->render(__FUNCTION__, $response);
     }
     
- public function techTeam($param){
+ public function meet_our_team($param){
         define('SUBTITLE','Technets Team');
         $this->render(__FUNCTION__, $response);
     }

@@ -1,17 +1,16 @@
 
 <style>
-    
+
 </style>
             <div class="inner-head">
                 <div class="container">
                     <h1 class="entry-title">Technets Team</h1>
                     <p class="description">
-                       TechNets is a value-driven IT company specialized in web designing and development, search engine optimizations & web promotion. We deliver years of domain expertise and unmatched value to our clients. Our solutions power operations of clients across critical industries such as ecommerce, matrimony, education, hospitality and courier. We are one stop solution for your IT needs in critical Mobile app, responsive Web application , Cloud/ SaaS development and domain-hosting
-                    </p>
+Our team is your team. When your mission is to be better, faster and smarter, you need the best people driving your vision forward. You need people who can create focused Devolping strategies that align with business goals, who can infuse their creativity into groundbreaking campaigns, and who can analyze your requirement. You need Technets. Get to know your team below.                    </p>
                     <div class="breadcrumb">
                         <ul class="clearfix">
                             <li class="ib"><a href="">Home</a></li>
-                         
+
                             <li class="ib current-page"><a href="">Our Team</a></li>
                         </ul>
                     </div>
@@ -22,18 +21,17 @@
 
             <section class="full-section instructors-section fancy-shadow">
                 <div class="container">
-                    <h3 class="section-title">Meet Our Instructors</h3>
+                    <h3 class="section-title">Meet Our Team</h3>
                     <p class="section-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
                     </p><!-- End Section Description -->
                 </div>
                 <div class="section-content instructors-content fadeInDown-animation">
                     <div class="container">
                         <div class="row">
-                            
+
                             <div class="col-md-4 col-xs-6">
                                 <div class="instructor">
-                                    <div class="avatar"><img src="<?= SRC_URL ?>/img/content/instructor-avatar-1-270x270.jpg" class="img-responsive" style="width: 360px;" alt=""></div><!-- End Avatar -->
+                                    <div class="avatar"><img src="<?= SRC_URL ?>/img/team/gautam.jpg" class="img-responsive" style="width: 360px;" alt=""></div><!-- End Avatar -->
                                     <div class="instructor-info">
                                         <p class="name">Gautam Gupta</p>
                                         <span class="position">Web Developer / Web Designer</span>
@@ -50,7 +48,7 @@
                             </div>
                             <div class="col-md-4 col-xs-6">
                                 <div class="instructor">
-                                    <div class="avatar"><img src="<?= SRC_URL ?>/img/content/instructor-avatar-1-270x270.jpg" class="img-responsive" style="width: 360px;" alt=""></div><!-- End Avatar -->
+                                    <div class="avatar"><img src="<?= SRC_URL ?>/img/team/sujit.jpg" class="img-responsive" style="width: 360px;" alt=""></div><!-- End Avatar -->
                                     <div class="instructor-info">
                                         <p class="name">Sujit Kahar</p>
                                         <span class="position">Web Developer / DBA</span>
@@ -67,7 +65,7 @@
                             </div>
                             <div class="col-md-4 col-xs-6">
                                 <div class="instructor">
-                                    <div class="avatar"><img src="<?= SRC_URL ?>/img/content/instructor-avatar-1-270x270.jpg" class="img-responsive" alt="" style="width: 360px;"></div><!-- End Avatar -->
+                                    <div class="avatar"><img src="<?= SRC_URL ?>/img/team/adesh.jpg" class="img-responsive" alt="" style="width: 360px;"></div><!-- End Avatar -->
                                     <div class="instructor-info">
                                         <p class="name">Adesh Vishwkarma</p>
                                         <span class="position">Web Developer / System Analysis</span>
@@ -82,12 +80,11 @@
                                     </div>
                                 </div><!-- End Instructor Box -->
                             </div>
-                          
+
                         </div>
                     </div>
                 </div><!-- End Instructors Section Content -->
             </section>
-            
-            
-            <div class="clearfix"></div>
 
+
+            <div class="clearfix"></div>
