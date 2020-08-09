@@ -56,9 +56,7 @@ class User extends Session{
 
     public function send_feedback($param){
         $response = $this->model->savefeedback($param);
-        echo __DIR__;
-        die();
-        include('mail.php');
+        include('mail.controller.php');
         $mail = new mail();
         $mail->savefeedback($_POST);
         $this->redirect(PUBLIC_URL, "Thank You For Your Valuable Feedback.~suc");

@@ -62,7 +62,7 @@
                                                 </div><!-- end email -->
                                                 <div class="col-md-12">
                                                     <div class="input">
-                                                        <textarea name="comment-area" name="msg" id="comment-area" placeholder="Comment"></textarea>
+                                                        <textarea name="msg" id="comment-area" placeholder="Comment"></textarea>
                                                         <input type="submit" id="comment-submit" class="submit-input grad-btn ln-tr" value="Send">
                                                     </div>
                                                 </div>

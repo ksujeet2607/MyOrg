@@ -1,6 +1,42 @@
 <?php
 class General  {
 
+  /// UC First //
+
+  public function ucf($string){
+      return ucwords(strtolower($string));
+  }
+
+  public function uc($string){
+      return strtoupper(strtolower($string));
+  }
+
+
+  public function excelHeader() {
+      require('plugins/PHP-Excel/Classes/PHPExcel.php');
+      ini_set('memory_limit', '512M');
+//        if (PHP_SAPI == 'cli')
+      return $objPHPExcel = new PHPExcel();
+  }
+  public function excelFooter($objPHPExcel,$filename="Report.xls") {
+      header('Content-Type: application/vnd.ms-excel');
+      header('Content-Disposition: attachment;filename='.$filename);
+      header('Cache-Control: max-age=0');
+      // If you're serving to IE 9, then the following may be needed
+      header('Cache-Control: max-age=1');
+
+      // If you're serving to IE over SSL, then the following may be needed
+      //header ('Expires: Mon, 26 Jul 1997 05:00:00 GMT'); // Date in the past
+      //header ('Last-Modified: '.gmdate('D, d M Y H:i:s').' GMT'); // always modified
+      header ('Cache-Control: cache, must-revalidate'); // HTTP/1.1
+      header ('Pragma: public'); // HTTP/1.0
+
+      $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
+      ob_end_clean();
+      $objWriter->save('php://output');
+      exit;
+  }
+
     public static function encrypt($data, $key)
     {
         $encryption_key = base64_decode($key);

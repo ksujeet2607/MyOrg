@@ -179,8 +179,8 @@
                               </div><!-- End 3rd Item -->
                           </div><!-- End Accordion Container -->
                       </div><!-- End col-md-6 -->
-                        <div class="col-md-6 basic-slider-box">
-                            <img src="<?= SRC_URL ?>img/whyus.jpg">
+                        <div class="col-md-6">
+                            <img class="img-thumb" style="position: absolute;top: 54px;" src="<?= SRC_URL ?>img/whyus.jpg">
                         </div><!-- End col-md-6 -->
 
                     </div><!-- End row -->
