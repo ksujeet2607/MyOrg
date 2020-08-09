@@ -50,7 +50,7 @@ Our team is your team. When your mission is to be better, faster and smarter, yo
                                 <div class="instructor">
                                     <div class="avatar"><img src="<?= SRC_URL ?>/img/team/sujit.jpg" class="img-responsive" style="width: 360px;" alt=""></div><!-- End Avatar -->
                                     <div class="instructor-info">
-                                        <p class="name">Sujit Kahar</p>
+                                        <p class="name">Sujeet Kahar</p>
                                         <span class="position">Web Developer / DBA</span>
                                         <div class="social-icons">
                                             <ul class="clearfix">

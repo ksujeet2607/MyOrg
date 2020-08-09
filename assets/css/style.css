@@ -1,10 +1,5 @@
-/*
-	Theme Name: Coursaty.
-	Description: Premium Courses HTML5 Template.
-	Author: iSeada
-	Author URI: http://iSeada.com & http://7oroof.com
-	Version: 1.0
-*/
+
+
 
 /* ------------------------------------------ */
 /*             TABLE OF CONTENTS
@@ -847,7 +842,8 @@ header.alt .mobile-navigation .mobile-btn span:after {
 }
 .instructor-info .position {
 	font-size: 12px;
-	color: #5a5e6a;
+	color: #03346b;
+	/* color: #5a5e6a; */
 	display: block;
 	margin-bottom: 26px;
 }
@@ -4241,4 +4237,7 @@ header .main-navigation li.courses-menu li .single-item:hover .item-icon i {
 }
 .services_img{
 	width: 37px;
+}
+.service-img{
+	width: 50px;float: left;
 }

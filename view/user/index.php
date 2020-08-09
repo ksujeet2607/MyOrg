@@ -65,9 +65,9 @@
                         <div class="row">
                             <div class="col-md-3 col-xs-6">
                                 <div class="instructor">
-                                    <div class="avatar"><img src="<?= SRC_URL ?>img/windows.jpg" class="img-responsive" alt=""></div><!-- End Avatar -->
+                                    <div class="avatar"></div><!-- End Avatar -->
                                     <div class="instructor-info">
-                                        <p class="name">Windows (1 year)</p>
+                                        <p class="name"><img src="<?= SRC_URL ?>img/windows.jpg" class="img-responsive service-img" alt="">Windows (1 year)</p>
                                         <span class="position">INR 4000 / year</span>
 
                                     </div>
@@ -75,9 +75,9 @@
                             </div>
                             <div class="col-md-3 col-xs-6">
                                 <div class="instructor">
-                                    <div class="avatar"><img src="<?= SRC_URL ?>img/windows.jpg" class="img-responsive" alt=""></div><!-- End Avatar -->
+                                    <div class="avatar"></div><!-- End Avatar -->
                                     <div class="instructor-info">
-                                        <p class="name">Windows (3 year)</p>
+                                        <p class="name"><img src="<?= SRC_URL ?>img/windows.jpg" class="img-responsive service-img" alt="">Windows (3 year)</p>
                                         <span class="position">INR 3,500/ years</span>
 
                                     </div>
@@ -85,9 +85,9 @@
                             </div>
                             <div class="col-md-3 col-xs-6">
                                 <div class="instructor">
-                                    <div class="avatar"><img src="<?= SRC_URL ?>img/linux.png" class="img-responsive" alt=""></div><!-- End Avatar -->
+                                    <div class="avatar"></div><!-- End Avatar -->
                                     <div class="instructor-info">
-                                        <p class="name">Linux (1 year)</p>
+                                        <p class="name"><img src="<?= SRC_URL ?>img/linux.png" class="img-responsive service-img" alt="">Linux (1 year)</p>
                                         <span class="position">INR 3500 / year</span>
 
                                     </div>
@@ -95,10 +95,10 @@
                             </div>
                             <div class="col-md-3 col-xs-6">
                                 <div class="instructor">
-                                    <div class="avatar"><img src="<?= SRC_URL ?>img/linux.png" class="img-responsive" alt=""></div><!-- End Avatar -->
+                                    <div class="avatar"></div><!-- End Avatar -->
                                     <div class="instructor-info">
-                                        <p class="name">Linux (3 year)</p>
-                                        <span class="position">INR 3,000 / year</span>
+                                        <p class="name"><img src="<?= SRC_URL ?>img/linux.png" class="img-responsive service-img" alt="">Linux (3 year)</p>
+                                        <span class="position"> INR 3,000 / year</span>
 
                                     </div>
                                 </div><!-- End Instructor Box -->
