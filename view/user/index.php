@@ -98,7 +98,7 @@
                                     <div class="avatar"></div><!-- End Avatar -->
                                     <div class="instructor-info">
                                         <p class="name"><img src="<?= SRC_URL ?>img/linux.png" class="img-responsive service-img" alt="">Linux (3 year)</p>
-                                        <span class="position"> INR 3,000 / year</span>
+                                        <span class="position">INR 3,000 / year</span>
 
                                     </div>
                                 </div><!-- End Instructor Box -->
