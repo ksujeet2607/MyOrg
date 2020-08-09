@@ -48,7 +48,7 @@ class User extends Session{
         $this->render(__FUNCTION__, $response);
     }
 
-    public function portfolio($param){
+    public function our_portfolio($param){
         define('SUBTITLE','Technets Portfolio');
         $response = $this->model->portfolioPageSrc($param);
         $this->render(__FUNCTION__, $response);
