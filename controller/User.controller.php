@@ -38,14 +38,22 @@ class User extends Session{
         $this->render(__FUNCTION__, $response);
     }
 
- public function meet_our_team($param){
+    public function meet_our_team($param){
         define('SUBTITLE','Technets Team');
         $this->render(__FUNCTION__, $response);
     }
 
-    public function enquiry($param){
+    public function visitors($param){
+      $response = $this->model->saveVisitors($_POST);
+      echo '1';
+    }
+
+    public function send_enquiry($param){
         $response = $this->model->saveEnquiry($param);
-        $this->render(__FUNCTION__, $response);
+        include('mail.controller.php');
+        $mail = new mail();
+        $mail->saveEnquiry($_POST);
+        $this->redirect(PUBLIC_URL."contact-us", "Thank You! We Will Get Back To You Soon.~suc");
     }
 
     public function our_portfolio($param){
@@ -59,7 +67,7 @@ class User extends Session{
         include('mail.controller.php');
         $mail = new mail();
         $mail->savefeedback($_POST);
-        $this->redirect(PUBLIC_URL, "Thank You For Your Valuable Feedback.~suc");
+        $this->redirect(PUBLIC_URL, "Thank You! For Your Valuable Feedback.~suc");
     }
 
 

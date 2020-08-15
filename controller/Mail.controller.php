@@ -67,40 +67,6 @@ class Mail extends Session {
 
     }
 
-    public function sendenquiry($data){
-        $from = strtolower($data['email']);
-        $mobile = $data['mobile'];
-        $msg = $data['msg'];
-        $name = $this->ucf($data['fname'])." ".$this->ucf($data['lname']);
-        //$to = EMAIL_FROM;
-        $to = parent::getSiteInfo('Email');
-        $message='<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e8e8e8" style="max-width:700px;border-collapse:collapse;border:1px solid #e2e0e0;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#3a3a3a;line-height:18px" align="center">';
-        $message.='<tbody><tr><td width="700px" valign="top" align="center"><table width="93%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr><td height="22"></td></tr><tr><td valign="top" align="center" bgcolor="#FFFFFF" style="border-radius:13px;">';
-        $message.='<table width="93%" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse"><tbody><tr><td height="25"></td></tr><tr><td valign="top"><table border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse"><tbody>';
-        $message.='<tr><td width="380" ><img src="'.SRC_URL.'img/logo@2x.jpg" alt="'. SITE_NAME.'" style="text-align:left;font-size:17px;font-style:italic;color:#ff3414" class="CToWUd"><span style="color: #ff3414;font-size:large;position: absolute;margin-left: 7px;">'.SITE_NAME.'</span></td></tr><tr><td ></td></tr>';
-        $message.='<tr><td height="10"></td></tr></tbody></table></td></tr><tr><td height="22"></td></tr>'
-                . '<tr><td>'
-                . '<p style="margin-left: 12px;">'
-                . '<b>An enuiry has been received on '.SITE_NAME.'.</p>'
-                . '<p style="margin-left: 12px;">Enquiry Detail: </p>'
-                . '<p style="margin-left: 12px;"><b>Name </b>:'.$name.' </p>'
-                . '<p style="margin-left: 12px;"><b>Mobile </b>:'.$mobile.' </p>'
-                . '<p style="margin-left: 12px;"><b>Email </b>:'.$from.' </p>'
-                . '<p style="margin-left: 12px;"><b>Message </b>:'.$msg.' </p>'
-                . '</td></tr>'
-                . '<tr><td height="10"></td></tr>'
-                . '<tr><td><p style="margin-left: 12px;"></p></td></tr>';
-        $message.='<tr><td height="10"></td></tr></tbody></table></td></tr>';
-        $message.='</tbody></table>';
-
-        $this->Obj->Subject = "Feedback on " . SITE_NAME;
-        $this->Obj->Body = $message;
-        $this->Obj->addAddress($to, SITE_NAME);
-        $this->Obj->send();
-        return true;
-
-    }
-
     public function savefeedback($data){
         $from = strtolower($data['email']);
         $mobile = $data['mobile'];
@@ -128,6 +94,42 @@ class Mail extends Session {
         $message.='</tbody></table>';
 
         $this->Obj->Subject = "Feedback on " . SITE_NAME;
+        $this->Obj->Body = $message;
+        $this->Obj->addAddress($to, SITE_NAME);
+        $this->Obj->send();
+        // die();
+        return true;
+
+    }
+
+    public function saveEnquiry($data){
+        $from = strtolower($data['email']);
+        $mobile = $data['mobile'];
+        $subject = $data['subject'];
+        $msg = $data['msg'];
+        $name = $this->ucf($data['fname']);
+        //$to = EMAIL_FROM;
+        $to = EMAIL_FROM;
+        $message='<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e8e8e8" style="max-width:700px;border-collapse:collapse;border:1px solid #e2e0e0;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#3a3a3a;line-height:18px" align="center">';
+        $message.='<tbody><tr><td width="700px" valign="top" align="center"><table width="93%" border="0" align="center" cellpadding="0" cellspacing="0"><tbody><tr><td height="22"></td></tr><tr><td valign="top" align="center" bgcolor="#FFFFFF" style="border-radius:13px;">';
+        $message.='<table width="93%" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse"><tbody><tr><td height="25"></td></tr><tr><td valign="top"><table border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse"><tbody>';
+        $message.='<tr><td width="380" ><img style="width:100%" src="'.SRC_URL.'img/logo@2x.jpg" alt="'. SITE_NAME.'" style="text-align:left;font-size:17px;font-style:italic;color:#ff3414" class="CToWUd"></td></tr><tr><td ></td></tr>';
+        $message.='<tr><td height="10"></td></tr></tbody></table></td></tr><tr><td height="22"></td></tr>'
+                . '<tr><td>'
+                . '<p style="margin-left: 12px;">'
+                . '<b>An enquiry has been received on '.SITE_NAME.'.</p>'
+                . '<p style="margin-left: 12px;">'.$subject.': </p>'
+                . '<p style="margin-left: 12px;"><b>Name </b>:'.$name.' </p>'
+                . '<p style="margin-left: 12px;"><b>Mobile </b>:'.$mobile.' </p>'
+                . '<p style="margin-left: 12px;"><b>Email </b>:'.$from.' </p>'
+                . '<p style="margin-left: 12px;"><b>Message </b>:'.$msg.' </p>'
+                . '</td></tr>'
+                . '<tr><td height="10"></td></tr>'
+                . '<tr><td><p style="margin-left: 12px;"></p></td></tr>';
+        $message.='<tr><td height="10"></td></tr></tbody></table></td></tr>';
+        $message.='</tbody></table>';
+
+        $this->Obj->Subject = "Enquiry on " . SITE_NAME;
         $this->Obj->Body = $message;
         $this->Obj->addAddress($to, SITE_NAME);
         $this->Obj->send();

@@ -4,7 +4,7 @@
                 <div class="container">
                     <h1 class="entry-title">We Wanna Hear From You!</h1>
                     <p class="description">
-                      We are ready to help you. Let us know what are your requirements. There is no challenge that we can't overcome!
+                      
                     </p>
                     <div class="breadcrumb">
                         <ul class="clearfix">

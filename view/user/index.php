@@ -78,7 +78,7 @@
                                     <div class="avatar"></div><!-- End Avatar -->
                                     <div class="instructor-info">
                                         <p class="name"><img src="<?= SRC_URL ?>img/windows.jpg" class="img-responsive service-img" alt="">Windows (3 year)</p>
-                                        <span class="position">INR 3,500/ years</span>
+                                        <span class="position">INR 3,500 / years</span>
 
                                     </div>
                                 </div><!-- End Instructor Box -->

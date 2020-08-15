@@ -161,13 +161,12 @@ if (!headers_sent($filename, $linenum)) {
     if($msg!=''){
     $msg = explode("~", $msg);
     $div = ($msg[1]=="suc")?"success":"danger";
-    $color = ($msg[1]=="suc")?MSG_SUC:MSG_ERR;
-    $fcolr = ($msg[1]=="suc")?"#fff":"#fff";
+    $fcolr = ($msg[1]=="suc")?MSG_SUC:MSG_ERR;
     $message = '<script>$(document).ready(function(){'
             .'$(".content-header").append(\'<div id="erralert" class="alert alert-'.$div.'" style="margin-bottom: 0px;">'
                 .'<span style="color: '.$fcolr.';">'.$msg[0].'</span>'
             .'</div>\');
-            setTimeout(function(){if($("#erralert").length > 0){$("#erralert").remove();}},3000);});
+            setTimeout(function(){if($("#erralert").length > 0){$("#erralert").remove();}},5000);});
         </script>';
     }
     $_SESSION["msg"]= $message;

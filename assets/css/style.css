@@ -4241,3 +4241,17 @@ header .main-navigation li.courses-menu li .single-item:hover .item-icon i {
 .service-img{
 	width: 50px;float: left;
 }
+.alert{
+	margin-bottom: 0px;
+	padding: 12px;
+	text-align: center;
+}
+.alert span{
+	color: #383c4b
+}
+.alert-success{
+    background: #9beca9;
+}
+.alert-danger{
+    background: rgb(236 155 155);;
+}

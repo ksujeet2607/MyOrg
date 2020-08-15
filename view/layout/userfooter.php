@@ -242,17 +242,28 @@
             $(document).ready(function(){
               $(document).on('ready', function(event) {
                 var ele = document.querySelector(".scroll-down a");
-                if (ele.hash !== "") {
-                  event.preventDefault();
-                  var hash = ele.hash;
-                  $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                  }, 2200, function(){
-                    window.location.hash = hash;
-                  });
+                if(ele !== undefined && ele !== null){
+                  if (ele.hash !== "") {
+                    event.preventDefault();
+                    var hash = ele.hash;
+                    $('html, body').animate({
+                      scrollTop: $(hash).offset().top
+                    }, 2200, function(){
+                      window.location.hash = hash;
+                    });
+                  }
                 }
               });
             });
         </script>
+        <?php echo Session::GetMessage(); ?>
+        <!-- <script>
+            $(document).ready(function(){
+                setTimeout(function(){
+                    if($("#erralert").length > 0){$("#erralert").remove();
+                    }
+                },3000);
+            });
+        </script> -->
     </body>
 </html>

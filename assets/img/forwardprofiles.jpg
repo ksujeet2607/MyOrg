@@ -1,0 +1,25 @@
+$(document).ready(function() { 		   
+		
+$('#btnsubmit').click(function(e){ 
+
+var xx=validation("#form-forwardprofiles");
+if(!xx)
+{
+	e.preventDefault();
+}else{
+    if($("#pid").val()==""){
+        	alert("Profiles Not selected.");
+                e.preventDefault();
+    }
+}
+});
+	$('.required').focus(function(){
+			//				  alert("fg");
+		var $parent =  $("#err"+$(this).attr("id"));//$(this).parent();
+		$parent.removeClass('error');
+		$('span.error',$parent).fadeOut();
+	});
+});
+	
+	
+

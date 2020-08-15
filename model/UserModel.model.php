@@ -14,10 +14,16 @@ class UserModel extends Base{
     }
 
 
+
     public function indexPageSrc($param){
         //$imgs = parent::getSliderImg($param);
         //$services = $this->db_executeReader("news", "*", "", "","","order by newsId DESC LIMIT 12",false);
         return $response = array("list",$rs,$about,$imgs);
+    }
+
+    public function saveVisitors($param){
+      $this->db_Insert("visitors","emailid,visit_date",$param['email']."~".date('Y-m-d H:i:s'));
+      
     }
 
     public function contactPageSrc($param){
@@ -42,7 +48,7 @@ class UserModel extends Base{
     public function saveEnquiry($param){
 
         return $response = array("list",$rs,$about,$imgs);
-        $about = $this->db_Insert("feedback", "name, email, mobile, subject, message, entrydate, readstatus", $values, $print_qry);
+        //$about = $this->db_Insert("feedback", "name, email, mobile, subject, message, entrydate, readstatus", $values, $print_qry);
     }
 
     private function getPortfolio($param){
