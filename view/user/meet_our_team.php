@@ -29,7 +29,7 @@ Our team is your team. When your mission is to be better, faster and smarter, yo
                     <div class="container">
                         <div class="row">
 
-                            <div class="col-md-4 col-xs-6">
+                            <div class="col-md-4 col-xs-6" style="margin-bottom:30px" >
                                 <div class="instructor">
                                     <div class="avatar"><img src="<?= SRC_URL ?>/img/team/gautam.jpg" class="img-responsive" style="width: 360px;" alt=""></div><!-- End Avatar -->
                                     <div class="instructor-info">
@@ -46,7 +46,7 @@ Our team is your team. When your mission is to be better, faster and smarter, yo
                                     </div>
                                 </div><!-- End Instructor Box -->
                             </div>
-                            <div class="col-md-4 col-xs-6">
+                            <div class="col-md-4 col-xs-6" style="margin-bottom:30px">
                                 <div class="instructor">
                                     <div class="avatar"><img src="<?= SRC_URL ?>/img/team/sujit.jpg" class="img-responsive" style="width: 360px;" alt=""></div><!-- End Avatar -->
                                     <div class="instructor-info">
@@ -63,7 +63,7 @@ Our team is your team. When your mission is to be better, faster and smarter, yo
                                     </div>
                                 </div><!-- End Instructor Box -->
                             </div>
-                            <div class="col-md-4 col-xs-6">
+                            <div class="col-md-4 col-xs-6" style="margin-bottom:30px">
                                 <div class="instructor">
                                     <div class="avatar"><img src="<?= SRC_URL ?>/img/team/adesh.jpg" class="img-responsive" alt="" style="width: 360px;"></div><!-- End Avatar -->
                                     <div class="instructor-info">
@@ -80,7 +80,57 @@ Our team is your team. When your mission is to be better, faster and smarter, yo
                                     </div>
                                 </div><!-- End Instructor Box -->
                             </div>
-
+                            <div class="col-md-4 col-xs-6" style="margin-bottom:30px">
+                                <div class="instructor">
+                                    <div class="avatar"><img src="<?= SRC_URL ?>/img/team/krishna.Jpg" class="img-responsive" alt="" style="width: 360px;"></div><!-- End Avatar -->
+                                    <div class="instructor-info">
+                                        <p class="name">Krishna</p>
+                                        <span class="position">Sr App Designer</span>
+                                        <div class="social-icons">
+                                            <ul class="clearfix">
+                                                <li><a href="#" class="fb-icon es-tr"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#" class="tw-icon es-tr"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#" class="gp-icon es-tr"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="#" class="in-icon es-tr"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!-- End Instructor Box -->
+                            </div>
+<div class="col-md-4 col-xs-6" style="margin-bottom:30px">
+                                <div class="instructor">
+                                    <div class="avatar"><img src="<?= SRC_URL ?>/img/team/sheetal.Jpg" class="img-responsive" alt="" style="width: 360px;"></div><!-- End Avatar -->
+                                    <div class="instructor-info">
+                                        <p class="name">Sheetal Singh</p>
+                                        <span class="position">Sr Web and Graphics Designer</span>
+                                        <div class="social-icons">
+                                            <ul class="clearfix">
+                                                <li><a href="#" class="fb-icon es-tr"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#" class="tw-icon es-tr"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#" class="gp-icon es-tr"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="#" class="in-icon es-tr"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!-- End Instructor Box -->
+                            </div>
+                            <div class="col-md-4 col-xs-6" style="margin-bottom:30px">
+                                <div class="instructor">
+                                    <div class="avatar"><img src="<?= SRC_URL ?>/img/team/tukaram.Jpg" class="img-responsive" alt="" style="width: 360px;"></div><!-- End Avatar -->
+                                    <div class="instructor-info">
+                                        <p class="name">Tukaram</p>
+                                        <span class="position">Web Designer</span>
+                                        <div class="social-icons">
+                                            <ul class="clearfix">
+                                                <li><a href="#" class="fb-icon es-tr"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#" class="tw-icon es-tr"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#" class="gp-icon es-tr"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="#" class="in-icon es-tr"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!-- End Instructor Box -->
+                            </div>
                         </div>
                     </div>
                 </div><!-- End Instructors Section Content -->

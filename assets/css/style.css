@@ -696,7 +696,7 @@ header.alt .mobile-navigation .mobile-btn span:after {
 	top: 0;
 	z-index: 21;
 	/* background: rgba(47, 51, 66, .9); */
-	background: rgb(47 51 66 / 44%)
+/*	background: rgb(47 51 66 / 44%)*/
 }
 .tp-banner > ul li .tp-caption, .fullscreen > ul li .tp-caption {
 	z-index: 22 !important;
