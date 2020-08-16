@@ -22,8 +22,12 @@ class UserModel extends Base{
     }
 
     public function saveVisitors($param){
-      $this->db_Insert("visitors","emailid,visit_date",$param['email']."~".date('Y-m-d H:i:s'));
-      
+      $rs = $this->db_Insert("visitors","emailid,visit_date",$param['email']."~".date('Y-m-d H:i:s'));
+      if($rs){
+        return true;
+      }else{
+        return false;
+      }
     }
 
     public function contactPageSrc($param){

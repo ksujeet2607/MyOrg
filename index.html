@@ -20,15 +20,15 @@
 	<div class="w3l-banner-layer">
 	<div class="container  text-center">
 			<div class="agileinfo-logo">
-                            <h1><a href="index.html"><img src="images/logo.png"></a></h1>
+        <h1><a href="index.html"><img src="images/logo.png"></a></h1>
 			</div>
 			<h2 class="txt-w3_agile">stay tuned <br>we're launching soon. </h2>
 			<span class="bar"></span>
 			<p>get notified once we launch.</p>
 			<div class="sub-form-wthree">
-				<form action="http://technets.in/visitors" method="post">
+				<form action="#" method="post">
 					<input type="email" name="email" size="30" required="" placeholder="Email">
-					<button class="btn1"><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
+					<button class="btn1" onclick=" return getNotify()"><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
 				</form>
 			</div>
 			<div class="agile_social_banner">
@@ -57,5 +57,19 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+
+function getNotify(){
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status== 200){
+			console.log(this.responseText);
+		}
+	}
+	xhttp.open("POST","http://technets.in/visitors", true);
+	xhttp.send();
+	return false;
+}
+
+
 </script>
 <!--End of Tawk.to Script-->

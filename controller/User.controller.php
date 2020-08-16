@@ -45,7 +45,12 @@ class User extends Session{
 
     public function visitors($param){
       $response = $this->model->saveVisitors($_POST);
-      echo '1';
+      if($response){
+        echo 'Thank You! We You Notify You on This Email As Soon As We Launch Technets.';
+      }else{
+        echo 'Thank You! We You Notify You on This Email.'
+      }
+
     }
 
     public function send_enquiry($param){
