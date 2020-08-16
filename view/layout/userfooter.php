@@ -42,7 +42,7 @@
                                 </p>
                                 <div class="contact-left">
                                     <div class="contact-form">
-                                        <form method="post" action="<?= PUBLIC_URL ?>send-feedback" id="contact-form">
+                                        <form method="post" action="<?= PUBLIC_URL ?>send-feedback" id="feedback-form">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="input">
