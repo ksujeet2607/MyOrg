@@ -14,7 +14,6 @@
 <!-- css files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
-<script src="http://technets.in/js/vendor/jquery-1.11.2.min.js"></script>
 <!-- /css files -->
 <body>
 	<div class="w3l-banner-layer">
@@ -24,7 +23,8 @@
 			</div>
 			<h2 class="txt-w3_agile">stay tuned <br>we're launching soon. </h2>
 			<span class="bar"></span>
-			<p>get notified once we launch.</p>
+			<p id="notify">get notified once we launch.</p>
+
 			<div class="sub-form-wthree">
 				<form action="#" method="post">
 					<input type="email" name="email" id="visit_email" size="30" required="" placeholder="Email">
@@ -60,15 +60,31 @@ s0.parentNode.insertBefore(s1,s0);
 
 function getNotify(){
 	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function(){
-		if(this.readyState == 4 && this.status== 200){
-			console.log(this.responseText);
-		}
-	}
-	xhttp.open("POST","http://technets.in/visitors", true);
-	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	var data = document.querySelector('#visit_email');
-	xhttp.send("email="+data);
+	var parent = document.getElementById("notify");
+	if(data.value !=""){
+		if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(data.value))
+	  {
+			xhttp.onreadystatechange = function(){
+				if(this.readyState == 4 && this.status== 200){
+					parent.innerHTML = this.responseText;
+					parent.style = 'color: green;background:#ffffff94;';
+					data.value = '';
+				}
+			}
+			xhttp.open("POST","http://technets.in/visitors", true);
+			xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xhttp.send("email="+data.value);
+	  }else{
+			parent.innerHTML = "Please Enter A Valid Email Address!";
+			parent.style = 'color: red;background:#ffffff94;';
+			data.focus();
+		}
+	}else{
+		parent.innerHTML = "Please Enter An Email Address!";
+		parent.style = 'color: red;background:#ffffff94;';
+		data.focus();
+	}
 	return false;
 }
 
