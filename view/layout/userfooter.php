@@ -46,24 +46,24 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="input">
-                                                        <input type="text" id="name" name="fname" class="name-input" placeholder="Your Name">
+                                                        <input type="text" id="name_fd" name="fname" class="name-input" placeholder="Your Name">
                                                     </div>
                                                 </div><!-- end name -->
 
                                                 <div class="col-md-6">
                                                     <div class="input">
-                                                        <input type="text" name="mobile" id="tel" class="tel-input" placeholder="Mobile/Phone">
+                                                        <input type="text" name="mobile" id="tel_fd" class="tel-input" placeholder="Mobile/Phone">
                                                     </div>
                                                 </div><!-- end phone -->
                                                 <div class="col-md-12">
                                                     <div class="input">
-                                                        <input type="email" name="email" id="email" class="email-input" placeholder="Email">
+                                                        <input type="email" name="email" id="email_fd" class="email-input" placeholder="Email">
                                                     </div>
                                                 </div><!-- end email -->
                                                 <div class="col-md-12">
                                                     <div class="input">
-                                                        <textarea name="msg" id="comment-area" placeholder="Comment"></textarea>
-                                                        <input type="submit" id="comment-submit" class="submit-input grad-btn ln-tr" value="Send">
+                                                        <textarea name="msg" id="comment-area_fd" placeholder="Comment"></textarea>
+                                                        <input type="submit" id="comment-submit_fd" class="submit-input grad-btn ln-tr" value="Send">
                                                     </div>
                                                 </div>
                                             </div><!-- end row -->

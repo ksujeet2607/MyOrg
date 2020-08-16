@@ -33,7 +33,7 @@ class User extends Session{
         $this->render(__FUNCTION__, $response);
     }
 
-     public function about_us($param){
+    public function about_us($param){
         define('SUBTITLE','About Technets');
         $this->render(__FUNCTION__, $response);
     }
@@ -59,6 +59,27 @@ class User extends Session{
         $mail = new mail();
         $mail->saveEnquiry($_POST);
         $this->redirect(PUBLIC_URL."contact-us", "Thank You! We Will Get Back To You Soon.~suc");
+    }
+
+    public function careers($param){
+        define('SUBTITLE','Career');
+        $response = $this->model->readOpennings($param);
+        $this->render(__FUNCTION__, $response);
+    }
+
+    public function post_resume($param){
+        $link = $this->uploadfile("resume",$this->generateRandomString(15). "_" . time(),
+                "assets/cv_resume/",
+         array("pdf", "doc", "docx"),
+         array("application/msword","application/word","application/pdf"), 10, 2048);
+         if($link=="N"){
+           $this->redirect(PUBLIC_URL."careers", "Upload Valid Files Only ( doc / docx / pdf).~err");
+           exit(0);
+         }
+         include('mail.controller.php');
+         $mail = new mail();
+         $mail->postResume($_POST);
+         $this->redirect(PUBLIC_URL."careers", "We acknowledge receipt of your resume and application and sincerely appreciate your interest in our company Technets.~suc");
     }
 
     public function our_portfolio($param){

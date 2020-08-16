@@ -26,8 +26,8 @@ define("SCANFILE", "scan");
 
 define("PROFILEPRE", "JMS");// Profile Prefix
 
-define('MSG_ERR', 'red');
-define('MSG_SUC', 'green');
+define('MSG_ERR', '#fff');
+define('MSG_SUC', '#fff');
 define('SITE_NAME', "TechNets");
 
 define('SMS_ID', "");

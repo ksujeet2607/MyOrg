@@ -635,16 +635,7 @@ class Base extends Dbfunction {
         if($error == 0){return true;}else{return false;}
     }
 
-   /////// Generates random string /////////////
-  function generateRandomString($length = 15) {
-    $characters = '0123456789-abcdefghijklmnopqrstuvwxyz_ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $charactersLength = strlen($characters);
-    $randomString = '';
-    for ($i = 0; $i < $length; $i++) {
-        $randomString .= $characters[rand(0, $charactersLength - 1)];
-    }
-    return $randomString;
-    }
+  
 
 
    // RETRIVE FIRST PARAGRAPH OF NEWS CONTENT //
@@ -685,7 +676,7 @@ class Base extends Dbfunction {
         }
         echo $res;
     }
-    
+
 
     public function getProfileInfo() {
         $id = $this->strip($_POST['profileId']);

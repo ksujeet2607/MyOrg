@@ -21,6 +21,12 @@ class UserModel extends Base{
         return $response = array("list",$rs,$about,$imgs);
     }
 
+    public function readOpennings($param){
+        //$imgs = parent::getSliderImg($param);
+        //$services = $this->db_executeReader("news", "*", "", "","","order by newsId DESC LIMIT 12",false);
+        return $response = array("list",$rs,$about,$imgs);
+    }
+
     public function saveVisitors($param){
       $rs = $this->db_Insert("visitors","emailid,visit_date",$param['email']."~".date('Y-m-d H:i:s'));
       if($rs){

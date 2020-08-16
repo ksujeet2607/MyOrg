@@ -11,6 +11,78 @@ class General  {
       return strtoupper(strtolower($string));
   }
 
+  /////// Generates random string /////////////
+ function generateRandomString($length = 15) {
+   $characters = '0123456789-abcdefghijklmnopqrstuvwxyz_ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+   $charactersLength = strlen($characters);
+   $randomString = '';
+   for ($i = 0; $i < $length; $i++) {
+       $randomString .= $characters[rand(0, $charactersLength - 1)];
+   }
+   return $randomString;
+ }
+
+  public function uploadfile($file = "",$filename_custem = "", $folder = "", $allowed_exts = "", $allowed_type = "", $minsize = 0, $maxsize = 0){
+
+      $filename = "N";
+
+      if ($_FILES[$file]["name"] != "") {
+
+        $ext = explode(".", $_FILES[$file]["name"]);
+
+        $extn = strtolower(end($ext));
+
+        if($filename_custem != ""){
+          $filename = $filename_custem.".".$extn;
+        }
+        else {
+            $filename = substr(str_replace(" ", "-", $ext[0]), 0, 10) . "_" . time() .".". $extn;
+        }
+
+        if (file_exists($folder . $filename)) {
+            unlink($folder . $filename);
+        }
+
+        $error = 0;
+
+        if (round(($_FILES[$file]["size"]) / 1024) < $minsize) {
+            $error++;
+        }
+
+        if (round(($_FILES[$file]["size"]) / 1024) > $maxsize) {
+            $error++;
+        }
+
+        if(is_array($allowed_type)){
+            $result = new finfo();
+            $mimefiletype=$result->file($_FILES[$file]["tmp_name"], FILEINFO_MIME_TYPE);
+            if (!in_array($mimefiletype, $allowed_type)) {
+                $error++;
+            }
+        }
+
+        if(is_array($allowed_exts)){
+            if (!in_array($extn, $allowed_exts)) {
+                $error++;
+            }
+        }
+
+        if($error == 0 ){
+            print_r($_FILES[$file]);
+            if(move_uploaded_file($_FILES[$file]["tmp_name"],$folder . $filename)){
+                $filename = $filename;
+            } else {
+                $filename = "N";
+            }
+        }else{
+           $filename = "N";
+        }
+
+      } else {
+        $filename = "N";
+      }
+      return $filename;
+  }
 
   public function excelHeader() {
       require('plugins/PHP-Excel/Classes/PHPExcel.php');
@@ -600,14 +672,14 @@ $out=file_get_contents("http://www.bit7sms.com/new/sendsmsapi.php",false,$contex
 
 }
 function sendemail($to="",$sub="",$msg){
-ini_set('SMTP','115.124.123.73');
-$headers =  "From: ".EMAIL_FROM."\r\n";
-$headers .= 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-//$headers .= "\r\nX-Mailer: PHP/" . phpversion();
-$subject = $sub;
-$message = $msg;
-return mail($to, $subject , $message ,$headers);
+  ini_set('SMTP','115.124.123.73');
+  $headers =  "From: ".EMAIL_FROM."\r\n";
+  $headers .= 'MIME-Version: 1.0' . "\r\n";
+  $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+  //$headers .= "\r\nX-Mailer: PHP/" . phpversion();
+  $subject = $sub;
+  $message = $msg;
+  return mail($to, $subject , $message ,$headers);
 }
 
 function mkstr($input){
