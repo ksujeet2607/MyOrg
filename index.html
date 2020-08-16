@@ -27,7 +27,7 @@
 			<p>get notified once we launch.</p>
 			<div class="sub-form-wthree">
 				<form action="#" method="post">
-					<input type="email" name="email" size="30" required="" placeholder="Email">
+					<input type="email" name="email" id="visit_email" size="30" required="" placeholder="Email">
 					<button class="btn1" onclick=" return getNotify()"><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
 				</form>
 			</div>
@@ -67,9 +67,8 @@ function getNotify(){
 	}
 	xhttp.open("POST","http://technets.in/visitors", true);
 	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	var form = document.querySelector('form');
-	var data = new FormData(form);
-	xhttp.send(data);
+	var data = document.querySelector('#visit_email');
+	xhttp.send("email="+data);
 	return false;
 }
 
