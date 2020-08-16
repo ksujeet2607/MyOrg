@@ -28,7 +28,7 @@
                                 <h5 class="contact-title ib">Let Us Know</h5>
                                 <div class="contact-text">
                                     <p>
-                                      Whether you’re looking to start your career or continue your professional career—Technets has a place for you. If you have a passion for technology, and are looking to grow in the field of innovative web technlogy, then Technets is the place to be.
+                                      Whether you’re looking to start your career or continue your professional career—Technets has a place for you. If you have a passion for technology, and are looking to grow in the field of innovative web technology, then Technets is the place to be.
                                     </p>
                                 </div><!-- End text -->
                                 <div class="contact-form">
