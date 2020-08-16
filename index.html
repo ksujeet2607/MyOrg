@@ -66,7 +66,10 @@ function getNotify(){
 		}
 	}
 	xhttp.open("POST","http://technets.in/visitors", true);
-	xhttp.send();
+	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	var form = document.querySelector('form');
+	var data = new FormData(form);
+	xhttp.send(data);
 	return false;
 }
 
