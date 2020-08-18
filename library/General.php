@@ -22,6 +22,8 @@ class General  {
    return $randomString;
  }
 
+
+////////////////// Upload files //////////////////////
   public function uploadfile($file = "",$filename_custem = "", $folder = "", $allowed_exts = "", $allowed_type = "", $minsize = 0, $maxsize = 0){
 
       $filename = "N";
@@ -126,6 +128,12 @@ class General  {
         return openssl_decrypt($encrypted_data, 'aes-256-cbc', $encryption_key, 0, $iv);
     }
 
+    /////////////////// Get Menu ////////////////////
+    public function getMenu($type) {
+       include_once 'view/menu/'.strtolower($type).'menu.php';
+    }
+
+    ////////////////// Render Views //////////////////////
     public function render($d, $response=array(), $layoutH="", $layoutF=""){
          $dir = strtolower(get_called_class());
          //echo  __DIR__."/../view/".$dir."/".$d.".php";

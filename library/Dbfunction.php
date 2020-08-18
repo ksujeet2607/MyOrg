@@ -17,7 +17,7 @@ class Dbfunction extends Session {
             $options = [
                         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                         PDO::ATTR_CASE => PDO::CASE_NATURAL,
-                        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+                        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_BOTH
                       ];
             $conn = new PDO("mysql:host=".$this->host.";dbname=".$this->db.";", $this->user, $this->pass,$options);
 
@@ -33,7 +33,7 @@ class Dbfunction extends Session {
 
     //********************// Select Multiple rows Values //**********************//
 
-    public function db_executeReader($table = "", $colomns = "", $join = "", $condition = "", $conditionArr="", $extra = "", $print_qry = false){
+    public function db_executeReader($table = "", $colomns = "", $join = "", $condition = "", $conditionArr=[], $extra = "", $print_qry = false){
 
         $qry = "select ".$colomns." from ".$table." ";
 
@@ -48,7 +48,7 @@ class Dbfunction extends Session {
         //die();
         $stmt = $this->conn->prepare($qry);
 
-        $stmt->execute([$conditionArr]);
+        $stmt->execute($conditionArr);
 
         return $stmt->fetchAll();
     }
@@ -60,7 +60,7 @@ class Dbfunction extends Session {
 
     //********************// Select Query //**********************//
 
-    public function db_execute($qryTxt, $print_qry = false){
+    public function db_execute($qryTxt, $valuearr= [], $print_qry = false){
 
         $qry = $qryTxt;
 
@@ -68,7 +68,7 @@ class Dbfunction extends Session {
 
         $stmt = $this->conn->prepare($qry);
 
-        $stmt->execute();
+        $stmt->execute($valuearr);
 
         //$this->conn = null;
 
@@ -105,7 +105,7 @@ class Dbfunction extends Session {
 
 
 /////****** Fetch Single Row ******/////
-    public function db_executeSingle($table = "", $colomn = "", $condition = "", $conditionArr = "", $extra = "", $print_qry = false){
+    public function db_executeSingle($table = "", $colomn = "", $condition = "", $conditionArr = [], $extra = "", $print_qry = false){
 
         $qry = "select ".$colomn." from ".$table." ";
 
@@ -115,9 +115,11 @@ class Dbfunction extends Session {
 
         if($print_qry){echo $qry;} // print query
 
+        print_r($conditionArr);
+
         $stmt = $this->conn->prepare($qry);
 
-        $stmt->execute([$conditionArr]);
+        $stmt->execute($conditionArr);
 
         $row = $stmt->fetch();
 

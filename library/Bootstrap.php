@@ -12,8 +12,8 @@ class Bootstrap {
        $this->loadExe();
     }
     private function loadExe(){
-        $controller = isset($this->url[0])?$this->url[0]:"u";
-        if($controller=='u')$controller='user';
+        $controller = isset($this->url[0])?ucfirst($this->url[0]):"u";
+        if($controller=='u')$controller='User';
         $noIndex = array();
         foreach (new DirectoryIterator(__DIR__.'/../controller') as $file) {
           if ($file->isFile()) {
@@ -23,12 +23,14 @@ class Bootstrap {
              }
           }
         }
-        if(!in_array($noIndex,$controller)){
-          $controller='user';
+        if(!in_array($controller,$noIndex)){
+          $controller='User';
         }// If no controller other than those it will take user controller
         $controller = ucfirst(file_exists("controller/".$controller.".controller.php")?$controller:"Errors");
+        // echo $controller." - ".$method;
+        // die();
         if(file_exists("model/".$controller."Model.model.php") && $controller!="Errors"){
-          require_once "model/".$controller."Model.model.php";
+          include_once "model/".$controller."Model.model.php";
           require_once "controller/".$controller.".controller.php";
         }else{// if selected controller not found
           $controller1 = "Errors";
@@ -37,7 +39,10 @@ class Bootstrap {
           $this->control->index("404");
           exit();
         }
-        if($controller!='Admin' && $controller!='Login' && $controller!='Seo'){// if controller is user then assiging right parameters and method
+
+
+
+        if(!in_array($controller, $noIndex)){// if controller is user then assiging right parameters and method
            if(isset($this->url[1])){// method
                $method = $this->url[1];
            }else{
@@ -67,6 +72,7 @@ class Bootstrap {
           }
         }
         $method = preg_replace('/[-]/', '_', $method);
+
         $this->control = new $controller($method,$params);
         if(method_exists($controller, $method)){// If method does not exits in selected controller run error controller
             if($controller == "Errors")$params=404;

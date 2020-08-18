@@ -269,41 +269,6 @@ class Base extends Dbfunction {
         echo ($valid > 0)?"yes":"no";
     }
 
-
-    public function checkadminlogininfo($bypage="login"){
-        extract($_POST);
-
-        $valid = $this->db_executeSingle("Login", "COUNT(ID)", "LoginID='".$this->strip($userid)."' AND LoginPS = '".$this->strip($password)."' ","",FALSE) ;
-        if($valid > 0){
-            $rs = $this->db_execute("select * from Login where LoginID='".$this->strip($userid)."' AND LoginPS = '".$this->strip($password)."' ",FALSE);
-            $result = $this->db_read($rs);
-            $user =  ucfirst(strtolower(str_replace(" ","",$result['type'])));
-            auth::Create_Session($result['LoginID'],$user,$result['ID'],$result['DisplayName'],$result['role']);
-            $res = true;
-        }else{
-            $res = FALSE;
-        }
-
-        return $res;
-    }
-
-    public function checkmemberlogininfo($bypage="login"){
-        extract($_POST);
-
-        $valid = $this->db_executeSingle("profile", "COUNT(ID)", "LoginID='".$this->strip($userid)."' AND password = '".$this->strip($password)."' ","",FALSE) ;
-        if($valid > 0){
-            $rs = $this->db_execute("select LoginID,id from profile where LoginID='".$this->strip($userid)."' AND password = '".$this->strip($password)."' ",FALSE);
-            $result = $this->db_read($rs);
-            $user =  ucfirst(strtolower(str_replace(" ","",$result['type'])));
-            auth::Create_Session_Public($result['LoginID'],'member');
-            $res = true;
-        }else{
-            $res = FALSE;
-        }
-
-        return $res;
-    }
-
     public function isloginvalid($user="admin"){
         if(!$this->IsSessionValid($user)){
            $msg = "<p".MSG_ERR.">Session Expired.</p>";
@@ -312,15 +277,6 @@ class Base extends Dbfunction {
         }else{
             return TRUE;
         }
-    }
-
-
-     public function getMenu() {
-      $type = auth::Get_userType();
-      $type = ($type=="adminuser")?"admin":$type;
-      $home = $type."home.php";
-      $d = '../view/menu/'.strtolower($type).'menu.php';
-      $this->render($d,$home);
     }
 
     public function getGroupId(){
@@ -635,7 +591,7 @@ class Base extends Dbfunction {
         if($error == 0){return true;}else{return false;}
     }
 
-  
+
 
 
    // RETRIVE FIRST PARAGRAPH OF NEWS CONTENT //

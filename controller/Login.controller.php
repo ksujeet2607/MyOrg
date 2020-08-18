@@ -14,11 +14,15 @@
 class Login extends Session{
     //put your code here
     public  $params;
+    protected  $userid;
+    protected  $usertype;
+    protected  $model;
+    public static $menu;
 
-    function __construct($model,$method,$params) {
-        parent::__construct();
+    function __construct($method,$params) {
         $this->params = $params;
-
+        $this->model = new LoginModel();
+        self::$menu = $method;
     }
 
     public function index($response){
@@ -32,7 +36,7 @@ class Login extends Session{
 
     public function login($param){
        if($this->is_not_empty($_POST,"userid~@~password")){
-            if(!$this->checkadminlogininfo()){
+            if(!$this->model->checkadminlogininfo()){
                $msg = "Worng Id or Password.~err";
                $page = BASE_URL."login/";
             }else{
@@ -52,7 +56,7 @@ class Login extends Session{
 
     public function memberlogin($param){
        if($this->is_not_empty($_POST,"userid~@~password")){
-            if(!$this->checkmemberlogininfo()){
+            if(!$this->model->checkmemberlogininfo()){
                $msg = "Worng Id or Password.~err";
                $page = PUBLIC_URL."index?lgerr";
             }else{
@@ -68,9 +72,27 @@ class Login extends Session{
          $this->redirect($page,$msg);
     }
 
+    public function seologin($param){
+       if($this->is_not_empty($_POST,"userid~@~password")){
+            if(!$this->model->checkseologininfo()){
+               $msg = "Worng Id or Password.~err";
+               $page = BASE_URL."seo/index?lgerr";
+            }else{
+
+               $msg = "";
+               $page = BASE_URL."seo/seohome";
+
+            }
+         }else{
+             $msg = "Invalid input.~err";
+             $page = "index";
+         }
+         $this->redirect($page,$msg);
+    }
+
     public function logout($param) {
         auth::DestroySess($param[0]);
-        $this->redirect(PUBLIC_URL."index?lgerr", "Logged out!!~suc");
+        $this->redirect(PUBLIC_URL."seo", "Logged out!!~suc");
     }
 
 }
