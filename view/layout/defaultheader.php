@@ -33,7 +33,7 @@
                     <ul>
                         <li data-transition="random" data-slotamount="7" data-masterspeed="1500">
                             <!-- MAIN IMAGE -->
-                            <img src="<?= SRC_URL ?>img/maze-1804499_1920.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                            <img src="<?= SRC_URL ?>img/slider1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                             <!-- LAYERS -->
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption lft skewtoleft tp-resizeme start white"
@@ -65,10 +65,10 @@
                             </div>
                         </li><!-- end 1st slide -->
                         <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
-                            <!-- MAIN IMAGE -->
-                            <img src="<?= SRC_URL ?>img/innovation-5161494_1920.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-                            <!-- LAYERS -->
-                            <!-- LAYER NR. 1 -->
+<!--                             MAIN IMAGE -->
+                            <img src="<?= SRC_URL ?>img/slider2.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+<!--                             LAYERS 
+                             LAYER NR. 1 -->
                             <div class="tp-caption lft skewtoleft tp-resizeme start white"
                                 data-y="210"
                                 data-x="center"
@@ -81,7 +81,7 @@
                                 style="z-index: 2">
 <!--                                <h2 class="slide-title">We Help You To Get What You Want!</h2>-->
                             </div>
-                            <!-- LAYER NR. 2 -->
+<!--                             LAYER NR. 2 -->
                             <div class="tp-caption black randomrotate skewtoleft tp-resizeme start"
                                 data-x="center"
                                 data-hoffset="0"
@@ -96,12 +96,11 @@
                                 data-endspeed="500" style="z-index: 99; white-space: pre-line;">
 <!--                                <p class="slide-description">Every professional wants his/her own identity into the virtual world. The best way is to have our own virtual world. Let the world visit to you. </p>-->
                             </div>
-                        </li><!-- end 2nd slide -->
+                        </li> 
                         <li data-transition="random" data-slotamount="7" data-masterspeed="1500">
-                            <!-- MAIN IMAGE -->
-                            <img src="<?= SRC_URL ?>img/puzzle-1686920_1920.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-                            <!-- LAYERS -->
-                            <!-- LAYER NR. 1 -->
+                         
+                            <img src="<?= SRC_URL ?>img/slider3.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                           
                             <div class="tp-caption lft skewtoleft tp-resizeme start white"
                                 data-y="210"
                                 data-x="center"
@@ -114,7 +113,7 @@
                                 style="z-index: 2">
 <!--                                <h2 class="slide-title">Let us to build your profession in virtual world!</h2>-->
                             </div>
-                            <!-- LAYER NR. 2 -->
+                            
                             <div class="tp-caption black randomrotate skewtoleft tp-resizeme start"
                                 data-x="center"
                                 data-hoffset="0"
@@ -129,7 +128,7 @@
                                 data-endspeed="500" style="z-index: 99; white-space: pre-line;">
 <!--                                <p class="slide-description">We will provide you the best product, within a time schedule.</p>-->
                             </div>
-                        </li><!-- end 3rd slide -->
+                        </li> 
                     </ul><!-- end ul elements -->
                     <div class="scroll-down">
                         <a href="#header">
