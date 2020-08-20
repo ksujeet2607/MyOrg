@@ -4,54 +4,54 @@
                                 <a href="<?= BASE_URL ?>" class="ln-tr">Home</a>
                             </li>
                             <li class="parent-item haschild <?= (mb_strtolower(User::$menu) == 'services')?"current_page_item":"" ?> courses-menu">
-                                <a href="<?= PUBLIC_URL ?>services" class="ln-tr">Services</a>
+                                <a href="#" class="ln-tr">Services</a>
                                 <ul class="clearfix">
                                     <li class="course-menu-item col-md-3 col-sm-4">
                                         <div class="single-item">
                                             <span class="item-icon"><img src="<?= SRC_URL ?>img/icon1.png" class="services_img" alt="" style=""></span>
-                                            <a href="10-courses-grid-1.html" class="ln-tr link">Web Development</a>
+                                            <a href="<?= PUBLIC_URL ?>web-development" class="ln-tr link">Web Development</a>
                                         </div>
                                     </li><!-- end course menu item -->
                                     <li class="course-menu-item col-md-3 col-sm-4">
                                         <div class="single-item">
                                             <span class="item-icon"><img src="<?= SRC_URL ?>img/icon6.png" class="services_img" alt="" style=""></span>
-                                            <a href="10-courses-grid-1.html" class="ln-tr link">Mobile Application</a>
+                                            <a href="<?= PUBLIC_URL ?>mobile-application" class="ln-tr link">Mobile Application</a>
                                         </div>
                                     </li><!-- end course menu item -->
                                     <li class="course-menu-item col-md-3 col-sm-4">
                                         <div class="single-item">
                                             <span class="item-icon"><img src="<?= SRC_URL ?>img/icon5.png" class="services_img" alt="" style=""></span>
-                                            <a href="10-courses-grid-1.html" class="ln-tr link">E-commerse Services</a>
+                                            <a href="<?= PUBLIC_URL ?>e-commerse-services" class="ln-tr link">E-commerse Services</a>
                                         </div>
                                     </li><!-- end course menu item -->
                                     <li class="course-menu-item col-md-3 col-sm-4">
                                         <div class="single-item">
                                             <span class="item-icon"><img src="<?= SRC_URL ?>img/icon4.png" class="services_img" alt="" style=""></span>
-                                            <a href="10-courses-grid-1.html" class="ln-tr link">Domain / Hosting</a>
+                                            <a href="<?= PUBLIC_URL ?>domain-hosting" class="ln-tr link">Domain / Hosting</a>
                                         </div>
                                     </li>
                                     <li class="course-menu-item col-md-3 col-sm-4">
                                         <div class="single-item">
                                             <span class="item-icon"><img src="<?= SRC_URL ?>img/icon8.png" class="services_img" alt="" style=""></span>
-                                            <a href="10-courses-grid-1.html" class="ln-tr link">UI / XI Design</a>
+                                            <a href="<?= PUBLIC_URL ?>ui-xi-Design" class="ln-tr link">UI / XI Design</a>
                                         </div>
                                     </li><!-- end course menu item -->
                                     <li class="course-menu-item col-md-3 col-sm-4">
                                         <div class="single-item">
                                             <span class="item-icon"><img src="<?= SRC_URL ?>img/icon7.png" class="services_img" alt="" style=""></span>
-                                            <a href="10-courses-grid-1.html" class="ln-tr link">SEO</a>
+                                            <a href="<?= PUBLIC_URL ?>seo" class="ln-tr link">SEO</a>
                                         </div>
                                     </li><!-- end course menu item -->
                                     <li class="course-menu-item col-md-3 col-sm-4">
                                         <div class="single-item">
                                             <span class="item-icon"><img src="<?= SRC_URL ?>img/icon9.png" class="services_img" alt="" style=""></span>
-                                            <a href="10-courses-grid-1.html" class="ln-tr link">Bulk SMS</a>
+                                            <a href="<?= PUBLIC_URL ?>bulk-sms" class="ln-tr link">Bulk SMS</a>
                                         </div>
                                     </li><!-- end course menu item -->
                                     <li class="course-menu-item col-md-3 col-sm-4">
                                         <div class="single-item">
                                             <span class="item-icon"><img src="<?= SRC_URL ?>img/icon10.png" class="services_img" alt="" style=""></span>
-                                            <a href="10-courses-grid-1.html" class="ln-tr link">API Intigration</a>
+                                            <a href="<?= PUBLIC_URL ?>api-intigration" class="ln-tr link">API Intigration</a>
                                         </div>
                                     </li><!-- end course menu item -->
                                 </ul><!-- end courses menu -->
