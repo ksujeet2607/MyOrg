@@ -36,6 +36,12 @@ class User extends Session{
         $this->render(__FUNCTION__, $response);
     }
     
+     public function web_development($param){
+        define('SUBTITLE','Web Development');
+        $this->render(__FUNCTION__, $response);
+    }
+    
+    
  public function meet_our_team($param){
         define('SUBTITLE','Technets Team');
         $this->render(__FUNCTION__, $response);
