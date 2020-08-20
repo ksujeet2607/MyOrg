@@ -20,6 +20,12 @@
 
   <link rel="stylesheet" href="<?php echo SRC_URL ?>css/bootstrap-datepicker.css">
 
+  <!-- FAV & Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="<?= SRC_URL ?>img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?= SRC_URL ?>img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?= SRC_URL ?>img/icons/favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+
   <link rel="stylesheet" href="<?php echo SRC_URL ?>css/combobox/kendo.common-material.min.css" />
     <link rel="stylesheet" href="<?php echo SRC_URL ?>css/combobox/kendo.material.min.css" />
     <link rel="stylesheet" href="<?php echo SRC_URL ?>css/combobox/kendo.material.mobile.min.css" />
