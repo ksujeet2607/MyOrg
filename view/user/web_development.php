@@ -1,6 +1,6 @@
 
 <style>
-    
+
 </style>
             <div class="inner-head">
                 <div class="container">
@@ -11,7 +11,7 @@
                     <div class="breadcrumb">
                         <ul class="clearfix">
                             <li class="ib"><a href="">Home</a></li>
-                         
+
                             <li class="ib current-page"><a href="">Web Development</a></li>
                         </ul>
                     </div>
@@ -25,15 +25,19 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-7">
-                               
+
                                 <div class="description">
                                     <p style="text-align:justify">
                                         We plan and create the features and functionality that make your vision a reality. At the end, you’ll get a customized content management system tailored to user needs.<br>
                                         Our experts in agile software development work with you to create elegant and highly functional web solutions that are delivered on-time and on-budget. We take on partners, not clients. Our team is proactive, inventive and genuinely care about the challenges and goals for you AND your users. You are an integral part of the entire process so we work together to advise, suggest, and test as we build your application.
                                     </p>
-                                   
-                                    <p style="text-align:justify;margin-top:20px;"> <i class="fa fa-check" style="color:#73EB88;"></i> <span style="font-weight:600;">Creating device-agnostic solutions.</span> We deliver functional, convenient, and visually compelling HTML5/JavaScript applications that offer end users invariably perfect experience across desktops, smartphones, and tablets.</p>
-<p style="text-align:justify;margin-top:20px;"> <i class="fa fa-check" style="color:#73EB88;"></i> <span style="font-weight:600;text-align:justify">Reworking outdated apps.</span> We can modernize or completely redesign unfriendly and old-fashioned web interfaces in order to align them with the evolving needs of end users and current technologies.</p>
+
+                                    <p style="text-align:justify;margin-top:20px;">
+                                      <i class="fa fa-check" style="color:#73EB88;"></i>
+                                      <span style="font-weight:600;">Creating device-agnostic solutions.</span> We deliver functional, convenient, and visually compelling HTML5/JavaScript applications that offer end users invariably perfect experience across desktops, smartphones, and tablets.</p>
+                                    <p style="text-align:justify;margin-top:20px;">
+                                      <i class="fa fa-check" style="color:#73EB88;"></i>
+                                      <span style="font-weight:600;text-align:justify">Reworking outdated apps.</span> We can modernize or completely redesign unfriendly and old-fashioned web interfaces in order to align them with the evolving needs of end users and current technologies.</p>
                                 </div>
                             </div>
                             <div class="col-md-5" style="text-align:right">
@@ -41,7 +45,7 @@
                                     <div class="main-img"><img class="img-responsive" src="<?= SRC_URL ?>img/web-development.jpg" alt=""></div><!-- Main Image -->
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div><!-- End Text & Image Section Content -->
@@ -57,35 +61,36 @@
                         <div class="row">
                             <div class="col-md-4 col-xs-12 col-sm-12">
                                 <div class="instructor">
-                                    <div class=""><img src="<?= SRC_URL ?>img/Consistent.png" class="img-responsive"  alt="" style="height:127px;;padding-left: 97px;"></div><!-- End Avatar -->
-                                    <div class="instructor-info" style="background: none;padding: 27px 20px 30px;">
+                                    <div class="">
+                                      <img src="<?= SRC_URL ?>img/Consistent.png" class="img-responsive"  alt="" style="height:127px;margin:auto"></div><!-- End Avatar -->
+                                    <div class="instructor-info" style="background: none;">
                                         <p class="name">Consistent</p>
-                                        <span class="position" style="text-align: center;line-height: 20px;padding:0px 10px 0px 10px">Our team has brought their A-game to over 100 projects. We will quickly put together a cross-functional scrum team ready to turn your ideas into remarkable web applications and do it on time.</span>
-                                        
+                                        <span class="position" style="text-align: justify;line-height: 20px;">Our team has brought their A-game to over 100 projects. We will quickly put together a cross-functional scrum team ready to turn your ideas into remarkable web applications and do it on time.</span>
+
                                     </div>
                                 </div><!-- End Instructor Box -->
                             </div>
                             <div class="col-md-4 col-xs-12 col-sm-12">
                                 <div class="instructor">
-                                    <div class=""><img src="<?= SRC_URL ?>img/Reliable.png" class="img-responsive" alt="" style="height: 100%;padding-left: 105px;"></div><!-- End Avatar -->
-                                    <div class="instructor-info" style="background: none;padding: 27px 20px 30px;">
+                                    <div class=""><img src="<?= SRC_URL ?>img/Reliable.png" class="img-responsive" alt="" style="height: 100%;margin:auto"></div><!-- End Avatar -->
+                                    <div class="instructor-info" style="background: none;">
                                         <p class="name">Reliable</p>
-                                        <span class="position" style="text-align: center;line-height: 20px;padding:0px 10px 0px 10px">We are capable, not overconfident. Our agency rates are very competitive across North America. We align expectations around budget and timeline early on, and don’t make promises we can’t keep.</span>
-                                        
+                                        <span class="position" style="text-align: justify;line-height: 20px;">We are capable, not overconfident. Our agency rates are very competitive across North America. We align expectations around budget and timeline early on, and don’t make promises we can’t keep.</span>
+
                                     </div>
                                 </div><!-- End Instructor Box -->
                             </div>
                             <div class="col-md-4 col-xs-12 col-sm-12">
                                 <div class="instructor">
-                                    <div class=""><img src="<?= SRC_URL ?>img/Integrated.png" class="img-responsive" alt="" style="height: 100%;padding-left: 105px;"></div><!-- End Avatar -->
-                                    <div class="instructor-info" style="background: none;padding: 27px 20px 30px;">
+                                    <div class=""><img src="<?= SRC_URL ?>img/Integrated.png" class="img-responsive" alt="" style="height: 100%;margin:auto"></div><!-- End Avatar -->
+                                    <div class="instructor-info" style="background: none;">
                                         <p class="name">Integrated</p>
-                                        <span class="position" style="text-align: center;line-height: 20px;padding:0px 10px 0px 10px">Need a web app that integrates with or improves your existing website or other technology? We create custom solutions for a seamless experience that improves performance but stays familiar.</span>
-                                       
+                                        <span class="position" style="text-align: justify;line-height: 20px;">Need a web app that integrates with or improves your existing website or other technology? We create custom solutions for a seamless experience that improves performance but stays familiar.</span>
+
                                     </div>
                                 </div><!-- End Instructor Box -->
                             </div>
-                           
+
                         </div>
                     </div>
                 </div><!-- End Instructors Section Content -->
@@ -94,34 +99,34 @@
               <section class="instructors-section"style="border:0px;">
                 <div class="container">
                      <h1 class="h1-title" style="color:#353a48;margin-bottom:30px;">TECHNOLOGIES</h1>
-                     <p class="section-description" style="padding-left:100px;padding-right:100px;margin-bottom:30px;">
+                     <p class="section-description service-des" style="margin-bottom:30px;">
                         Technets technology competency goes far beyond what is typically expected of “a web app development company”. Our long-established technology competencies are centered around
                     </p><!-- End Section Description -->
                 </div>
                   <div class="section-content instructors-content fadeInDown-animation" style="margin-bottom:30px;">
                     <div class="container">
                         <div class="row">
-                            
+
                             <div class="col-md-2 col-xs-12 col-sm-12">
-                                <div class=""><img src="<?= SRC_URL ?>img/technology/php.JPG" class="img-responsive"  alt="PHP" title="PHP"></div><!-- End Avatar -->
+                                <div class="img-srv"><img src="<?= SRC_URL ?>img/technology/php.JPG" class="img-responsive"  alt="PHP" title="PHP"></div><!-- End Avatar -->
                             </div>
                             <div class="col-md-2 col-xs-12 col-sm-12">
-                                <div class=""><img src="<?= SRC_URL ?>img/technology/opencart.JPG" class="img-responsive"  alt="Open Cart" title="Open Cart"></div><!-- End Avatar -->
+                                <div class="img-srv"><img src="<?= SRC_URL ?>img/technology/opencart.JPG" class="img-responsive"  alt="Open Cart" title="Open Cart"></div><!-- End Avatar -->
                             </div>
                              <div class="col-md-2 col-xs-12 col-sm-12">
-                                 <div class=""><img src="<?= SRC_URL ?>img/technology/maznto.JPG" class="img-responsive"  alt="Maznto" title="Maznto"></div><!-- End Avatar -->
+                                 <div class="img-srv"><img src="<?= SRC_URL ?>img/technology/maznto.JPG" class="img-responsive"  alt="Maznto" title="Maznto"></div><!-- End Avatar -->
                             </div>
                              <div class="col-md-2 col-xs-12 col-sm-12">
-                                 <div class=""><img src="<?= SRC_URL ?>img/technology/cognitor.JPG" class="img-responsive"  alt="Cognitor" title="Cognitor"></div><!-- End Avatar -->
+                                 <div class="img-srv"><img src="<?= SRC_URL ?>img/technology/cognitor.JPG" class="img-responsive"  alt="Cognitor" title="Cognitor"></div><!-- End Avatar -->
                             </div>
                              <div class="col-md-2 col-xs-12 col-sm-12">
-                                 <div class=""><img src="<?= SRC_URL ?>img/technology/frontend.JPG" class="img-responsive"  alt="Front-end" title="Front-end"></div><!-- End Avatar -->
+                                 <div class="img-srv"><img src="<?= SRC_URL ?>img/technology/frontend.JPG" class="img-responsive"  alt="Front-end" title="Front-end"></div><!-- End Avatar -->
                             </div>
                              <div class="col-md-2 col-xs-12 col-sm-12">
-                                 <div class=""><img src="<?= SRC_URL ?>img/technology/wordpress.JPG" class="img-responsive"  alt="Wordpress" title="Wordpress" ></div><!-- End Avatar -->
+                                 <div class="img-srv"><img src="<?= SRC_URL ?>img/technology/wordpress.JPG" class="img-responsive"  alt="Wordpress" title="Wordpress" ></div><!-- End Avatar -->
                             </div>
-                            
-                           
+
+
                         </div>
                     </div>
                 </div><!-- End Instructors Section Content -->
@@ -205,7 +210,6 @@
  </ul>
 </div>
 </section>-->
-            
-            
-            <div class="clearfix"></div>
 
+
+            <div class="clearfix"></div>

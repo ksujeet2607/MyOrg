@@ -841,9 +841,9 @@ header.alt .mobile-navigation .mobile-btn span:after {
 	margin-bottom: 11px;
 }
 .instructor-info .position {
-	font-size: 12px;
-	color: #03346b;
-	/* color: #5a5e6a; */
+	font-size: 13px;
+	/* color: #03346b; */
+	color: #5a5e6a;
 	display: block;
 	margin-bottom: 26px;
 }
@@ -1582,7 +1582,7 @@ h6.head-title {
 	position: relative;
 	text-align: center;
 	padding: 60px
-	
+
 }
 
 
@@ -4263,4 +4263,10 @@ header .main-navigation li.courses-menu li .single-item:hover .item-icon i {
 }
 .alert-danger{
     background: rgb(236 155 155);;
+}
+.img-srv{
+	margin-bottom: 10px;
+}
+.img-srv img{
+	margin: auto;
 }

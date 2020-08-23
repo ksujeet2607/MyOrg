@@ -2,6 +2,11 @@
 
 @media only screen and (max-width : 1200px) {
 
+  .service-des{
+		padding-left:100px;padding-right:100px;
+	}
+
+
 	.boxed, .boxed-2 {
 		width: 990px;
 	}
@@ -229,7 +234,7 @@
 		padding: 50px 0;
 	}
 	.post {
-		padding-top: 50px;	
+		padding-top: 50px;
 	}
 	.instructors-page {
 		padding: 20px 0 50px;
@@ -497,7 +502,7 @@
 	}
 
 	/*========== 45 - Soon ==========*/
-	
+
 	.coming-soon {
 		padding: 50px 0;
 	}
@@ -519,7 +524,13 @@
 /* Small Devices, Tablets **************************************************/
 
 @media only screen and (max-width : 768px) {
-	
+
+	.service-des {
+    padding-left: 0;
+    padding-right: 0px;
+    text-align: justify;
+	}
+
 	.demo_navigation {
 		display: none;
 	}
@@ -690,7 +701,7 @@
 	}
 
 	/*========== 45 - Soon ==========*/
-	
+
 	.countdown div {
 		width: 100px;
 		height: 100px;

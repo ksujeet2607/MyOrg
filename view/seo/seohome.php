@@ -152,7 +152,7 @@ function addrow(tagname, tagvalue, tagcontent, tagid){
                         '</div>'+
                         '<div class=" col-md-3">'+
                             '<div class=" form-group">'+
-                                '<label>Tag Name/Property (E.g googlebot, robots)</label>'+
+                                '<label>Tag Name/Property Value</label>'+
                                 '<input class=" form-control" name="metaname['+$elecount+']"  value="'+tagvalue+'">'+
                             '</div>'+
                         '</div>'+
