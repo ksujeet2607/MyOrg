@@ -15,7 +15,7 @@
   <img class="modal-content" style=" text-align: center" id="">
      <div id="divLoading" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%;  z-index: 30001;">
         <p id="loderimg" style="position: absolute; color: White; top: 50%; left: 40%;">
-            Sending verification mail on this mail-id, please wait...
+            Loading Meta Data, please wait...
         <img class=".loading-image" src="<?php echo BASE_URL ?>assets/img/loader.gif">
         </p>
         <p id="emailfailed" style=" position: absolute; color: red; top: 53%; left: 45%;"></p>
