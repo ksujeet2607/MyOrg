@@ -39,11 +39,19 @@ class Dbfunction   {
 
         if(trim($join) != ""){$qry .= " ".$join." ";}
 
-        if(trim($condition) != ""){$qry .= " where (".$condition.") ";}
+        if(trim($condition) != ""){
+          $pos = $this->strpos_all($condition, "?");
+          for($i=0; $i < count($pos); $i++){
+            $cond = substr_replace($condition,"'".$conditionArr[$i]."'",$pos[$i],1);
+          }
+          $read_qry = $qry;
+          $qry .= " where (".$condition.") ";
+          $read_qry .= " where (".$cond.") ";
+        }
 
-        if(trim($extra) != ""){$qry .= " ".$extra." ";}
+        if(trim($extra) != ""){$qry .= " ".$extra." ";$read_qry .= " ".$extra." ";}
 
-        if($print_qry){echo $qry;} // print query
+        if($print_qry){echo $read_qry;} // print query
         //echo $qry;
         //die();
         $stmt = $this->conn->prepare($qry);
@@ -63,8 +71,11 @@ class Dbfunction   {
     public function db_execute($qryTxt, $valuearr= [], $print_qry = false){
 
         $qry = $qryTxt;
-
-        if($print_qry){echo $qry;} // print query
+        $pos = $this->strpos_all($qry, "?");
+        for($i=0; $i < count($pos); $i++){
+          $read_qry = substr_replace($qry,"'".$valuearr[$i]."'",$pos[$i],1);
+        }
+        if($print_qry){echo $read_qry;} // print query
 
         $stmt = $this->conn->prepare($qry);
 
@@ -80,9 +91,12 @@ class Dbfunction   {
     public function db_executeSingleQuery($QryString = "", $PrepareArr=[],$print_qry = false){
 
         $qry = $QryString;
+        $pos = $this->strpos_all($qry, "?");
+        for($i=0; $i < count($pos); $i++){
+          $read_qry = substr_replace($qry,"'".$PrepareArr[$i]."'",$pos[$i],1);
+        }
 
-
-        if($print_qry){echo $qry;} // print query
+        if($print_qry){echo $read_qry;} // print query
 
         $stmt = $this->conn->prepare($qry);
 
@@ -110,11 +124,19 @@ class Dbfunction   {
 
         $qry = "select ".$colomn." from ".$table." ";
 
-        if(trim($condition) != ""){$qry .= " where (".$condition.") ";}
+        if(trim($condition) != ""){
+          $pos = $this->strpos_all($condition, "?");
+          for($i=0; $i < count($pos); $i++){
+            $cond = substr_replace($condition,"'".$conditionArr[$i]."'",$pos[$i],1);
+          }
+          $read_qry = $qry;
+          $qry .= " where (".$condition.") ";
+          $read_qry .= " where (".$cond.") ";
+        }
 
         if(trim($extra) != ""){$qry .= " ".$extra." ";}
 
-        if($print_qry){echo $qry;} // print query
+        if($print_qry){echo $read_qry;} // print query
 
         $stmt = $this->conn->prepare($qry);
 
@@ -150,33 +172,28 @@ class Dbfunction   {
 
             $qry .= $field.' = ?';
 
-            $read_qry .= $field.' = '.$conditionArr[$key];
+            $read_qry .= $field.' = \''.$conditionArr[$key].'\'';
 
           } else {
 
             $qry .= ', '.$field.' = ?';
 
-            $read_qry .= ', '.$field.' = '.$conditionArr[$key];
+            $read_qry .= ', '.$field.' = \''.$conditionArr[$key].'\'';
 
           }
           $count = $key;
         }
-
         if($condition != ""){
-          echo $condition;
           $pos = $this->strpos_all($condition, "?");
-          print_r($pos);
           for($i=0; $i < count($pos); $i++){
-            $cond = substr_replace($condition,$conditionArr[$count],$pos[$i],1);
             $count++;
+            $cond = substr_replace($condition,"'".$conditionArr[$count]."'",$pos[$i],1);
+
           }
-          print_r($pos);
           $qry .= " where (".$condition.") ";
-          ecoh $read_qry .= " where (".$cond.") ";
+          $read_qry .= " where (".$cond.") ";
 
         }
-
-        die();
         try {
 
         $stmt = $this->conn->prepare($qry);
