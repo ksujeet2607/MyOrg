@@ -106,14 +106,16 @@ function loadPageMetaData(ele){
       var jsonObj = JSON.parse(res);
       $(".properties").find(".col-md-12").remove();
       var title = document.querySelector('.title');
-      title.value = jsonObj[0][0].title;
-      setOutput(title);
-      var description = document.querySelector('.description');
-      description.value = jsonObj[0][0].descrp;
-      setOutput(description);
-      var keywords = document.querySelector('.keywords');
-      keywords.value = jsonObj[0][0].keyword;
-      setOutput(keywords);
+      if(Object.keys(jsonObj[0]).length > 0){
+        title.value = jsonObj[0][0].title;
+        setOutput(title);
+        var description = document.querySelector('.description');
+        description.value = jsonObj[0][0].descrp;
+        setOutput(description);
+        var keywords = document.querySelector('.keywords');
+        keywords.value = jsonObj[0][0].keyword;
+        setOutput(keywords);
+      }
       if(jsonObj[1]!=null){
         if(Object.keys(jsonObj[1]).length > 0){
           for(var i = 0; i < Object.keys(jsonObj[1]).length; i++){
@@ -122,8 +124,10 @@ function loadPageMetaData(ele){
 
         }
       }
-      modal1.style.display = "none";
+
     }
+  }).done(function() {
+    modal1.style.display = "none";
   });
 }
 
