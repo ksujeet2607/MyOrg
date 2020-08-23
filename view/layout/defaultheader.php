@@ -6,9 +6,16 @@
     <head>
         <!-- Meta Tags -->
         <meta charset="utf-8">
-        <title><?= SITE_NAME ?> | <?= SUBTITLE ?></title>
-        <meta name="description" content="">
-        <meta name="author" content="iSeada.com">
+        <title><?= (self::$metatags->title!="")?self::$metatags->title:SITE_NAME." | ".SUBTITLE ?></title>
+        <meta name="description" content="<?= self::$metatags->descrp ?>">
+        <meta name="keywords" content="<?= self::$metatags->keyword ?>">
+        <?php
+        if(count(self::$metaprop)>0){
+          foreach (self::$metaprop as $key => $value) {
+            echo '<meta '.$value['type'].'="'.$value['p_value'].'" content="'.$value['contect'].'">';
+          }
+        }
+         ?>
         <!-- Mobile Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
         <!-- Main Stylesheet -->
@@ -67,7 +74,7 @@
                         <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
 <!--                             MAIN IMAGE -->
                             <img src="<?= SRC_URL ?>img/slider2.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-<!--                             LAYERS 
+<!--                             LAYERS
                              LAYER NR. 1 -->
                             <div class="tp-caption lft skewtoleft tp-resizeme start white"
                                 data-y="210"
@@ -96,11 +103,11 @@
                                 data-endspeed="500" style="z-index: 99; white-space: pre-line;">
 <!--                                <p class="slide-description">Every professional wants his/her own identity into the virtual world. The best way is to have our own virtual world. Let the world visit to you. </p>-->
                             </div>
-                        </li> 
+                        </li>
                         <li data-transition="random" data-slotamount="7" data-masterspeed="1500">
-                         
+
                             <img src="<?= SRC_URL ?>img/slider3.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-                           
+
                             <div class="tp-caption lft skewtoleft tp-resizeme start white"
                                 data-y="210"
                                 data-x="center"
@@ -113,7 +120,7 @@
                                 style="z-index: 2">
 <!--                                <h2 class="slide-title">Let us to build your profession in virtual world!</h2>-->
                             </div>
-                            
+
                             <div class="tp-caption black randomrotate skewtoleft tp-resizeme start"
                                 data-x="center"
                                 data-hoffset="0"
@@ -128,7 +135,7 @@
                                 data-endspeed="500" style="z-index: 99; white-space: pre-line;">
 <!--                                <p class="slide-description">We will provide you the best product, within a time schedule.</p>-->
                             </div>
-                        </li> 
+                        </li>
                     </ul><!-- end ul elements -->
                     <div class="scroll-down">
                         <a href="#header">

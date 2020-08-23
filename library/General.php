@@ -1,6 +1,17 @@
 <?php
 trait General  {
 
+  public function strpos_all($haystack, $needle) {
+    $offset = 0;
+    $allpos = array();
+    while (($pos = mb_strpos($haystack, $needle, $offset)) !== FALSE) {
+        $offset   = $pos + 1;
+        $allpos[] = $pos;
+    }
+    return $allpos;
+  }
+
+
   /// UC First //
 
   public function ucf($string){

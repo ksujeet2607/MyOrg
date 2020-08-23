@@ -135,6 +135,7 @@ function addrow(tagname, tagvalue, tagcontent, tagid){
   tagname = (tagname==undefined)?'':tagname;
   tagvalue = (tagvalue==undefined)?'':tagvalue;
   tagcontent = (tagcontent==undefined)?'':tagcontent;
+  tagid = (tagcontent==undefined)?'':tagid;
     var $elecount = Number($(".properties").find(".col-md-12").length)+1;
       var  html='<div class=" col-md-12" id="ele'+$elecount+'">'+
                     '<div class=" row"> '+
@@ -159,6 +160,7 @@ function addrow(tagname, tagvalue, tagcontent, tagid){
                             '<div class=" form-group">'+
                                 '<label>Meta Content</label>'+
                                 '<input class=" form-control" name="metacontent['+$elecount+']" value="'+tagcontent+'">'+
+                                '<input type="hidden" class=" form-control" name="updateid['+$elecount+']" value="'+tagid+'">'+
                             '</div>'+
                         '</div>'+
                         '<div class=" col-md-1">'+
@@ -177,7 +179,7 @@ function addrow(tagname, tagvalue, tagcontent, tagid){
 function removeids(elecount,tagid){
   if(confirm('Are you sure?')){
     $('#ele'+elecount).remove();
-    if(tagid!=undefined){
+    if(tagid!=''){
       var ids = $("#removeIDs").val();
       $("#removeIDs").val(ids+","+tagid);
     }

@@ -1,7 +1,7 @@
 <?php
 
 class Dbfunction   {
-    use Session;
+    use Session,General;
     private $host = DB_HOST;
     private $user = DB_USER;
     private $pass = DB_PASSWORD;
@@ -17,7 +17,7 @@ class Dbfunction   {
             $options = [
                         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                         PDO::ATTR_CASE => PDO::CASE_NATURAL,
-                        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_BOTH
+                        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
                       ];
             $conn = new PDO("mysql:host=".$this->host.";dbname=".$this->db.";", $this->user, $this->pass,$options);
 
@@ -120,7 +120,7 @@ class Dbfunction   {
 
         $stmt->execute($conditionArr);
 
-        $row = $stmt->fetch();
+        $row = $stmt->fetch(PDO::FETCH_BOTH);
 
         //$this->conn = null;
 
@@ -134,7 +134,7 @@ class Dbfunction   {
 
 
 //********************// Update Values //**********************//
-    public function db_Update($table = "", $colomns = "", $values = "", $condition = "",  $conditionArr = "", $print_qry = false){
+    public function db_Update($table = "", $colomns = "", $condition = "",  $conditionArr = "", $print_qry = false){
 
         $colomn_array = explode(",", $colomns);
 
@@ -143,43 +143,45 @@ class Dbfunction   {
         $qry = "update ".$table." set ";
 
         $read_qry = "update ".$table." set ";
-
+        $count = count($colomn_array);
         foreach($colomn_array as $key => $field){
 
-            if ($key == 0) {
+          if ($key == 0) {
 
             $qry .= $field.' = ?';
 
-            $read_qry .= $field.' = '.$values_array[$key];
+            $read_qry .= $field.' = '.$conditionArr[$key];
 
           } else {
 
             $qry .= ', '.$field.' = ?';
 
-            $read_qry .= ', '.$field.' = '.$values_array[$key];
+            $read_qry .= ', '.$field.' = '.$conditionArr[$key];
 
           }
+          $count = $key;
         }
 
         if($condition != ""){
-
-            $qry .= " where (".$condition.") ";
-
-            $read_qry .= " where (".$condition.") ";
-            if(!empty($conditionArr)){
-              $conditionArr = array($conditionArr);
-              foreach ($conditionArr as $value) {
-                array_push($values_array,$value);
-              }
-            }
+          echo $condition;
+          $pos = $this->strpos_all($condition, "?");
+          print_r($pos);
+          for($i=0; $i < count($pos); $i++){
+            $cond = substr_replace($condition,$conditionArr[$count],$pos[$i],1);
+            $count++;
+          }
+          print_r($pos);
+          $qry .= " where (".$condition.") ";
+          ecoh $read_qry .= " where (".$cond.") ";
 
         }
 
+        die();
         try {
 
         $stmt = $this->conn->prepare($qry);
 
-        $stmt->execute($values_array);
+        $stmt->execute($conditionArr);
 
         if($print_qry){
             //$stmt->debugDumpParams();

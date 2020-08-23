@@ -6,9 +6,16 @@
     <head>
         <!-- Meta Tags -->
         <meta charset="utf-8">
-        <title><?= SITE_NAME ?> | <?= SUBTITLE ?></title>
-        <meta name="description" content="">
-        <meta name="author" content="technets.in">
+        <title><?= (self::$metatags->title!="")?self::$metatags->title:SITE_NAME." | ".SUBTITLE ?></title>
+        <meta name="description" content="<?= self::$metatags->descrp ?>">
+        <meta name="keywords" content="<?= self::$metatags->keyword ?>">
+        <?php
+        if(count(self::$metaprop)>0){
+          foreach (self::$metaprop as $key => $value) {
+            echo '<meta '.$value['type'].'="'.$value['p_value'].'" content="'.$value['contect'].'">';
+          }
+        }
+         ?>
         <!-- Mobile Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
         <!-- Main Stylesheet -->

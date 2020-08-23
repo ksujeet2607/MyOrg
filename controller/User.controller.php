@@ -5,12 +5,19 @@ class User {
     protected  $model;
     public  $params;
     public static $menu;
+    public static $metatags;
+    public static $metaprop;
     use General, Session;
 
     function __construct($method,$params) {
         $this->params = $params;
         $this->model = new UserModel();
         self::$menu = $method;
+        $seopage = preg_replace('/[_]/', '-', $method);
+        $tags = $this->model->metatags($seopage);
+        self::$metatags = (object)$tags[0];
+        self::$metaprop = (object)$tags[1];
+
     }
 
     public function isMemberLogin(){
@@ -44,8 +51,12 @@ class User {
         $this->render(__FUNCTION__, $response);
     }
 
+    public function mobile_application($param){
+        define('SUBTITLE','Mobile Application');
+        $this->render(__FUNCTION__, $response);
+    }
 
-   public function meet_our_team($param){
+    public function meet_our_team($param){
         define('SUBTITLE','Technets Team');
         $this->render(__FUNCTION__, $response);
     }

@@ -33,13 +33,13 @@
                                     <li class="course-menu-item col-md-3 col-sm-4">
                                         <div class="single-item">
                                             <span class="item-icon"><img src="<?= SRC_URL ?>img/icon8.png" class="services_img" alt="" style=""></span>
-                                            <a href="<?= PUBLIC_URL ?>ui-xi-Design" class="ln-tr link">UI / XI Design</a>
+                                            <a href="<?= PUBLIC_URL ?>ui-xi-design" class="ln-tr link">UI / XI Design</a>
                                         </div>
                                     </li><!-- end course menu item -->
                                     <li class="course-menu-item col-md-3 col-sm-4">
                                         <div class="single-item">
                                             <span class="item-icon"><img src="<?= SRC_URL ?>img/icon7.png" class="services_img" alt="" style=""></span>
-                                            <a href="<?= PUBLIC_URL ?>seo" class="ln-tr link">SEO</a>
+                                            <a href="<?= PUBLIC_URL ?>seo-facility" class="ln-tr link">SEO</a>
                                         </div>
                                     </li><!-- end course menu item -->
                                     <li class="course-menu-item col-md-3 col-sm-4">

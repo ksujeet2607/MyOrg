@@ -6,11 +6,11 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
 
-error_reporting(0);
-ini_set("display_errors", "off");
+// error_reporting(0);
+// ini_set("display_errors", "off");
 
-// error_reporting(E_ALL);
-// ini_set("display_errors", "on");
+error_reporting(1);
+ini_set("display_errors", "on");
 
 
 define('BASE_URL', 'http://localhost/TechNets/');

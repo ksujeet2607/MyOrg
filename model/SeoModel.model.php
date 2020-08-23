@@ -24,19 +24,29 @@ class SeoModel extends Base{
           $this->strip($data['pagename'])."~".$this->strip($data['title'])."~".$this->strip($data['desc'])
         ."~".$this->strip($data['keyword']));
       }
-      $sql = "Replace into seo_property (type, p_value, contect, pagename) VALUES";
+      echo "<pre>";
+      print_r($data);
+      $insert = false;
+      $sql = "Insert into seo_property (type, p_value, contect, pagename) VALUES";
       for($i = 1; $i <= count($data['tagtype']); $i++){
-        if($data['tagtype'][$i]!=""){
+        if($data['metaname'][$i]!="" && ($data['updateid'][$i]=="" || $data['updateid'][$i]=="undefined")){
+          $insert = true;
           $sql .= "('".$this->strip($data['tagtype'][$i])."', '".$this->strip($data['metaname'][$i])."',
           '".$this->strip($data['metacontent'][$i])."', '".$this->strip($data['pagename'])."'), ";
         }
+        if($data['updateid'][$i]!="" && $data['updateid'][$i]!="undefined"){
+          $this->db_update("seo_property","type, p_value, contect","id=?", [$this->strip($data['tagtype'][$i]),$this->strip($data['metaname'][$i]),
+          $this->strip($data['metacontent'][$i]),$data['updateid'][$i]]);
+        }
       }
+
       $sql = rtrim($sql, ", ");
+      if($insert)
       $this->db_execute($sql);
       if($data['removeIDs']!=""){
         $this->db_delete("seo_property","id IN (?)",[ltrim($data['removeIDs'],",")]);
       }
-      //die();
+
     }
 
 

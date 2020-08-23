@@ -15,6 +15,11 @@ class UserModel extends Base{
         }
     }
 
+    public function metatags($seopage){
+      $rs = $this->db_executeReader("seocontent","title, descrp, keyword","","pagename = ?",[$seopage],"",false);
+      $rs1 = $this->db_executeReader("seo_property","type, p_value, contect","","pagename = ?",[$seopage],"",false);
+      return [$rs[0], $rs1];
+    }
 
 
     public function indexPageSrc($param){
