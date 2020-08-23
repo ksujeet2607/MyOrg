@@ -1,6 +1,8 @@
 <?php
 class UserModel extends Base{
 
+
+    use General, Session;
     function __construct() {
         parent::__construct();
     }

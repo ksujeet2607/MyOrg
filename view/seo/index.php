@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="<?php echo SRC_URL?>css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo SRC_URL?>css/AdminLTE.min.css">
-  <link href='<?php echo SRC_URL?>css/alertify.min.css' rel='stylesheet' type='text/css'>	
+  <link href='<?php echo SRC_URL?>css/alertify.min.css' rel='stylesheet' type='text/css'>
   <link href='<?php echo SRC_URL?>css/error.css' rel='stylesheet' type='text/css'>
 
   <!-- Google Font -->
@@ -25,14 +25,14 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="#"><b><?php echo SITE_NAME ?></b></a>
+    <a href="#"><b><?php echo SITE_NAME ?> | SEO</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
     <div class="content-header no-padding" style="margin-bottom: 10px;"></div>
     <form action="<?php echo BASE_URL ?>login/seologin/" method="post">
-      
+
       <div class="form-group has-feedback">
           <input type="text" name="userid" maxlength="15" minlength="3"  class="form-control" placeholder="Login Id" required>
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -45,7 +45,7 @@
         <div class="col-xs-8">
           <div class="checkbox icheck">
             <label>
-              
+
             </label>
           </div>
         </div>

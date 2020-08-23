@@ -18,14 +18,13 @@
 
     static function Create_Session($uname="",$type='',$user_id="",$displayname="",$role="0")
     {
+        $_SESSION["userName"]=$uname;
+        $_SESSION["userType"]=$type;
+        $_SESSION["userid"]=$user_id;
+        $_SESSION["displayname"]=$displayname;
+        $_SESSION["admin_area"]=$role;
 
-            $_SESSION["userName"]=$uname;
-            $_SESSION["userType"]=$type;
-            $_SESSION["userid"]=$user_id;
-            $_SESSION["displayname"]=$displayname;
-            $_SESSION["admin_area"]=$role;
-
-            return true;
+        return true;
     }
 
     static function Create_Session_Public($user_id="",$type='')
@@ -80,7 +79,6 @@
             return TRUE;
     }
     static function IsLogin($type=""){
-
         if($type!=""){
            if(self::Get_userType($type)== strtolower($type)){
             return true;

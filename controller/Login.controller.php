@@ -11,13 +11,14 @@
  *
  * @author SUJEET KUMAR KAHAR
  */
-class Login extends Session{
+class Login {
     //put your code here
     public  $params;
     protected  $userid;
     protected  $usertype;
     protected  $model;
     public static $menu;
+    use General, Session;
 
     function __construct($method,$params) {
         $this->params = $params;
@@ -78,15 +79,14 @@ class Login extends Session{
                $msg = "Worng Id or Password.~err";
                $page = BASE_URL."seo/index?lgerr";
             }else{
-
                $msg = "";
                $page = BASE_URL."seo/seohome";
-
             }
          }else{
              $msg = "Invalid input.~err";
              $page = "index";
          }
+
          $this->redirect($page,$msg);
     }
 

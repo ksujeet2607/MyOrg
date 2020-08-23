@@ -11,9 +11,10 @@
  *
  * @author SUJEET KUMAR KAHAR
  */
-class Errors extends Session{
+class Errors {
 
     protected $control;
+    use General, Session;
 
     public function __construct($control) {
         $this->control = $control;
@@ -26,7 +27,7 @@ class Errors extends Session{
     public function index($param) {
         $this->error404($param);
     }
-    
+
     public function error404($param){
         $this->render(__FUNCTION__, $param);
     }

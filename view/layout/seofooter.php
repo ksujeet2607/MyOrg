@@ -9,6 +9,22 @@
   <!-- Modal Caption (Image Text) -->
   <div id="caption1"></div>
 </div>
+
+<div id="loader12" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" style=" text-align: center" id="">
+     <div id="divLoading" style="margin: 0px; padding: 0px; position: fixed; right: 0px; top: 0px; width: 100%; height: 100%;  z-index: 30001;">
+        <p id="loderimg" style="position: absolute; color: White; top: 50%; left: 40%;">
+            Sending verification mail on this mail-id, please wait...
+        <img class=".loading-image" src="<?php echo BASE_URL ?>assets/img/loader.gif">
+        </p>
+        <p id="emailfailed" style=" position: absolute; color: red; top: 53%; left: 45%;"></p>
+        <p id="emailsuc" style=" position: absolute; green: White; top: 53%; left: 45%;"></p>
+    </div>
+
+  <div id="caption"></div>
+</div>
+
 <script src="<?php echo SRC_URL ?>js/jquery.dataTables.min.js"></script>
 <script src="<?php echo SRC_URL ?>js/dataTables.bootstrap.min.js"></script>
 <script language="JavaScript" src="<?php echo SRC_URL ?>js/alertify.min.js"></script>

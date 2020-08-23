@@ -1,5 +1,6 @@
 <?php
-class Session extends General { 
+
+trait Session {
 
 static function GetMessage() {
     $msg = $_SESSION["msg"];

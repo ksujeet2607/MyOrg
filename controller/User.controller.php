@@ -1,10 +1,11 @@
 <?php
-class User extends Session{
+class User {
     protected  $userid;
     protected  $usertype;
     protected  $model;
     public  $params;
     public static $menu;
+    use General, Session;
 
     function __construct($method,$params) {
         $this->params = $params;

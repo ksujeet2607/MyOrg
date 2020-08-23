@@ -16,17 +16,16 @@
 
     <!-- Main content -->
     <section class="content container-fluid">
-
         <div class="box">
             <div class="box-body">
-                <form action="<?= BASE_URL."seo/addcontent" ?>" method="post">
+                <form id="seoform" action="<?= BASE_URL."seo/addseocontent" ?>" method="post">
                     <div class="row">
                         <div class=" col-md-6">
                             <div class=" form-group">
                                 <label>Select Page</label>
                                 <?php
                                 $sel = ($edit['pagename']!="")?$edit['pagename']:"0";
-                                echo $this->getseopageoptions("pagename","pagename","form-control required","Select Page","$sel","str");
+                                echo $response['pagename'];
                                 ?>
                             </div>
                         </div>
@@ -70,6 +69,7 @@
                             <button class=" btn btn-default" onclick=" return addrow()">Add More+</button>
                         </div>
                     </div>
+                    <input type="hidden" name="removeIDs" id="removeIDs">
                 </form>
             </div>
         </div>
@@ -93,45 +93,92 @@ $(document).ready(function(){
     addrow();
 });
 
-function addrow(){
+function loadPageMetaData(ele){
+  var modal1 = document.getElementById("loader12");
+  $.ajax({
+    url: "<?= BASE_URL ?>seo/loadPageMetaData",
+    type: "post",
+    data:{pagename: ele.value},
+    beforeSend:function(res){
+      modal1.style.display = "block";
+    },
+    success: function(res){
+      var jsonObj = JSON.parse(res);
+      $(".properties").find(".col-md-12").remove();
+      var title = document.querySelector('.title');
+      title.value = jsonObj[0][0].title;
+      setOutput(title);
+      var description = document.querySelector('.description');
+      description.value = jsonObj[0][0].descrp;
+      setOutput(description);
+      var keywords = document.querySelector('.keywords');
+      keywords.value = jsonObj[0][0].keyword;
+      setOutput(keywords);
+      if(jsonObj[1]!=null){
+        if(Object.keys(jsonObj[1]).length > 0){
+          for(var i = 0; i < Object.keys(jsonObj[1]).length; i++){
+            addrow(jsonObj[1][i].type, jsonObj[1][i].p_value, jsonObj[1][i].contect, jsonObj[1][i].id);
+          }
+
+        }
+      }
+      modal1.style.display = "none";
+    }
+  });
+}
+
+function addrow(tagname, tagvalue, tagcontent, tagid){
+  tagname = (tagname==undefined)?'':tagname;
+  tagvalue = (tagvalue==undefined)?'':tagvalue;
+  tagcontent = (tagcontent==undefined)?'':tagcontent;
     var $elecount = Number($(".properties").find(".col-md-12").length)+1;
-//    var html = '';
-//    for(var i = $elecount; i >=0; i--){
       var  html='<div class=" col-md-12" id="ele'+$elecount+'">'+
                     '<div class=" row"> '+
                         '<div class=" col-md-3">'+
                             '<div class=" form-group">'+
                                 '<label>Select Meta Tag Name/Property</label>'+
                                 '<select class=" form-control" name="tagtype['+$elecount+']">'+
-                                    '<option>name</option>'+
-                                    '<option>property</option>'+
+                                    '<option '+((tagname=="" || tagname=="name")?"selected":"")+'>name</option>'+
+                                    '<option '+((tagname=="property")?"selected":"")+'>property</option>'+
+                                    '<option '+((tagname=="http-equiv")?"selected":"")+'>http-equiv</option>'+
+                                    '<option '+((tagname=="charset")?"selected":"")+'>charset</option>'+
                                 '</select>'+
                             '</div>'+
                         '</div>'+
                         '<div class=" col-md-3">'+
                             '<div class=" form-group">'+
                                 '<label>Tag Name/Property (E.g googlebot, robots)</label>'+
-                                '<input class=" form-control" name="metaname['+$elecount+']" >'+
+                                '<input class=" form-control" name="metaname['+$elecount+']"  value="'+tagvalue+'">'+
                             '</div>'+
                         '</div>'+
                         '<div class=" col-md-5">'+
                             '<div class=" form-group">'+
                                 '<label>Meta Content</label>'+
-                                '<input class=" form-control" name="metacontent['+$elecount+']" >'+
+                                '<input class=" form-control" name="metacontent['+$elecount+']" value="'+tagcontent+'">'+
                             '</div>'+
                         '</div>'+
                         '<div class=" col-md-1">'+
                             '<div class=" form-group">'+
-                                '<label></label><br>'+
-                                '<button class=" btn" onclick="if(confirm(\'Are you sure?\'))$(\'#ele'+$elecount+'\').remove();" ><i class="fa fa-times" style=" color: red;"></i></button>'+
+                                '<label>&nbsp;</label><br>'+
+                                '<button class=" btn" onclick="return removeids('+$elecount+','+tagid+')" ><i class="fa fa-times" style=" color: red;"></i></button>'+
                             '</div>'+
                         '</div>'+
                     '</div>'+
 
                 '</div>';
-//    }
     $(".properties").append(html);
     return false;
+}
+
+function removeids(elecount,tagid){
+  if(confirm('Are you sure?')){
+    $('#ele'+elecount).remove();
+    if(tagid!=undefined){
+      var ids = $("#removeIDs").val();
+      $("#removeIDs").val(ids+","+tagid);
+    }
+  }
+  return false;
 }
 
 function setOutput($ele){
@@ -140,7 +187,6 @@ function setOutput($ele){
        document.querySelector('#title').innerHTML  = '&lt;title&gt;'+$ele.value+'&lt;/title&gt;';
     }else{
        var index = $ele.classList.length - 1;
-       console.log($ele.classList.length - 1);
        document.querySelector('#'+$ele.classList[index]).innerHTML = '&lt;meta name="'+$ele.classList[index]+'" content="'+$ele.value+'" /&gt;';
     }
 

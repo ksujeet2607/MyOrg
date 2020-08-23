@@ -1,6 +1,7 @@
 <?php
 
-class Dbfunction extends Session {
+class Dbfunction   {
+    use Session;
     private $host = DB_HOST;
     private $user = DB_USER;
     private $pass = DB_PASSWORD;
@@ -8,7 +9,6 @@ class Dbfunction extends Session {
     public $conn;
 
     function __construct() {
-
         $this->conn = $this->getConnection();
     }
 
@@ -70,6 +70,7 @@ class Dbfunction extends Session {
 
         $stmt->execute($valuearr);
 
+
         //$this->conn = null;
 
         return $stmt;
@@ -98,7 +99,7 @@ class Dbfunction extends Session {
 
     /////****** Fetch Rows from execute() object ******/////
     public function db_read($stmt) {
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        $row = $stmt->fetchAll();
         return $row;
     }
 
@@ -114,8 +115,6 @@ class Dbfunction extends Session {
         if(trim($extra) != ""){$qry .= " ".$extra." ";}
 
         if($print_qry){echo $qry;} // print query
-
-        print_r($conditionArr);
 
         $stmt = $this->conn->prepare($qry);
 
@@ -307,7 +306,7 @@ class Dbfunction extends Session {
 
 
    //********************// Delete Record //**********************//
-public function db_delete($table = "", $condition = "", $print_qry = false){
+public function db_delete($table = "", $condition = "", $conditionarr=[],$print_qry = false){
 
         $qry = "delete from ".$table." ";
 
@@ -320,7 +319,7 @@ public function db_delete($table = "", $condition = "", $print_qry = false){
 
         $stmt = $this->conn->prepare($qry);
 
-        $stmt->execute();
+        $stmt->execute($conditionarr);
 
         if($print_qry){$stmt->debugDumpParams();}
 

@@ -1,8 +1,9 @@
 <?php
 
-class Mail extends Session {
+class Mail {
     //put your code here
     protected $Obj;
+    use General, Session;
 
     function __construct() {
 

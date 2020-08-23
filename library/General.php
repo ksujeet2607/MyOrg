@@ -1,5 +1,5 @@
 <?php
-class General  {
+trait General  {
 
   /// UC First //
 
@@ -417,22 +417,121 @@ function get_subtitle($array=array()){
  }
  return $subtitle;
 }
-function is_not_null($value) {
 
-    if (is_array($value)) {
-      if (sizeof($value) > 0) {
-        return true;
-      } else {
-        return false;
-      }
-    } else {
-      if (($value != '') && (strtolower($value) != 'null') && (strlen(trim($value)) > 0)) {
-        return true;
-      } else {
-        return false;
-      }
+    /////////////////////////////////////////////////////////////////////////////////
+    // check varible existance and value not null ///////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////
+
+    public function is_not_null($variable_type = "", $variable_list = ""){
+
+        $variables = explode("~", $variable_list);
+
+        $error = 0;
+
+        if($variable_type == "POST"){
+
+            foreach ($variables as $variable){
+
+            if(isset($_POST[$variable])){
+
+                if(trim($_POST[$variable]) == "" && $_POST[$variable] == NULL){
+                    $error++;
+                }
+            }
+            else {
+                $error++;
+            }
+           }
+        }
+        else if($variable_type == "GET"){
+
+            foreach ($variables as $variable){
+
+            if(isset($_GET[$variable])){
+
+                if(trim($_GET[$variable]) == "" && $_GET[$variable] == NULL){
+                    $error++;
+                }
+            }
+            else {
+                $error++;
+            }
+           }
+        }
+        else if($variable_type == "FILES"){
+
+            foreach ($variables as $variable){
+
+            if(!isset($_FILES[$variable])){
+                 $error++;
+            }
+           }
+        }
+        else if($variable_type == "SESSION"){
+
+            foreach ($variables as $variable){
+
+            if(isset($_SESSION[$variable])){
+
+                if(trim($_SESSION[$variable]) == "" && $_SESSION[$variable] == NULL){
+                    $error++;
+                }
+            }
+            else {
+                $error++;
+            }
+           }
+        }
+        else if($variable_type == "REQUEST"){
+
+            foreach ($variables as $variable){
+
+            if(isset($_REQUEST[$variable])){
+
+                if(trim($_REQUEST[$variable]) == "" && $_REQUEST[$variable] == NULL){
+                    $error++;
+                }
+            }
+            else {
+                $error++;
+            }
+           }
+        }
+        else if($variable_type == "COOKIE"){
+
+            foreach ($variables as $variable){
+
+            if(isset($_COOKIE[$variable])){
+
+                if(trim($_COOKIE[$variable]) == "" && $_COOKIE[$variable] == NULL){
+                    $error++;
+                }
+            }
+            else {
+                $error++;
+            }
+           }
+        }
+        else if($variable_type == "SERVER"){
+
+            foreach ($variables as $variable){
+
+            if(isset($_SERVER[$variable])){
+
+                if(trim($_SERVER[$variable]) == "" && $_SERVER[$variable] == NULL){
+                    $error++;
+                }
+            }
+            else {
+                $error++;
+            }
+           }
+        }
+
+        if($error == 0){return true;}else{return false;}
     }
-  }
+
+
 function is_not_empty($array,$value){
    if($this->is_not_null($array)){
     $tmp_array=explode("~@~",$value);

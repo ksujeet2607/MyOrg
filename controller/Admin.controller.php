@@ -1,9 +1,11 @@
 <?php
-class Admin extends Session{
+class Admin {
     public static $menu;
     protected  $userid;
     protected  $usertype;
     public  $params;
+    use General, Session;
+
     function __construct($method,$params){
         self::$menu = $method;
         $this->params = $params;

@@ -1,10 +1,11 @@
 <?php
 class AdminModel extends Base{
 
+    use General, Session;
     function __construct(){
         parent::__construct();
     }
-    
+
     public function index($response){
         if(auth::IsLogin('Admin') && !auth::IsLogin('adminuser')){
             $this->adminhome("adminhome");
