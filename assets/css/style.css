@@ -1577,6 +1577,15 @@ h6.head-title {
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+.achievement-sections {
+	position: relative;
+	text-align: center;
+	padding: 60px
+	
+}
+
+
 .testimonials-section:after,
 .achievement-section:after {
 	content: '';
