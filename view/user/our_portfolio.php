@@ -2,7 +2,7 @@
 
             <div class="inner-head">
                 <div class="container">
-                    <h1 class="entry-title">Portfolio Classic - 2 Columns</h1>
+                    <h1 class="entry-title">Our Portfolio</h1>
                     <p class="description">
 We see every project as a new and fresh opportunity – we approach each and every one from an exciting new angle. Our culture of teamwork and collaboration challenges us to take complex concepts and make them a reality, using our talents to be as effective as possible for our clients. View some of our latest work here.                    </p>
                     <div class="breadcrumb">
