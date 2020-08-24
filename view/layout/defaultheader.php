@@ -40,7 +40,7 @@
                     <ul>
                         <li data-transition="random" data-slotamount="7" data-masterspeed="1500">
                             <!-- MAIN IMAGE -->
-                            <img src="<?= SRC_URL ?>img/slider1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                            <img src="<?= SRC_URL ?>img/slider1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top"  data-bgrepeat="no-repeat">
                             <!-- LAYERS -->
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption lft skewtoleft tp-resizeme start white"

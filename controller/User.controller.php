@@ -56,6 +56,21 @@ class User {
         $this->render(__FUNCTION__, $response);
     }
 
+    public function e_commerse_services($param){
+        define('SUBTITLE','E-commerce Services');
+        $this->render(__FUNCTION__, $response);
+    }
+    
+     public function bulk_sms($param){
+        define('SUBTITLE','Bulk SMS');
+        $this->render(__FUNCTION__, $response);
+    }
+    
+    public function seo_facility($param){
+        define('SUBTITLE','SEO');
+        $this->render(__FUNCTION__, $response);
+    }
+    
     public function meet_our_team($param){
         define('SUBTITLE','Technets Team');
         $this->render(__FUNCTION__, $response);

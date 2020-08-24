@@ -1,8 +1,25 @@
 
+<style>.pl141{
+    padding-left: 141px;
+}
+.pr67{
+    padding-right:67px;
+}
 
+@media only screen and (max-width : 768px) {
+
+.pl141{
+    padding-left: 1px;
+}
+.pr67{
+    padding-right:1px;
+}
+}
+
+
+</style>
 <section class="features-section fancy-shadow" style="background:none">
-                <div class="testimonials-sections" style="padding-left: 141px;
-    padding-right: 67px;">
+                <div class="testimonials-sections pl141 pr67">
                     <div class="col-md-7">
                          <h3 class="section-title" style="text-align: left;">Welcome Dear Visitor in <?= SITE_NAME ?></h3>
                          <p class="section-description" style="text-align: justify;">
@@ -25,7 +42,7 @@
                             <h1 style="font-size: 40px;">Custome Software Development Company</h1>
                             <p style="font-size: 18px;margin-bottom:30px;">We Offer Web Development & Mobile Application Services</p>
                             
-                            <div class="col-md-3 col-xs-6">
+                            <div class="col-md-3 col-xs-12">
                                 <div class="feature-box alt">
                                     <div class="icon"><img src="<?= SRC_URL ?>img/webdevelopment.png" class="es-tr" alt=""></div><!-- End Icon -->
                                     <h5 class="feature-title">Web Development</h5>
@@ -34,7 +51,7 @@
                                     </p>
                                 </div><!-- End Features Box -->
                             </div>
-                            <div class="col-md-3 col-xs-6">
+                            <div class="col-md-3 col-xs-12">
                                 <div class="feature-box alt">
                                     <div class="icon"><img src="<?= SRC_URL ?>img/logodesigning.png" class="es-tr" alt=""></div><!-- End Icon -->
                                     <h5 class="feature-title">Web & Logo Designing</h5>
@@ -43,7 +60,7 @@
                                     </p>
                                 </div><!-- End Features Box -->
                             </div>
-                            <div class="col-md-3 col-xs-6">
+                            <div class="col-md-3 col-xs-12">
                                 <div class="feature-box alt">
                                     <div class="icon"><img src="<?= SRC_URL ?>img/cmscosti.png" class="es-tr" alt=""></div><!-- End Icon -->
                                     <h5 class="feature-title">CMS Customization</h5>
@@ -52,7 +69,7 @@
                                     </p>
                                 </div><!-- End Features Box -->
                             </div>
-                            <div class="col-md-3 col-xs-6">
+                            <div class="col-md-3 col-xs-12">
                                 <div class="feature-box alt">
                                     <div class="icon"><img src="<?= SRC_URL ?>img/webhosting.png" class="es-tr" alt=""></div><!-- End Icon -->
                                     <h5 class="feature-title">Web Hosting</h5>
@@ -251,7 +268,7 @@
             <section class="full-section misc-section fadeInDown-animation">
                 <div class="container">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-xs-12" >
                           <h6 class="head-title">Why <?= SITE_NAME ?></h6>
                           <div id="accordion-container" class="accordion">
                               <h4 class="accordion-header ln-tr">What Is <?= SITE_NAME ?>?</h4>
@@ -274,7 +291,7 @@
                               </div><!-- End 3rd Item -->
                           </div><!-- End Accordion Container -->
                       </div><!-- End col-md-6 -->
-                        <div class="col-md-6">
+                        <div class="col-md-6 hidden-xs hidden-sm">
                             <img class="img-thumb" style="position: absolute;top: 54px;" src="<?= SRC_URL ?>img/whyus.jpg">
                         </div><!-- End col-md-6 -->
 
