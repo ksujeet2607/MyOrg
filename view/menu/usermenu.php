@@ -21,7 +21,7 @@
                                     <li class="course-menu-item col-md-3 col-sm-4">
                                         <div class="single-item">
                                             <span class="item-icon"><img src="<?= SRC_URL ?>img/icon5.png" class="services_img" alt="" style=""></span>
-                                            <a href="<?= PUBLIC_URL ?>e-commerse-services" class="ln-tr link">E-commerse Services</a>
+                                            <a href="<?= PUBLIC_URL ?>e-commerse-services" class="ln-tr link">E-commerse</a>
                                         </div>
                                     </li><!-- end course menu item -->
                                     <li class="course-menu-item col-md-3 col-sm-4">

@@ -1,7 +1,7 @@
 <?php
 // database credentials
 
-define('DB_NAME', 'technetdb');
+define('DB_NAME', 'technetsdb');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
