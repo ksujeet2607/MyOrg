@@ -57,7 +57,10 @@ class User {
         $this->render(__FUNCTION__, $response);
     }
     
-     
+    public function api_intigration($param){
+        define('SUBTITLE','UI XI Design');
+        $this->render(__FUNCTION__, $response);
+    }
     
     
     public function mobile_application($param){
